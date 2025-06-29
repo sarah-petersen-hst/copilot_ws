@@ -44,6 +44,24 @@ Acknowledged user's manual setup and dev server start. Proceeding with React pro
 **[2025-06-29 12:15:10] Copilot:**
 Created `src/components` and `src/styles` directories. Added `theme.css` with custom colors, Poppins font, and round label/button styles. Imported theme CSS into `main.jsx` and `App.jsx` for global and component-level styling. Proceeding to scaffold NavBar, Header, and FilterBar components next.
 
+**[2025-06-29 12:20:30] Copilot:**
+Scaffolded NavBar, HeaderImage, and FilterBar React components with full documentation and custom styles. Updated App.jsx to use these components. Next: scaffold event list and event card components, then add tests. All actions logged with full timestamps.
+
+**[2025-06-29 12:27:10] User:**
+Ok but before you do that, tell me why it isn't showing the image from the dancing couple yet even though i have put it in the correct folder?
+
+**[2025-06-29 12:28:00] Copilot:**
+Explained that images in the `src/assets` folder must be imported as modules in React, and updated the HeaderImage component to use an import for the image. Confirmed that the image should now display correctly.
+
+**[2025-06-29 12:29:30] User:**
+Ok, it's in the assets folder, so change the file for me accordingly.
+
+**[2025-06-29 12:30:10] Copilot:**
+Updated HeaderImage.jsx to import the image from the assets folder and use it as the src in the img tag. The image should now display correctly in the app.
+
+**[2025-06-29 12:35:00] Copilot:**
+Scaffolded EventList and EventCard React components with documentation and custom styles. Updated App.jsx to include EventList with example event data for development and testing. Ready to add tests and expand event details next. All actions logged with full timestamps.
+
 ---
 
 This log will be updated continuously as the project progresses.
