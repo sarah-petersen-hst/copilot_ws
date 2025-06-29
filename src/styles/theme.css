@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+  --color-primary: #E92932;
+  --color-background: #221112;
+  --color-label-selected: #8B1A1A;
+  --color-label: #E92932;
+  --font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: var(--color-background);
+  font-family: var(--font-family);
+  color: #fff;
+  margin: 0;
+  min-height: 100vh;
+}
+
+button {
+  background: var(--color-primary);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5em 1.5em;
+  font-family: var(--font-family);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #b71c1c;
+}
+
+.round-label {
+  display: inline-block;
+  border-radius: 999px;
+  background: var(--color-label);
+  color: #fff;
+  padding: 0.4em 1.2em;
+  margin: 0.2em;
+  font-family: var(--font-family);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  user-select: none;
+}
+
+.round-label.selected {
+  background: var(--color-label-selected);
+}
