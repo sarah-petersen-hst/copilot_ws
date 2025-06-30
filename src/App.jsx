@@ -1,97 +1,73 @@
-import React from 'react';
-import { useState } from 'react'
+import React, { useEffect, useState } from 'react';
 import NavBar from './components/NavBar';
 import HeaderImage from './components/HeaderImage';
 import FilterBar from './components/FilterBar';
 import EventList from './components/EventList';
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
 import './styles/theme.css';
 
 /**
  * Main application component for Salsa Dance Event Finder.
- * Renders the navigation bar, header image, filter bar, and event list.
+ * Fetches events and votes from backend and manages voting state.
  * @returns {JSX.Element} The main app component.
  */
 function App() {
-  const [count, setCount] = useState(0)
+  const [events, setEvents] = useState([]);
+  const [votesByEvent, setVotesByEvent] = useState({});
+  const [lastVotedByEvent, setLastVotedByEvent] = useState({});
+  const [loading, setLoading] = useState(true);
 
-  // Example event data for development/testing
-  const exampleEvents = [
-    {
-      id: 1,
-      title: 'Salsa Night at Havana Club',
-      date: '2025-07-05',
-      address: '123 Main St, Berlin',
-      source: 'Official Club Website',
-      trusted: true,
-      workshops: [
-        { style: 'Salsa L.A.', level: 'Beginner', start: '18:00', end: '19:00' },
-        { style: 'Bachata Sensual', level: 'Open Level', start: '19:15', end: '20:15' }
-      ],
-      party: {
-        start: '21:00',
-        end: '',
-        floors: [
-          { description: '60% Salsa, 40% Bachata' }
-        ]
-      },
-      existsVotes: 5,
-      notExistsVotes: 1
-    },
-    {
-      id: 2,
-      title: 'Bachata Sensual Summer Party',
-      date: '2025-07-12',
-      address: '456 Dance Ave, Hamburg',
-      source: 'Facebook Event',
-      trusted: false,
-      workshops: [
-        { style: 'Bachata Sensual', level: 'Advanced', start: '20:00', end: '21:00' }
-      ],
-      party: {
-        start: '21:30',
-        end: '03:00',
-        floors: [
-          { description: 'Floor 1: Bachata only' },
-          { description: 'Floor 2: Mixed Latin (Salsa, Kizomba, Zouk)' }
-        ]
-      },
-      existsVotes: 2,
-      notExistsVotes: 3
-    },
-  ];
+  // Fetch events from backend
+  useEffect(() => {
+    async function fetchEvents() {
+      setLoading(true);
+      const res = await fetch('http://localhost:4000/api/events');
+      const data = await res.json();
+      setEvents(data);
+      setLoading(false);
+      // Fetch votes for each event
+      data.forEach(event => fetchVotes(event.id));
+    }
+    fetchEvents();
+  }, []);
+
+  // Fetch votes for a specific event
+  async function fetchVotes(eventId) {
+    const res = await fetch(`http://localhost:4000/api/votes?event_id=${eventId}`);
+    const data = await res.json();
+    setVotesByEvent(prev => ({ ...prev, [eventId]: data }));
+  }
+
+  // Handle voting for an event
+  async function handleVote(eventId, type) {
+    // Optionally, set user_id from localStorage or session
+    const user_id = null;
+    await fetch('http://localhost:4000/api/votes', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ event_id: eventId, type, user_id })
+    });
+    setLastVotedByEvent(prev => ({ ...prev, [eventId]: type }));
+    fetchVotes(eventId);
+  }
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
       <NavBar />
       <HeaderImage />
       <FilterBar />
-      <EventList events={exampleEvents} />
-      {/* TODO: Add event list and other containers here */}
+      {loading ? (
+        <div style={{ color: '#fff', textAlign: 'center', marginTop: '2em' }}>Loading events...</div>
+      ) : (
+        <EventList
+          events={events}
+          votesByEvent={votesByEvent}
+          onVote={handleVote}
+          lastVotedByEvent={lastVotedByEvent}
+        />
+      )}
     </>
-  )
+  );
 }
 
-export default App
+export default App;

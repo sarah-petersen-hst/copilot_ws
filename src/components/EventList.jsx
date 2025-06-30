@@ -6,9 +6,12 @@ import '../styles/theme.css';
  * EventList component displays a list of event cards.
  * @param {Object} props
  * @param {Array} props.events - Array of event objects to display.
+ * @param {Object} props.votesByEvent - Map of eventId to votes array.
+ * @param {function} props.onVote - Function to call when voting.
+ * @param {Object} props.lastVotedByEvent - Map of eventId to last voted type.
  * @returns {JSX.Element} The event list component.
  */
-function EventList({ events }) {
+function EventList({ events, votesByEvent = {}, onVote, lastVotedByEvent = {} }) {
   // Renders a list of EventCard components for each event.
   return (
     <section style={{
@@ -25,7 +28,13 @@ function EventList({ events }) {
         <div style={{ color: '#fff', opacity: 0.7 }}>No events found.</div>
       ) : (
         events.map(event => (
-          <EventCard key={event.id} event={event} />
+          <EventCard
+            key={event.id}
+            event={event}
+            votes={votesByEvent[event.id] || []}
+            onVote={type => onVote(event.id, type)}
+            lastVoted={lastVotedByEvent[event.id] || null}
+          />
         ))
       )}
     </section>

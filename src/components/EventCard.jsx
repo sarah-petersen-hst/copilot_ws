@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../styles/theme.css';
 
 /**
@@ -19,13 +19,13 @@ function getWeekKey(date) {
  * EventCard component displays a single event with details and actions.
  * @param {Object} props
  * @param {Object} props.event - The event object to display.
+ * @param {Array<{type: 'exists'|'notexists', date: string}>} props.votes - Array of vote objects for this event.
+ * @param {function('exists'|'notexists'):void} props.onVote - Callback when a vote is cast.
+ * @param {'exists'|'notexists'|null} props.lastVoted - The last vote type by the current user (if any).
  * @returns {JSX.Element} The event card component.
  */
-function EventCard({ event }) {
-  // Each vote is stored as { type: 'exists'|'notexists', date: Date }
-  const [votes, setVotes] = useState(event.votes || []);
-  const [showDetails, setShowDetails] = useState(false);
-  const [lastVoted, setLastVoted] = useState(null); // 'exists' or 'notexists'
+function EventCard({ event, votes = [], onVote, lastVoted }) {
+  const [showDetails, setShowDetails] = React.useState(false);
 
   // Calculate weekly vote stats
   const now = new Date();
@@ -59,7 +59,6 @@ function EventCard({ event }) {
    * Toggle the details section.
    */
   function toggleDetails() {
-    // Toggles the visibility of the event details section.
     setShowDetails((prev) => !prev);
   }
 
@@ -68,11 +67,7 @@ function EventCard({ event }) {
    * @param {'exists'|'notexists'} type
    */
   function handleVote(type) {
-    setVotes((prev) => [
-      ...prev,
-      { type, date: new Date().toISOString() }
-    ]);
-    setLastVoted(type);
+    if (onVote) onVote(type);
   }
 
   return (
