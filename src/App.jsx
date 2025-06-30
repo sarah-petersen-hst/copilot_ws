@@ -26,6 +26,19 @@ function App() {
       address: '123 Main St, Berlin',
       source: 'Official Club Website',
       trusted: true,
+      workshops: [
+        { style: 'Salsa L.A.', level: 'Beginner', start: '18:00', end: '19:00' },
+        { style: 'Bachata Sensual', level: 'Open Level', start: '19:15', end: '20:15' }
+      ],
+      party: {
+        start: '21:00',
+        end: '',
+        floors: [
+          { description: '60% Salsa, 40% Bachata' }
+        ]
+      },
+      existsVotes: 5,
+      notExistsVotes: 1
     },
     {
       id: 2,
@@ -34,6 +47,19 @@ function App() {
       address: '456 Dance Ave, Hamburg',
       source: 'Facebook Event',
       trusted: false,
+      workshops: [
+        { style: 'Bachata Sensual', level: 'Advanced', start: '20:00', end: '21:00' }
+      ],
+      party: {
+        start: '21:30',
+        end: '03:00',
+        floors: [
+          { description: 'Floor 1: Bachata only' },
+          { description: 'Floor 2: Mixed Latin (Salsa, Kizomba, Zouk)' }
+        ]
+      },
+      existsVotes: 2,
+      notExistsVotes: 3
     },
   ];
 
