@@ -8,12 +8,14 @@ import '../styles/theme.css';
  * @returns {JSX.Element} The event card component.
  */
 function EventCard({ event }) {
+  // Renders a single event card with details and actions.
   const [showDetails, setShowDetails] = useState(false);
 
   /**
    * Toggle the details section.
    */
   function toggleDetails() {
+    // Toggles the visibility of the event details section.
     setShowDetails((prev) => !prev);
   }
 

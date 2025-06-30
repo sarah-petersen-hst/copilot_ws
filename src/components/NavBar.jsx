@@ -7,6 +7,7 @@ import '../styles/theme.css';
  * @returns {JSX.Element} The navigation bar component.
  */
 function NavBar() {
+  // Renders the navigation bar with main and sub-items.
   return (
     <nav style={{ width: '100%', background: '#1a0d0d', padding: '0 0 0.5em 0', boxShadow: '0 2px 8px rgba(0,0,0,0.08)' }}>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', maxWidth: '1200px', margin: '0 auto' }}>

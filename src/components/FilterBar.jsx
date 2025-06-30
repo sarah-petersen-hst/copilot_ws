@@ -22,6 +22,7 @@ const DANCE_STYLES = [
  * @returns {JSX.Element} The filter bar component.
  */
 function FilterBar() {
+  // Renders the filter bar with dance style labels, city input, date input, and search button.
   const [selectedStyles, setSelectedStyles] = useState([]);
   const [city, setCity] = useState('');
   const [date, setDate] = useState('');
@@ -31,6 +32,7 @@ function FilterBar() {
    * @param {string} style - The dance style to toggle.
    */
   function toggleStyle(style) {
+    // Toggles the selected state of a dance style label.
     setSelectedStyles((prev) =>
       prev.includes(style)
         ? prev.filter((s) => s !== style)
@@ -43,6 +45,7 @@ function FilterBar() {
    * @param {Event} e - The form submit event.
    */
   function handleSearch(e) {
+    // Handles the search form submission.
     e.preventDefault();
     // TODO: Implement search logic
   }

@@ -9,6 +9,7 @@ import '../styles/theme.css';
  * @returns {JSX.Element} The event list component.
  */
 function EventList({ events }) {
+  // Renders a list of EventCard components for each event.
   return (
     <section style={{
       background: '#2d1818',

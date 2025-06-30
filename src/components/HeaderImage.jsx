@@ -8,6 +8,7 @@ import '../styles/theme.css';
  * @returns {JSX.Element} The header image component.
  */
 function HeaderImage() {
+  // Renders the header image and headline.
   return (
     <header style={{ position: 'relative', width: '100%', overflow: 'hidden', height: '500px', background: '#2d1818' }}>
       <img

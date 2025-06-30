@@ -62,6 +62,15 @@ Updated HeaderImage.jsx to import the image from the assets folder and use it as
 **[2025-06-29 12:35:00] Copilot:**
 Scaffolded EventList and EventCard React components with documentation and custom styles. Updated App.jsx to include EventList with example event data for development and testing. Ready to add tests and expand event details next. All actions logged with full timestamps.
 
+**[2025-06-29 12:40:00] Copilot:**
+Created unit/component tests for NavBar, HeaderImage, FilterBar, EventList, and EventCard using React Testing Library and Jest. All tests cover rendering and basic interactions. Ready to expand event details and add more advanced tests. All actions logged with full timestamps.
+
+**[2025-06-30 10:15:00] User:**
+All tests are now passing. Ready to proceed with the next step.
+
+**[2025-06-30 10:15:05] Copilot:**
+Confirmed all tests are passing after configuring Jest to mock CSS and image imports. Proceeding to expand the event details section and implement advanced features as planned. All actions will continue to be logged with full timestamps.
+
 ---
 
 This log will be updated continuously as the project progresses.
