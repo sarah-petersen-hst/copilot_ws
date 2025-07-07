@@ -4,7 +4,7 @@
 
 import express from 'express';
 import cors from 'cors';
-import { pool, initDb } from './db.js';
+import { pool, initDb, voteEvent } from './db.js';
 
 const app = express();
 const PORT = process.env.PORT || 4000;
@@ -38,19 +38,16 @@ app.get('/api/events', async (req, res) => {
 /**
  * POST /api/votes
  * Body: { event_id, type, user_id }
- * Adds a vote for an event.
+ * Handles voting logic: toggles or switches vote, returns updated counters.
  */
 app.post('/api/votes', async (req, res) => {
   const { event_id, type, user_id } = req.body;
-  if (!event_id || !['exists','notexists'].includes(type)) {
+  if (!event_id || !['exists','notexists'].includes(type) || !user_id) {
     return res.status(400).json({ error: 'Invalid vote data' });
   }
   try {
-    await pool.query(
-      'INSERT INTO votes (event_id, type, date, user_id) VALUES ($1, $2, $3, $4)',
-      [event_id, type, new Date().toISOString(), user_id || null]
-    );
-    res.json({ success: true });
+    const counts = await voteEvent(event_id, type, user_id);
+    res.json({ success: true, counts });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
