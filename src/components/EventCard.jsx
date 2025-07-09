@@ -27,12 +27,11 @@ function getWeekKey(date) {
 function EventCard({ event, votes = [], onVote, lastVoted }) {
   const [showDetails, setShowDetails] = React.useState(false);
 
-  // Calculate weekly vote stats
+  // Calculate weekly and total vote stats
   const now = new Date();
   const thisWeek = getWeekKey(now);
-  const lastWeek = getWeekKey(new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000));
 
-  // Group votes by week
+  // Group votes by week and count totals
   const weekVotes = votes.reduce((acc, v) => {
     const wk = getWeekKey(new Date(v.date));
     if (!acc[wk]) acc[wk] = { exists: 0, notexists: 0 };
@@ -40,20 +39,17 @@ function EventCard({ event, votes = [], onVote, lastVoted }) {
     return acc;
   }, {});
 
-  // Find the most recent week with votes
-  let weekToShow = thisWeek;
-  if (!weekVotes[thisWeek] || (weekVotes[thisWeek].exists + weekVotes[thisWeek].notexists === 0)) {
-    if (weekVotes[lastWeek] && (weekVotes[lastWeek].exists + weekVotes[lastWeek].notexists > 0)) {
-      weekToShow = lastWeek;
-    } else {
-      // Find the most recent week with any votes
-      const weeks = Object.keys(weekVotes).sort().reverse();
-      weekToShow = weeks.find(wk => weekVotes[wk].exists + weekVotes[wk].notexists > 0) || thisWeek;
-    }
-  }
-  const existsVotes = weekVotes[weekToShow]?.exists || 0;
-  const notExistsVotes = weekVotes[weekToShow]?.notexists || 0;
-  const likelyReal = existsVotes > notExistsVotes;
+  // Calculate total votes
+  let totalExists = 0, totalNotExists = 0;
+  votes.forEach(v => {
+    if (v.type === 'exists') totalExists++;
+    if (v.type === 'notexists') totalNotExists++;
+  });
+
+  // Votes for this week
+  const thisWeekExists = weekVotes[thisWeek]?.exists || 0;
+  const thisWeekNotExists = weekVotes[thisWeek]?.notexists || 0;
+  const likelyReal = totalExists > totalNotExists;
 
   /**
    * Toggle the details section.
@@ -144,18 +140,22 @@ function EventCard({ event, votes = [], onVote, lastVoted }) {
                 onClick={() => handleVote('exists')}
                 type="button"
               >
-                This event really exists <span style={{ marginLeft: 6, background: '#fff', color: '#388e3c', borderRadius: 8, padding: '0 8px' }}>{existsVotes}</span>
+                This event really exists
+                <span style={{ marginLeft: 6, background: '#fff', color: '#388e3c', borderRadius: 8, padding: '0 8px' }}>{totalExists}</span>
+                <span style={{ marginLeft: 6, fontSize: '0.85em', color: '#388e3c', background: '#fff3', borderRadius: 8, padding: '0 6px' }}>+{thisWeekExists} this week</span>
               </button>
               <button
                 style={{ background: '#e6c200', color: '#221112', minWidth: '120px', opacity: lastVoted === 'notexists' ? 0.7 : 1 }}
                 onClick={() => handleVote('notexists')}
                 type="button"
               >
-                This event doesn’t exist <span style={{ marginLeft: 6, background: '#fff', color: '#e6c200', borderRadius: 8, padding: '0 8px' }}>{notExistsVotes}</span>
+                This event doesn’t exist
+                <span style={{ marginLeft: 6, background: '#fff', color: '#e6c200', borderRadius: 8, padding: '0 8px' }}>{totalNotExists}</span>
+                <span style={{ marginLeft: 6, fontSize: '0.85em', color: '#e6c200', background: '#fff3', borderRadius: 8, padding: '0 6px' }}>+{thisWeekNotExists} this week</span>
               </button>
             </div>
             <div style={{ color: '#fff', fontSize: '0.9em', marginTop: '1em', opacity: 0.7 }}>
-              Showing votes for week: {weekToShow}
+              Showing total votes and this week's trend
             </div>
           </div>
         )}

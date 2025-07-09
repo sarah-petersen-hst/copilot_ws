@@ -36,6 +36,14 @@ function App() {
     const res = await fetch(`http://localhost:4000/api/votes?event_id=${eventId}`);
     const data = await res.json();
     setVotesByEvent(prev => ({ ...prev, [eventId]: data }));
+    // Determine last vote for this user
+    let user_id = localStorage.getItem('user_id');
+    if (user_id) {
+      const userVote = data.find(v => v.user_id === user_id);
+      setLastVotedByEvent(prev => ({ ...prev, [eventId]: userVote ? userVote.type : null }));
+    } else {
+      setLastVotedByEvent(prev => ({ ...prev, [eventId]: null }));
+    }
   }
 
   // Handle voting for an event
@@ -51,21 +59,8 @@ function App() {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ event_id: eventId, type, user_id })
     });
-    if (res.ok) {
-      const data = await res.json();
-      // Update counters directly from backend response
-      setVotesByEvent(prev => ({
-        ...prev,
-        [eventId]: [
-          ...Array(data.counts.exists).fill({ type: 'exists', date: new Date().toISOString() }),
-          ...Array(data.counts.notexists).fill({ type: 'notexists', date: new Date().toISOString() })
-        ]
-      }));
-      setLastVotedByEvent(prev => ({ ...prev, [eventId]: type }));
-    } else {
-      // fallback: refetch votes
-      fetchVotes(eventId);
-    }
+    // Always refetch votes after voting to ensure correct state
+    fetchVotes(eventId);
   }
 
   return (
