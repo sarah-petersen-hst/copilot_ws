@@ -3,19 +3,36 @@ import NavBar from './components/NavBar';
 import HeaderImage from './components/HeaderImage';
 import FilterBar from './components/FilterBar';
 import EventList from './components/EventList';
+import SavedEventsPage from './components/SavedEventsPage';
 import './App.css';
 import './styles/theme.css';
 
 /**
  * Main application component for Salsa Dance Event Finder.
  * Fetches events and votes from backend and manages voting state.
+ * Also manages favorite events using localStorage.
  * @returns {JSX.Element} The main app component.
  */
 function App() {
   const [events, setEvents] = useState([]);
   const [votesByEvent, setVotesByEvent] = useState({});
   const [lastVotedByEvent, setLastVotedByEvent] = useState({});
+  const [favoriteEventIds, setFavoriteEventIds] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [page, setPage] = useState('find'); // 'find' or 'saved'
+
+  // Load favorites from localStorage on component mount
+  useEffect(() => {
+    const savedFavorites = localStorage.getItem('favoriteEvents');
+    if (savedFavorites) {
+      try {
+        const parsedFavorites = JSON.parse(savedFavorites);
+        setFavoriteEventIds(parsedFavorites);
+      } catch (error) {
+        console.error('Error parsing saved favorites:', error);
+      }
+    }
+  }, []);
 
   // Fetch events from backend
   useEffect(() => {
@@ -63,19 +80,56 @@ function App() {
     fetchVotes(eventId);
   }
 
+  /**
+   * Handle toggling favorite status for an event.
+   * @param {number} eventId - The ID of the event to toggle favorite status for.
+   */
+  function handleToggleFavorite(eventId) {
+    setFavoriteEventIds(prev => {
+      const newFavorites = prev.includes(eventId)
+        ? prev.filter(id => id !== eventId)
+        : [...prev, eventId];
+      
+      // Save to localStorage
+      localStorage.setItem('favoriteEvents', JSON.stringify(newFavorites));
+      return newFavorites;
+    });
+  }
+
+  // Navigation handler for NavBar
+  function handleNav(pageKey) {
+    setPage(pageKey);
+  }
+
   return (
     <>
-      <NavBar />
+      <NavBar onNavigate={handleNav} currentPage={page} />
       <HeaderImage />
-      <FilterBar />
-      {loading ? (
-        <div style={{ color: '#fff', textAlign: 'center', marginTop: '2em' }}>Loading events...</div>
-      ) : (
-        <EventList
+      {page === 'find' && (
+        <>
+          <FilterBar />
+          {loading ? (
+            <div style={{ color: '#fff', textAlign: 'center', marginTop: '2em' }}>Loading events...</div>
+          ) : (
+            <EventList
+              events={events}
+              votesByEvent={votesByEvent}
+              onVote={handleVote}
+              lastVotedByEvent={lastVotedByEvent}
+              favoriteEventIds={favoriteEventIds}
+              onToggleFavorite={handleToggleFavorite}
+            />
+          )}
+        </>
+      )}
+      {page === 'saved' && (
+        <SavedEventsPage
           events={events}
+          favoriteEventIds={favoriteEventIds}
           votesByEvent={votesByEvent}
           onVote={handleVote}
           lastVotedByEvent={lastVotedByEvent}
+          onToggleFavorite={handleToggleFavorite}
         />
       )}
     </>

@@ -9,9 +9,12 @@ import '../styles/theme.css';
  * @param {Object} props.votesByEvent - Map of eventId to votes array.
  * @param {function} props.onVote - Function to call when voting.
  * @param {Object} props.lastVotedByEvent - Map of eventId to last voted type.
+ * @param {Array<number>} props.favoriteEventIds - Array of event IDs marked as favorites.
+ * @param {function(number):void} props.onToggleFavorite - Callback when favorite status is toggled.
+ * @param {string} [props.headline='Found Events'] - Headline for the event list section.
  * @returns {JSX.Element} The event list component.
  */
-function EventList({ events, votesByEvent = {}, onVote, lastVotedByEvent = {} }) {
+function EventList({ events, votesByEvent = {}, onVote, lastVotedByEvent = {}, favoriteEventIds = [], onToggleFavorite, headline = "Found Events" }) {
   // Renders a list of EventCard components for each event.
   return (
     <section style={{
@@ -23,7 +26,7 @@ function EventList({ events, votesByEvent = {}, onVote, lastVotedByEvent = {} })
       margin: '2em auto 0 auto',
       minHeight: '200px',
     }}>
-      <h2 style={{ fontFamily: 'Poppins, sans-serif', fontWeight: 600, fontSize: '2em', color: '#fff', marginBottom: '1em' }}>Found Events</h2>
+      <h2 style={{ fontFamily: 'Poppins, sans-serif', fontWeight: 600, fontSize: '2em', color: '#fff', marginBottom: '1em' }}>{headline}</h2>
       {events.length === 0 ? (
         <div style={{ color: '#fff', opacity: 0.7 }}>No events found.</div>
       ) : (
@@ -34,6 +37,8 @@ function EventList({ events, votesByEvent = {}, onVote, lastVotedByEvent = {} })
             votes={votesByEvent[event.id] || []}
             onVote={type => onVote(event.id, type)}
             lastVoted={lastVotedByEvent[event.id] || null}
+            isFavorite={favoriteEventIds.includes(event.id)}
+            onToggleFavorite={onToggleFavorite}
           />
         ))
       )}

@@ -22,9 +22,11 @@ function getWeekKey(date) {
  * @param {Array<{type: 'exists'|'notexists', date: string}>} props.votes - Array of vote objects for this event.
  * @param {function('exists'|'notexists'):void} props.onVote - Callback when a vote is cast.
  * @param {'exists'|'notexists'|null} props.lastVoted - The last vote type by the current user (if any).
+ * @param {boolean} props.isFavorite - Whether this event is marked as favorite.
+ * @param {function(number):void} props.onToggleFavorite - Callback when favorite status is toggled.
  * @returns {JSX.Element} The event card component.
  */
-function EventCard({ event, votes = [], onVote, lastVoted }) {
+function EventCard({ event, votes = [], onVote, lastVoted, isFavorite = false, onToggleFavorite }) {
   const [showDetails, setShowDetails] = React.useState(false);
 
   // Calculate weekly and total vote stats
@@ -66,6 +68,13 @@ function EventCard({ event, votes = [], onVote, lastVoted }) {
     if (onVote) onVote(type);
   }
 
+  /**
+   * Handle toggling favorite status.
+   */
+  function handleToggleFavorite() {
+    if (onToggleFavorite) onToggleFavorite(event.id);
+  }
+
   return (
     <div style={{
       borderBottom: '1px solid #3a2323',
@@ -101,7 +110,22 @@ function EventCard({ event, votes = [], onVote, lastVoted }) {
         <div style={{ color: '#fff', opacity: 0.85, margin: '0.3em 0' }}>{event.date}</div>
         <div style={{ color: '#fff', opacity: 0.7 }}>{event.address}</div>
         <div style={{ color: '#fff', opacity: 0.6, fontSize: '0.95em', marginBottom: '0.7em' }}>{event.source}</div>
-        <button style={{ marginRight: '1em' }}>Save</button>
+        <button 
+          style={{ 
+            marginRight: '1em',
+            background: isFavorite ? '#E92932' : '#444',
+            color: '#fff',
+            border: 'none',
+            borderRadius: '999px',
+            padding: '0.5em 1em',
+            cursor: 'pointer',
+            fontSize: '0.9em',
+            transition: 'all 0.3s ease',
+          }}
+          onClick={handleToggleFavorite}
+        >
+          {isFavorite ? '❤️ Saved' : '🤍 Save'}
+        </button>
         <button onClick={toggleDetails}>{showDetails ? 'Hide Details' : 'Details'}</button>
         {showDetails && (
           <div style={{ marginTop: '1.5em', background: '#1a0d0d', borderRadius: '12px', padding: '1.5em' }}>

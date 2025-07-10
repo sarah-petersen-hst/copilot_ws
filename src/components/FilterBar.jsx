@@ -3,13 +3,14 @@ import '../styles/theme.css';
 
 /**
  * List of available dance styles for filtering events.
+ * Must match the required names and order.
  */
 const DANCE_STYLES = [
-  'Salsa',
+  'Salsa (undefined style)',
   'Salsa On 2',
   'Salsa L.A.',
   'Salsa Cubana',
-  'Bachata',
+  'Bachata (undefined style)',
   'Bachata Dominicana',
   'Bachata Sensual',
   'Kizomba',
@@ -19,9 +20,12 @@ const DANCE_STYLES = [
 
 /**
  * Filter bar component with round labels, city search, date picker, and search button.
+ * @param {Object} props
+ * @param {boolean} props.showFavoritesOnly - Whether to show only favorite events.
+ * @param {function(boolean):void} props.onToggleFavoritesOnly - Callback when favorites filter is toggled.
  * @returns {JSX.Element} The filter bar component.
  */
-function FilterBar() {
+function FilterBar({ showFavoritesOnly = false, onToggleFavoritesOnly }) {
   // Renders the filter bar with dance style labels, city input, date input, and search button.
   const [selectedStyles, setSelectedStyles] = useState([]);
   const [city, setCity] = useState('');
