@@ -1,9 +1,9 @@
 // Utility for initializing the PostgreSQL database schema
-import pkg from 'pg';
+const pkg = require('pg');
 const { Pool } = pkg;
 
 // Connection pool for PostgreSQL
-export const pool = new Pool({
+const pool = new Pool({
   connectionString: process.env.DATABASE_URL || 'postgres://postgres:D3vTjQoy@localhost:5432/danceevents',
 });
 
@@ -11,7 +11,7 @@ export const pool = new Pool({
  * Initializes the database schema for events and votes tables if not present.
  * Call this once at server startup.
  */
-export async function initDb() {
+async function initDb() {
   await pool.query(`
     CREATE TABLE IF NOT EXISTS events (
       id SERIAL PRIMARY KEY,
@@ -42,7 +42,7 @@ export async function initDb() {
  * @param {string} user_id
  * @returns {Promise<{exists: number, notexists: number, weekExists: number, weekNotExists: number}>}
  */
-export async function voteEvent(event_id, type, user_id) {
+async function voteEvent(event_id, type, user_id) {
   if (!['exists', 'notexists'].includes(type)) throw new Error('Invalid vote type');
   const client = await pool.connect();
   try {
@@ -107,3 +107,5 @@ export async function voteEvent(event_id, type, user_id) {
     client.release();
   }
 }
+
+module.exports = { pool, initDb, voteEvent };

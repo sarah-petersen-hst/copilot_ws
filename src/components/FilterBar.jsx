@@ -45,13 +45,35 @@ function FilterBar({ showFavoritesOnly = false, onToggleFavoritesOnly }) {
   }
 
   /**
+   * Validate city input to prevent injection and only allow safe characters.
+   * @param {string} value
+   * @returns {boolean}
+   */
+  function isValidCity(value) {
+    // Allow only letters, spaces, and hyphens (no numbers or special chars)
+    return /^[a-zA-ZÀ-ÿ\s'-]+$/.test(value.trim());
+  }
+
+  /**
    * Handle search button click (to be implemented).
    * @param {Event} e - The form submit event.
    */
   function handleSearch(e) {
     // Handles the search form submission.
     e.preventDefault();
+    if (!isValidCity(city) && city.length > 0) {
+      alert('Please enter a valid city name (letters, spaces, hyphens only).');
+      return;
+    }
     // TODO: Implement search logic
+  }
+
+  /**
+   * Updates the city input state.
+   * @param {React.ChangeEvent<HTMLInputElement>} e
+   */
+  function handleCityChange(e) {
+    setCity(e.target.value);
   }
 
   return (
@@ -91,7 +113,7 @@ function FilterBar({ showFavoritesOnly = false, onToggleFavoritesOnly }) {
         type="text"
         placeholder="City"
         value={city}
-        onChange={(e) => setCity(e.target.value)}
+        onChange={handleCityChange}
         style={{ borderRadius: '8px', border: 'none', padding: '0.5em 1em', fontFamily: 'Poppins, sans-serif', fontSize: '1em', minWidth: '120px' }}
         aria-label="City"
       />

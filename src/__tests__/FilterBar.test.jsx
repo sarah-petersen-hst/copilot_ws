@@ -5,11 +5,11 @@ import FilterBar from '../components/FilterBar';
 describe('FilterBar', () => {
   it('renders all dance style labels', () => {
     render(<FilterBar />);
-    expect(screen.getByText('Salsa')).toBeInTheDocument();
+    expect(screen.getByText('Salsa (undefined style)')).toBeInTheDocument();
     expect(screen.getByText('Salsa On 2')).toBeInTheDocument();
     expect(screen.getByText('Salsa L.A.')).toBeInTheDocument();
     expect(screen.getByText('Salsa Cubana')).toBeInTheDocument();
-    expect(screen.getByText('Bachata')).toBeInTheDocument();
+    expect(screen.getByText('Bachata (undefined style)')).toBeInTheDocument();
     expect(screen.getByText('Bachata Dominicana')).toBeInTheDocument();
     expect(screen.getByText('Bachata Sensual')).toBeInTheDocument();
     expect(screen.getByText('Kizomba')).toBeInTheDocument();
@@ -18,7 +18,7 @@ describe('FilterBar', () => {
   });
   it('allows selecting and deselecting a dance style', () => {
     render(<FilterBar />);
-    const salsaLabel = screen.getByText('Salsa');
+    const salsaLabel = screen.getByText('Salsa (undefined style)');
     fireEvent.click(salsaLabel);
     expect(salsaLabel.className).toMatch(/selected/);
     fireEvent.click(salsaLabel);

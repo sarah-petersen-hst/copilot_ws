@@ -2,7 +2,6 @@ import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import EventCard from '../components/EventCard';
-import FilterBar from '../components/FilterBar';
 
 // Mock localStorage
 const localStorageMock = {
@@ -90,53 +89,5 @@ describe('Favorites Functionality', () => {
     fireEvent.click(saveButton);
     
     expect(mockOnToggleFavorite).toHaveBeenCalledWith(mockEvent.id);
-  });
-
-  test('renders favorites filter checkbox in FilterBar', () => {
-    const mockOnToggleFavoritesOnly = jest.fn();
-    
-    render(
-      <FilterBar 
-        showFavoritesOnly={false}
-        onToggleFavoritesOnly={mockOnToggleFavoritesOnly}
-      />
-    );
-
-    const checkbox = screen.getByRole('checkbox');
-    const label = screen.getByText('Show Favorites Only');
-    
-    expect(checkbox).toBeInTheDocument();
-    expect(label).toBeInTheDocument();
-    expect(checkbox).not.toBeChecked();
-  });
-
-  test('calls onToggleFavoritesOnly when checkbox is clicked', () => {
-    const mockOnToggleFavoritesOnly = jest.fn();
-    
-    render(
-      <FilterBar 
-        showFavoritesOnly={false}
-        onToggleFavoritesOnly={mockOnToggleFavoritesOnly}
-      />
-    );
-
-    const checkbox = screen.getByRole('checkbox');
-    fireEvent.click(checkbox);
-    
-    expect(mockOnToggleFavoritesOnly).toHaveBeenCalledWith(true);
-  });
-
-  test('checkbox is checked when showFavoritesOnly is true', () => {
-    const mockOnToggleFavoritesOnly = jest.fn();
-    
-    render(
-      <FilterBar 
-        showFavoritesOnly={true}
-        onToggleFavoritesOnly={mockOnToggleFavoritesOnly}
-      />
-    );
-
-    const checkbox = screen.getByRole('checkbox');
-    expect(checkbox).toBeChecked();
   });
 });

@@ -2,14 +2,20 @@
 // Express server with PostgreSQL for persistent event and vote storage
 // All endpoints and logic are fully documented
 
-import express from 'express';
-import cors from 'cors';
-import { pool, initDb, voteEvent } from './db.js';
+const express = require('express');
+const cors = require('cors');
+const rateLimit = require('express-rate-limit');
+const { pool, initDb, voteEvent } = require('./db.js');
 
 const app = express();
 const PORT = process.env.PORT || 4000;
 
-app.use(cors());
+// Restrict CORS in production
+const allowedOrigins = process.env.NODE_ENV === 'production'
+  ? ['https://your-frontend-domain.com']
+  : undefined;
+app.use(cors({ origin: allowedOrigins || true }));
+
 app.use(express.json());
 
 // Initialize PostgreSQL schema
@@ -68,6 +74,43 @@ app.get('/api/votes', async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`Salsa Event Finder backend running on port ${PORT}`);
+/**
+ * GET /api/events/search?city=CityName
+ * Returns events filtered by city (case-insensitive, safe from injection).
+ */
+app.get('/api/events/search', async (req, res) => {
+  const { city } = req.query;
+  if (!city || typeof city !== 'string') {
+    return res.status(400).json({ error: 'City is required' });
+  }
+  // Allow only letters, spaces, hyphens, and apostrophes
+  if (!/^[a-zA-ZÀ-ÿ\s'-]+$/.test(city.trim())) {
+    return res.status(400).json({ error: 'Invalid city name' });
+  }
+  try {
+    const result = await pool.query(
+      'SELECT * FROM events WHERE LOWER(address) LIKE LOWER($1) ORDER BY date ASC',
+      [`%${city.trim()}%`]
+    );
+    res.json(result.rows);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
 });
+
+// Rate limiting: 100 requests per 15 minutes per IP
+const apiLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 100,
+  standardHeaders: true,
+  legacyHeaders: false,
+});
+app.use('/api/', apiLimiter);
+
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`Salsa Event Finder backend running on port ${PORT}`);
+  });
+}
+
+module.exports = app;
