@@ -1,8 +1,8 @@
 // Integration tests for all backend endpoints in index.js
 // Uses supertest to test the Express app
 const request = require('supertest');
-const { pool } = require('../db.js');
-const app = require('../index.js');
+const { pool } = require('../db.cjs');
+const app = require('../index.cjs');
 
 describe('Backend API endpoints', () => {
   /**

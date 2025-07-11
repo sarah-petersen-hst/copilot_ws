@@ -2,8 +2,8 @@
 // Uses supertest to test the Express app
 
 const request = require('supertest');
-const { pool } = require('../db.js');
-const app = require('../index.js');
+const { pool } = require('../db.cjs');
+const app = require('../index.cjs');
 
 /**
  * Mocks and tests for /api/events/search endpoint

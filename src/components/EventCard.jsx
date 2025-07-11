@@ -129,6 +129,44 @@ function EventCard({ event, votes = [], onVote, lastVoted, isFavorite = false, o
         <button onClick={toggleDetails}>{showDetails ? 'Hide Details' : 'Details'}</button>
         {showDetails && (
           <div style={{ marginTop: '1.5em', background: '#1a0d0d', borderRadius: '12px', padding: '1.5em' }}>
+            {/* Recurrence info */}
+            {event.recurrence && (
+              <div style={{ marginBottom: '1.2em', color: '#fff', fontWeight: 500 }}>
+                <span style={{ background: '#3a2323', borderRadius: '999px', padding: '0.3em 1em', fontSize: '0.98em' }}>
+                  {typeof event.recurrence === 'string' ? event.recurrence : 'This event recurs.'}
+                </span>
+              </div>
+            )}
+            {/* Venue type label */}
+            <div style={{ marginBottom: event.venueType ? '1.2em' : '0.7em' }}>
+              <span style={{
+                background: '#E92932',
+                color: '#fff',
+                borderRadius: '999px',
+                padding: '0.3em 1em',
+                fontWeight: 500,
+                fontSize: '0.98em',
+                marginRight: '0.7em',
+              }}>
+                Venue: {event.venueType ? (event.venueType.charAt(0).toUpperCase() + event.venueType.slice(1)) : 'Not specified'}
+              </span>
+              {/* Weather warning if outdoor */}
+              {event.venueType && event.venueType.toLowerCase() === 'outdoor' && (
+                <span style={{
+                  display: 'inline-block',
+                  background: '#e6c200',
+                  color: '#221112',
+                  borderRadius: '8px',
+                  padding: '0.3em 1em',
+                  fontWeight: 700,
+                  fontSize: '1em',
+                  marginLeft: '0.5em',
+                  boxShadow: '0 0 8px #e6c20099',
+                }}>
+                  ⚠️ Weather warning: This event is outdoors. Please check the weather before attending!
+                </span>
+              )}
+            </div>
             {/* Workshop details */}
             {event.workshops && event.workshops.length > 0 && (
               <div style={{ marginBottom: '1.2em' }}>

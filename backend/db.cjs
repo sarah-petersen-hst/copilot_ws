@@ -30,6 +30,8 @@ async function initDb() {
       date TEXT NOT NULL,
       user_id TEXT
     );
+    ALTER TABLE events ADD COLUMN IF NOT EXISTS recurrence TEXT;
+    ALTER TABLE events ADD COLUMN IF NOT EXISTS venueType TEXT;
   `);
 }
 

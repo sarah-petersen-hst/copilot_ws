@@ -5,7 +5,7 @@
 const express = require('express');
 const cors = require('cors');
 const rateLimit = require('express-rate-limit');
-const { pool, initDb, voteEvent } = require('./db.js');
+const { pool, initDb, voteEvent } = require('./db.cjs');
 
 const app = express();
 const PORT = process.env.PORT || 4000;

@@ -1,6 +1,6 @@
 // Unit tests for backend/db.js utility functions
 // Uses Jest and a test database connection
-const { pool, initDb, voteEvent } = require('../db.js');
+const { pool, initDb, voteEvent } = require('../db.cjs');
 
 describe('db.js utility functions', () => {
   /**
