@@ -34,7 +34,7 @@ app.get('/api/health', (req, res) => {
  */
 app.get('/api/events', async (req, res) => {
   try {
-    const result = await pool.query('SELECT * FROM events ORDER BY date ASC');
+    const result = await pool.query('SELECT *, venuetype AS "venueType" FROM events ORDER BY date ASC');
     res.json(result.rows);
   } catch (err) {
     res.status(500).json({ error: err.message });
@@ -89,7 +89,7 @@ app.get('/api/events/search', async (req, res) => {
   }
   try {
     const result = await pool.query(
-      'SELECT * FROM events WHERE LOWER(address) LIKE LOWER($1) ORDER BY date ASC',
+      'SELECT *, venuetype AS "venueType" FROM events WHERE LOWER(address) LIKE LOWER($1) ORDER BY date ASC',
       [`%${city.trim()}%`]
     );
     res.json(result.rows);

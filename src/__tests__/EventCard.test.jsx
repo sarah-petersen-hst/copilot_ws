@@ -66,4 +66,28 @@ describe('EventCard', () => {
     render(<EventCard event={baseEvent} votes={votes} isFavorite />);
     expect(screen.getByText('❤️ Saved')).toBeInTheDocument();
   });
+
+  it('shows outdoor icon and weather warning for outdoor events', () => {
+    const outdoorEvent = {
+      ...baseEvent,
+      venueType: 'outdoor',
+      recurrence: 'This event takes place every Friday',
+    };
+    render(<EventCard event={outdoorEvent} votes={votes} />);
+    fireEvent.click(screen.getByRole('button', { name: /details/i }));
+    expect(screen.getByLabelText('outdoor')).toBeInTheDocument();
+    expect(screen.getByText(/weather warning/i)).toBeInTheDocument();
+    expect(screen.getByText(/This event takes place every Friday/)).toBeInTheDocument();
+  });
+
+  it('shows indoor icon for indoor events', () => {
+    const indoorEvent = {
+      ...baseEvent,
+      venueType: 'indoor',
+    };
+    render(<EventCard event={indoorEvent} votes={votes} />);
+    fireEvent.click(screen.getByRole('button', { name: /details/i }));
+    expect(screen.getByLabelText('indoor')).toBeInTheDocument();
+    expect(screen.queryByText(/weather warning/i)).not.toBeInTheDocument();
+  });
 });
