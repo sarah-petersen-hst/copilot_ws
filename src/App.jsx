@@ -17,9 +17,13 @@ function App() {
   const [events, setEvents] = useState([]);
   const [votesByEvent, setVotesByEvent] = useState({});
   const [lastVotedByEvent, setLastVotedByEvent] = useState({});
+  const [venueVotesByEvent, setVenueVotesByEvent] = useState({});
+  const [lastVenueVotedByEvent, setLastVenueVotedByEvent] = useState({});
   const [favoriteEventIds, setFavoriteEventIds] = useState([]);
   const [loading, setLoading] = useState(true);
   const [page, setPage] = useState('find'); // 'find' or 'saved'
+  // Add notification state for scraper status
+  const [scraperStatus, setScraperStatus] = useState(null);
 
   // Load favorites from localStorage on component mount
   useEffect(() => {
@@ -38,12 +42,31 @@ function App() {
   useEffect(() => {
     async function fetchEvents() {
       setLoading(true);
-      const res = await fetch('http://localhost:4000/api/events');
-      const data = await res.json();
-      setEvents(data);
-      setLoading(false);
-      // Fetch votes for each event
-      data.forEach(event => fetchVotes(event.id));
+      try {
+        const res = await fetch('http://localhost:4000/api/events');
+        if (!res.ok) {
+          throw new Error(`HTTP error! status: ${res.status}`);
+        }
+        const data = await res.json();
+        
+        // Ensure data is an array
+        if (Array.isArray(data)) {
+          setEvents(data);
+          // Fetch votes for each event
+          data.forEach(event => {
+            fetchVotes(event.id);
+            fetchVenueVotes(event.id);
+          });
+        } else {
+          console.error('Expected array but got:', data);
+          setEvents([]);
+        }
+      } catch (error) {
+        console.error('Error fetching events:', error);
+        setEvents([]);
+      } finally {
+        setLoading(false);
+      }
     }
     fetchEvents();
   }, []);
@@ -63,6 +86,21 @@ function App() {
     }
   }
 
+  // Fetch venue votes for a specific event
+  async function fetchVenueVotes(eventId) {
+    const res = await fetch(`http://localhost:4000/api/venue-votes?event_id=${eventId}`);
+    const data = await res.json();
+    setVenueVotesByEvent(prev => ({ ...prev, [eventId]: data }));
+    // Determine last venue vote for this user
+    let user_id = localStorage.getItem('user_id');
+    if (user_id) {
+      const userVote = data.find(v => v.user_id === user_id);
+      setLastVenueVotedByEvent(prev => ({ ...prev, [eventId]: userVote ? userVote.type : null }));
+    } else {
+      setLastVenueVotedByEvent(prev => ({ ...prev, [eventId]: null }));
+    }
+  }
+
   // Handle voting for an event
   async function handleVote(eventId, type) {
     // Use a persistent user_id (e.g. from localStorage) for demo purposes
@@ -78,6 +116,21 @@ function App() {
     });
     // Always refetch votes after voting to ensure correct state
     fetchVotes(eventId);
+  }
+
+  // Handle venue voting for an event
+  async function handleVenueVote(eventId, type) {
+    let user_id = localStorage.getItem('user_id');
+    if (!user_id) {
+      user_id = Math.random().toString(36).substring(2, 12);
+      localStorage.setItem('user_id', user_id);
+    }
+    await fetch('http://localhost:4000/api/venue-votes', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ event_id: eventId, type, user_id })
+    });
+    fetchVenueVotes(eventId);
   }
 
   /**
@@ -101,13 +154,56 @@ function App() {
     setPage(pageKey);
   }
 
+  // Add search handler for FilterBar
+  /**
+   * Handles search requests from the FilterBar.
+   * Fetches existing events from the database, then triggers scraping for new events, then fetches again.
+   * @param {Object} params - Search parameters (city, date, styles)
+   */
+  async function handleSearch({ city, date, styles }) {
+    setLoading(true);
+    setScraperStatus(null);
+    try {
+      // Build query params
+      const params = new URLSearchParams();
+      if (city) params.append('city', city);
+      if (date) params.append('date', date);
+      if (styles && styles.length > 0) params.append('styles', styles.join(','));
+      // 1. Fetch existing events from DB
+      let url = `http://localhost:4000/api/events/search?${params.toString()}`;
+      let res = await fetch(url);
+      let data = await res.json();
+      setEvents(data);
+      // 2. Trigger scraping for new events
+      url = `http://localhost:4000/api/scrape-events?${params.toString()}`;
+      const scrapeRes = await fetch(url);
+      const scrapeJson = await scrapeRes.json();
+      if (scrapeJson.status && scrapeJson.status.steps) {
+        setScraperStatus(scrapeJson.status.steps.map(s => `${s.step}: ${typeof s.message === 'object' ? JSON.stringify(s.message) : s.message}`).join('\n'));
+      } else {
+        setScraperStatus(scrapeJson.status || 'Scraper triggered');
+      }
+      // 3. Fetch again to get any new events
+      res = await fetch(`http://localhost:4000/api/events/search?${params.toString()}`);
+      data = await res.json();
+      setEvents(data);
+    } catch {
+      setEvents([]);
+      setScraperStatus('Fehler beim Abrufen oder Scrapen der Events.');
+    }
+    setLoading(false);
+  }
+
   return (
     <>
       <NavBar onNavigate={handleNav} currentPage={page} />
       <HeaderImage />
       {page === 'find' && (
         <>
-          <FilterBar />
+          <FilterBar onSearch={handleSearch} loading={loading} />
+          {scraperStatus && (
+            <div style={{ color: '#ffb347', textAlign: 'center', marginTop: '1em' }}>{scraperStatus}</div>
+          )}
           {loading ? (
             <div style={{ color: '#fff', textAlign: 'center', marginTop: '2em' }}>Loading events...</div>
           ) : (
@@ -118,6 +214,9 @@ function App() {
               lastVotedByEvent={lastVotedByEvent}
               favoriteEventIds={favoriteEventIds}
               onToggleFavorite={handleToggleFavorite}
+              venueVotesByEvent={venueVotesByEvent}
+              lastVenueVotedByEvent={lastVenueVotedByEvent}
+              onVenueVote={handleVenueVote}
             />
           )}
         </>
@@ -130,6 +229,9 @@ function App() {
           onVote={handleVote}
           lastVotedByEvent={lastVotedByEvent}
           onToggleFavorite={handleToggleFavorite}
+          venueVotesByEvent={venueVotesByEvent}
+          lastVenueVotedByEvent={lastVenueVotedByEvent}
+          onVenueVote={handleVenueVote}
         />
       )}
     </>

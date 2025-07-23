@@ -23,9 +23,11 @@ const DANCE_STYLES = [
  * @param {Object} props
  * @param {boolean} props.showFavoritesOnly - Whether to show only favorite events.
  * @param {function(boolean):void} props.onToggleFavoritesOnly - Callback when favorites filter is toggled.
+ * @param {function(Object):void} props.onSearch - Callback when search is performed.
+ * @param {boolean} props.loading - Whether the search is loading.
  * @returns {JSX.Element} The filter bar component.
  */
-function FilterBar({ showFavoritesOnly = false, onToggleFavoritesOnly }) {
+function FilterBar({ showFavoritesOnly = false, onToggleFavoritesOnly, onSearch, loading }) {
   // Renders the filter bar with dance style labels, city input, date input, and search button.
   const [selectedStyles, setSelectedStyles] = useState([]);
   const [city, setCity] = useState('');
@@ -65,7 +67,7 @@ function FilterBar({ showFavoritesOnly = false, onToggleFavoritesOnly }) {
       alert('Please enter a valid city name (letters, spaces, hyphens only).');
       return;
     }
-    // TODO: Implement search logic
+    if (onSearch) onSearch({ city, date, styles: selectedStyles });
   }
 
   /**
@@ -124,9 +126,17 @@ function FilterBar({ showFavoritesOnly = false, onToggleFavoritesOnly }) {
         style={{ borderRadius: '8px', border: 'none', padding: '0.5em 1em', fontFamily: 'Poppins, sans-serif', fontSize: '1em', minWidth: '120px' }}
         aria-label="Date"
       />
-      <button type="submit" style={{ minWidth: '120px' }}>Search</button>
+      <button type="submit" style={{ minWidth: '120px', position: 'relative' }} disabled={loading}>
+        {loading ? (
+          <span className="spinner" style={{ display: 'inline-block', width: 20, height: 20, border: '3px solid #fff', borderTop: '3px solid #E92932', borderRadius: '50%', animation: 'spin 1s linear infinite', verticalAlign: 'middle' }} />
+        ) : 'Search'}
+      </button>
     </form>
   );
 }
+
+// Add spinner CSS to theme.css:
+// @keyframes spin { 100% { transform: rotate(360deg); } }
+// .spinner { ... }
 
 export default FilterBar;

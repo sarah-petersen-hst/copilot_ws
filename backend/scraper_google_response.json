@@ -1,0 +1,950 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - Salsa Veranstaltung Freitag Berlin site:.de",
+        "totalResults": "280000",
+        "searchTerms": "Salsa Veranstaltung Freitag Berlin site:.de",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "24f2235f9afe149a6",
+        "hl": "de"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - Salsa Veranstaltung Freitag Berlin site:.de",
+        "totalResults": "280000",
+        "searchTerms": "Salsa Veranstaltung Freitag Berlin site:.de",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "24f2235f9afe149a6",
+        "hl": "de"
+      }
+    ]
+  },
+  "context": {
+    "title": "Latindance Event Searchengine"
+  },
+  "searchInformation": {
+    "searchTime": 0.442272,
+    "formattedSearchTime": "0.44",
+    "totalResults": "280000",
+    "formattedTotalResults": "280,000"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "Berliner Salsa Kalender - Salsa Events in Berlin",
+      "htmlTitle": "<b>Berliner Salsa</b> Kalender - <b>Salsa</b> Events in <b>Berlin</b>",
+      "link": "https://www.salsa-berlin.de/kalender/",
+      "displayLink": "www.salsa-berlin.de",
+      "snippet": "Salsa Events heute und in den nächsten 14 Tagen. Achtung, wir bemühen uns immer möglichst viele Veranstaltungen zu erfassen, können aber nicht für ...",
+      "htmlSnippet": "<b>Salsa</b> Events heute und in den nächsten 14 Tagen. Achtung, wir bemühen uns immer möglichst viele <b>Veranstaltungen</b> zu erfassen, können aber nicht für&nbsp;...",
+      "formattedUrl": "https://www.salsa-berlin.de/kalender/",
+      "htmlFormattedUrl": "https://www.<b>salsa</b>-<b>berlin</b>.de/kalender/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgSuBoNWLyW6HrrDsM95vpjLgQg91cnFRrtaLxkxzTbBfSqokTO29OeZw&s",
+            "width": "150",
+            "height": "108"
+          }
+        ],
+        "postaladdress": [
+          {
+            "addresslocality": "Berlin",
+            "postalcode": "10435",
+            "name": "Salsa-Berlin - Kultur",
+            "streetaddress": "Schönhauser Allee 36"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1.0",
+            "author": "(c) 1996-2019 by salsa-berlin.de"
+          }
+        ],
+        "place": [
+          {
+            "name": "Salsa-Berlin.de",
+            "url": "https://www.salsa-berlin.de"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.salsa-berlin.de/kalender/kalender.jpg"
+          }
+        ],
+        "danceevent": [
+          {
+            "image": "https://www.salsa-berlin.de/kalender/kalender.jpg",
+            "name": "Salsa Events in Berlin",
+            "description": "Hier findet Ihr Termine und Informationen zu Salsa Events in Berlin und Umgebung",
+            "startdate": "2025-07-18",
+            "url": "https://www.salsa-berlin.de/kalender/"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Salsa in Berlin: Clubs, Tanzschulen, Events - |salsa-staedte|",
+      "htmlTitle": "<b>Salsa</b> in <b>Berlin</b>: Clubs, Tanzschulen, Events - |<b>salsa</b>-staedte|",
+      "link": "https://www.salsalemania.de/salsa-in-berlin/",
+      "displayLink": "www.salsalemania.de",
+      "snippet": "Gleich 3 Salsa Clubs laden an regelmässigen Terminen zum Salsa Tanzen ein. Entdecke die Salsa-Szene in Berlin. Gleich heute abend gibt es ein Salsa-Event! Und ...",
+      "htmlSnippet": "Gleich 3 <b>Salsa</b> Clubs laden an regelmässigen Terminen zum <b>Salsa</b> Tanzen ein. Entdecke die <b>Salsa</b>-Szene in <b>Berlin</b>. Gleich heute abend gibt es ein <b>Salsa</b>-Event! Und&nbsp;...",
+      "formattedUrl": "https://www.salsalemania.de/salsa-in-berlin/",
+      "htmlFormattedUrl": "https://www.<b>salsa</b>lemania.de/<b>salsa</b>-in-<b>berlin</b>/",
+      "pagemap": {
+        "offer": [
+          {
+            "pricecurrency": "EUR",
+            "price": "8.00",
+            "name": "Eintritt",
+            "url": "https://www.salsalemania.de/salsa-partys/?ID=mambita-mambo-cafe&DT=2025-09-13"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "8.00",
+            "name": "Eintritt",
+            "url": "https://www.salsalemania.de/salsa-partys/?ID=mambita-freitag&DT=2025-09-26"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "8.00",
+            "name": "Eintritt",
+            "url": "https://www.salsalemania.de/salsa-partys/?ID=mambita-mambo-cafe&DT=2025-10-11"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "8.00",
+            "name": "Eintritt",
+            "url": "https://www.salsalemania.de/salsa-partys/?ID=mambita-freitag&DT=2025-10-24"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "8.00",
+            "name": "Eintritt",
+            "url": "https://www.salsalemania.de/salsa-partys/?ID=mambita-mambo-cafe&DT=2025-11-08"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "8.00",
+            "name": "Eintritt",
+            "url": "https://www.salsalemania.de/salsa-partys/?ID=mambita-freitag&DT=2025-11-21"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "8.00",
+            "name": "Eintritt",
+            "url": "https://www.salsalemania.de/salsa-partys/?ID=mambita-mambo-cafe&DT=2025-12-06"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "8.00",
+            "name": "Eintritt",
+            "url": "https://www.salsalemania.de/salsa-partys/?ID=mambita-freitag&DT=2025-12-19"
+          }
+        ],
+        "nightclub": [
+          {
+            "image": "https://www.salsalemania.de/salsa-clubs/berlin/havanna/havanna-berlin_small.png",
+            "name": "Havanna",
+            "description": "Salsa Partys, Reggaeton, Bachata - Achtung: Samstags nur Bachata & Reggaeton"
+          },
+          {
+            "image": "https://www.salsalemania.de/salsa-clubs/berlin/soda/soda-berlin_small.png",
+            "name": "Soda-Club"
+          },
+          {
+            "image": "https://www.salsalemania.de/salsa-clubs/berlin/claerchens-ballhaus/claerchens-logo-small.png",
+            "name": "Clärchens Ballhaus",
+            "description": "Salsa Party in Berlins ältestem Ballhaus.Jeden Montag ab 19 Uhr. Mit DJ Flori & Wilber. Eintritt 10 EUR"
+          }
+        ],
+        "festival": [
+          {
+            "image": "https://www.salsalemania.de/salsa-festivals/berlinsalsafestival_2026.jpg",
+            "enddate": "2026-03-29",
+            "name": "Festival: Berlin Salsa Festival \"Fiesta elegante\"",
+            "description": "We are ready for the third edition with an exclusive mind blowing line up. The Artist Lineup is cherry picked and carefully chosen, it will just blow your mind. <br> <br> Artists:<br> <br>...",
+            "startdate": "2026-03-27",
+            "url": "Festival: Berlin Salsa Festival \"Fiesta elegante\""
+          }
+        ],
+        "postaladdress": [
+          {
+            "addresslocality": "Berlin",
+            "postalcode": "10115",
+            "name": "Wilder Als Erwartet",
+            "streetaddress": "Caroline-Michaelis-Str. 1 (am Nordbahnhof)"
+          },
+          {
+            "addresslocality": "Berlin",
+            "postalcode": "10587",
+            "name": "Ernst-Reuter-Platz"
+          },
+          {
+            "addresslocality": "Berlin",
+            "postalcode": "10587",
+            "name": "Ernst-Reuter-Platz"
+          },
+          {
+            "addresslocality": "Berlin",
+            "postalcode": "10587",
+            "name": "Ernst-Reuter-Platz"
+          },
+          {
+            "addresslocality": "Berlin",
+            "postalcode": "10829",
+            "name": "La Mambita",
+            "streetaddress": "Kolonnenstr. 29"
+          },
+          {
+            "addresslocality": "Berlin",
+            "postalcode": "10587",
+            "name": "Ernst-Reuter-Platz"
+          },
+          {
+            "addresslocality": "Berlin",
+            "postalcode": "10829",
+            "name": "La Mambita",
+            "streetaddress": "Kolonnenstr. 29"
+          },
+          {
+            "addresslocality": "Berlin",
+            "postalcode": "10829",
+            "name": "La Mambita",
+            "streetaddress": "Kolonnenstr. 29"
+          },
+          {
+            "addresslocality": "Berlin",
+            "postalcode": "10829",
+            "name": "La Mambita",
+            "streetaddress": "Kolonnenstr. 29"
+          },
+          {
+            "addresslocality": "Berlin",
+            "postalcode": "10829",
+            "name": "La Mambita",
+            "streetaddress": "Kolonnenstr. 29"
+          },
+          {
+            "addresslocality": "Berlin",
+            "postalcode": "10829",
+            "name": "La Mambita",
+            "streetaddress": "Kolonnenstr. 29"
+          },
+          {
+            "addresslocality": "Berlin",
+            "postalcode": "10829",
+            "name": "La Mambita",
+            "streetaddress": "Kolonnenstr. 29"
+          },
+          {
+            "addresslocality": "Berlin",
+            "postalcode": "10829",
+            "name": "La Mambita",
+            "streetaddress": "Kolonnenstr. 29"
+          },
+          {
+            "addresslocality": "Berlin",
+            "postalcode": "13507",
+            "name": "Tegeler Seeterrassen",
+            "streetaddress": "Wilkestr. 1"
+          },
+          {
+            "addresslocality": "Berlin",
+            "postalcode": "10827",
+            "streetaddress": "Hauptstr. 30"
+          },
+          {
+            "addresslocality": "Berlin",
+            "postalcode": "10435",
+            "streetaddress": "Schönhauser Allee 36",
+            "telephone": "030 - 44 31 51 55"
+          },
+          {
+            "addresslocality": "Berlin",
+            "postalcode": "10117",
+            "streetaddress": "Auguststr. 24/25"
+          }
+        ],
+        "hcalendar": [
+          {
+            "summary": "Salsa-Party: Salsa-Cafe",
+            "description": "Für alle die authentische und besondere Salsa Musik hören und auch tanzen möchten öffnet das Salsa-Cafe in der \"Wilder-als-erwartet\" Bar am 5. März, so wie an jedem 1. Mittwoch im Monat,wieder...",
+            "photo": "https://www.salsalemania.de/salsa-partys/Salsa-Cafe-Wednesday.png",
+            "dtstart": "2025-08-06",
+            "url": "https://www.salsalemania.de/salsa-partys/?ID=salsa-cafe&DT=2025-08-06"
+          },
+          {
+            "summary": "Salsa-Party: Salsa Sommer",
+            "description": "Salsa Open Air mitten auf dem Ernst-Reuter-Platz - Zugang über U-Bahn-Tunnel<br> immer 18:00 - 22:00 Uhr mit DJ Ronny",
+            "photo": "https://www.salsalemania.de/salsa-partys/e-r-p-b-2025.jpg",
+            "dtstart": "2025-08-15",
+            "url": "https://www.salsalemania.de/salsa-partys/?ID=salsa-sommer-berlin-2025&DT=2025-08-15"
+          },
+          {
+            "summary": "Salsa-Party: Salsa Sommer",
+            "description": "Salsa Open Air mitten auf dem Ernst-Reuter-Platz - Zugang über U-Bahn-Tunnel<br> immer 18:00 - 22:00 Uhr mit DJ Ronny",
+            "photo": "https://www.salsalemania.de/salsa-partys/e-r-p-b-2025.jpg",
+            "dtstart": "2025-08-22",
+            "url": "https://www.salsalemania.de/salsa-partys/?ID=salsa-sommer-berlin-2025&DT=2025-08-22"
+          },
+          {
+            "summary": "Salsa-Party: Salsa Sommer",
+            "description": "Salsa Open Air mitten auf dem Ernst-Reuter-Platz - Zugang über U-Bahn-Tunnel<br> immer 18:00 - 22:00 Uhr mit DJ Ronny",
+            "photo": "https://www.salsalemania.de/salsa-partys/e-r-p-b-2025.jpg",
+            "dtstart": "2025-09-05",
+            "url": "https://www.salsalemania.de/salsa-partys/?ID=salsa-sommer-berlin-2025&DT=2025-09-05"
+          },
+          {
+            "summary": "Salsa-Party: Mambo Café @ Mambita",
+            "description": "Mit Cafe und leckerem Kuchen nachmittags & in den Abend hinein tanzen (bis 20:00). <br> Dj Flori | bettina_lady.mambo<br> 16 – 17 Uhr ChaChaChá mit Suzanne",
+            "photo": "https://www.salsalemania.de/salsa-partys/mambita-mambo-cafe.jpg",
+            "dtstart": "2025-09-13",
+            "url": "https://www.salsalemania.de/salsa-partys/?ID=mambita-mambo-cafe&DT=2025-09-13"
+          },
+          {
+            "summary": "Salsa-Party: Salsa Sommer",
+            "description": "Salsa Open Air mitten auf dem Ernst-Reuter-Platz - Zugang über U-Bahn-Tunnel<br> immer 18:00 - 22:00 Uhr mit DJ Ronny",
+            "photo": "https://www.salsalemania.de/salsa-partys/e-r-p-b-2025.jpg",
+            "dtstart": "2025-09-19",
+            "url": "https://www.salsalemania.de/salsa-partys/?ID=salsa-sommer-berlin-2025&DT=2025-09-19"
+          },
+          {
+            "summary": "Salsa-Party: Salsa Party @ La Mambita",
+            "description": "Salsa Party in der Tanzschule Mambita<br> Dj Flori | bettina_lady.mambo",
+            "photo": "https://www.salsalemania.de/salsa-partys/mambita.jpg",
+            "dtstart": "2025-09-26",
+            "url": "https://www.salsalemania.de/salsa-partys/?ID=mambita-freitag&DT=2025-09-26"
+          },
+          {
+            "summary": "Salsa-Party: Mambo Café @ Mambita",
+            "description": "Mit Cafe und leckerem Kuchen nachmittags & in den Abend hinein tanzen (bis 20:00). <br> Dj Flori | bettina_lady.mambo<br> 16 – 17 Uhr ChaChaChá mit Suzanne",
+            "photo": "https://www.salsalemania.de/salsa-partys/mambita-mambo-cafe.jpg",
+            "dtstart": "2025-10-11",
+            "url": "https://www.salsalemania.de/salsa-partys/?ID=mambita-mambo-cafe&DT=2025-10-11"
+          },
+          {
+            "summary": "Salsa-Party: Salsa Party @ La Mambita",
+            "description": "Salsa Party in der Tanzschule Mambita<br> Dj Flori | bettina_lady.mambo",
+            "photo": "https://www.salsalemania.de/salsa-partys/mambita.jpg",
+            "dtstart": "2025-10-24",
+            "url": "https://www.salsalemania.de/salsa-partys/?ID=mambita-freitag&DT=2025-10-24"
+          },
+          {
+            "summary": "Salsa-Party: Mambo Café @ Mambita",
+            "description": "Mit Cafe und leckerem Kuchen nachmittags & in den Abend hinein tanzen (bis 20:00). <br> Dj Flori | bettina_lady.mambo<br> 16 – 17 Uhr ChaChaChá mit Suzanne",
+            "photo": "https://www.salsalemania.de/salsa-partys/mambita-mambo-cafe.jpg",
+            "dtstart": "2025-11-08",
+            "url": "https://www.salsalemania.de/salsa-partys/?ID=mambita-mambo-cafe&DT=2025-11-08"
+          },
+          {
+            "summary": "Salsa-Party: Salsa Party @ La Mambita",
+            "description": "Salsa Party in der Tanzschule Mambita<br> Dj Flori | bettina_lady.mambo",
+            "photo": "https://www.salsalemania.de/salsa-partys/mambita.jpg",
+            "dtstart": "2025-11-21",
+            "url": "https://www.salsalemania.de/salsa-partys/?ID=mambita-freitag&DT=2025-11-21"
+          },
+          {
+            "summary": "Salsa-Party: Mambo Café @ Mambita",
+            "description": "Mit Cafe und leckerem Kuchen nachmittags & in den Abend hinein tanzen (bis 20:00). <br> Dj Flori | bettina_lady.mambo<br> 16 – 17 Uhr ChaChaChá mit Suzanne",
+            "photo": "https://www.salsalemania.de/salsa-partys/mambita-mambo-cafe.jpg",
+            "dtstart": "2025-12-06",
+            "url": "https://www.salsalemania.de/salsa-partys/?ID=mambita-mambo-cafe&DT=2025-12-06"
+          },
+          {
+            "summary": "Salsa-Party: Salsa Party @ La Mambita",
+            "description": "Salsa Party in der Tanzschule Mambita<br> Dj Flori | bettina_lady.mambo",
+            "photo": "https://www.salsalemania.de/salsa-partys/mambita.jpg",
+            "dtstart": "2025-12-19",
+            "url": "https://www.salsalemania.de/salsa-partys/?ID=mambita-freitag&DT=2025-12-19"
+          },
+          {
+            "summary": "Festival: Berlin Salsa Festival \"Fiesta elegante\"",
+            "description": "We are ready for the third edition with an exclusive mind blowing line up. The Artist Lineup is cherry picked and carefully chosen, it will just blow your mind. <br> <br> Artists:<br> <br>...",
+            "photo": "https://www.salsalemania.de/salsa-festivals/berlinsalsafestival_2026.jpg",
+            "dtend": "2026-03-29",
+            "dtstart": "2026-03-27",
+            "url": "https://www.salsalemania.de/salsa-festivals/?ID=berlinsalsafestival"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1.0",
+            "author": "salsalemania.de"
+          }
+        ],
+        "place": [
+          {
+            "name": "Wilder Als Erwartet",
+            "url": "https://maps.app.goo.gl/9N5dfUwGX95jA7QQ7"
+          },
+          {
+            "name": "Ernst-Reuter-Platz",
+            "url": "https://maps.app.goo.gl/TwbA3NSEs6hzdj6c7"
+          },
+          {
+            "name": "Ernst-Reuter-Platz",
+            "url": "https://maps.app.goo.gl/TwbA3NSEs6hzdj6c7"
+          },
+          {
+            "name": "Ernst-Reuter-Platz",
+            "url": "https://maps.app.goo.gl/TwbA3NSEs6hzdj6c7"
+          },
+          {
+            "name": "La Mambita",
+            "url": "https://goo.gl/maps/BScFLcNj1FJ2"
+          },
+          {
+            "name": "Ernst-Reuter-Platz",
+            "url": "https://maps.app.goo.gl/TwbA3NSEs6hzdj6c7"
+          },
+          {
+            "name": "La Mambita",
+            "url": "https://goo.gl/maps/BScFLcNj1FJ2"
+          },
+          {
+            "name": "La Mambita",
+            "url": "https://goo.gl/maps/BScFLcNj1FJ2"
+          },
+          {
+            "name": "La Mambita",
+            "url": "https://goo.gl/maps/BScFLcNj1FJ2"
+          },
+          {
+            "name": "La Mambita",
+            "url": "https://goo.gl/maps/BScFLcNj1FJ2"
+          },
+          {
+            "name": "La Mambita",
+            "url": "https://goo.gl/maps/BScFLcNj1FJ2"
+          },
+          {
+            "name": "La Mambita",
+            "url": "https://goo.gl/maps/BScFLcNj1FJ2"
+          },
+          {
+            "name": "La Mambita",
+            "url": "https://goo.gl/maps/BScFLcNj1FJ2"
+          },
+          {
+            "name": "Tegeler Seeterrassen",
+            "url": "https://goo.gl/maps/Aja6AkZnttSDUaV8A"
+          }
+        ],
+        "event": [
+          {
+            "summary": "Salsa-Party: Salsa-Cafe",
+            "location": "Berlin",
+            "dtstart": "2025-08-06",
+            "url": "https://www.salsalemania.de/salsa-partys/?ID=salsa-cafe&DT=2025-08-06"
+          }
+        ],
+        "danceevent": [
+          {
+            "image": "https://www.salsalemania.de/salsa-partys/Salsa-Cafe-Wednesday.png",
+            "name": "Salsa-Party: Salsa-Cafe",
+            "description": "Für alle die authentische und besondere Salsa Musik hören und auch tanzen möchten öffnet das Salsa-Cafe in der \"Wilder-als-erwartet\" Bar am 5. März, so wie an jedem 1. Mittwoch im Monat,wieder...",
+            "startdate": "2025-08-06",
+            "url": "Salsa-Party: Salsa-Cafe"
+          },
+          {
+            "image": "https://www.salsalemania.de/salsa-partys/e-r-p-b-2025.jpg",
+            "name": "Salsa-Party: Salsa Sommer",
+            "description": "Salsa Open Air mitten auf dem Ernst-Reuter-Platz - Zugang über U-Bahn-Tunnel<br> immer 18:00 - 22:00 Uhr mit DJ Ronny",
+            "startdate": "2025-08-15",
+            "url": "Salsa-Party: Salsa Sommer"
+          },
+          {
+            "image": "https://www.salsalemania.de/salsa-partys/e-r-p-b-2025.jpg",
+            "name": "Salsa-Party: Salsa Sommer",
+            "description": "Salsa Open Air mitten auf dem Ernst-Reuter-Platz - Zugang über U-Bahn-Tunnel<br> immer 18:00 - 22:00 Uhr mit DJ Ronny",
+            "startdate": "2025-08-22",
+            "url": "Salsa-Party: Salsa Sommer"
+          },
+          {
+            "image": "https://www.salsalemania.de/salsa-partys/e-r-p-b-2025.jpg",
+            "name": "Salsa-Party: Salsa Sommer",
+            "description": "Salsa Open Air mitten auf dem Ernst-Reuter-Platz - Zugang über U-Bahn-Tunnel<br> immer 18:00 - 22:00 Uhr mit DJ Ronny",
+            "startdate": "2025-09-05",
+            "url": "Salsa-Party: Salsa Sommer"
+          },
+          {
+            "image": "https://www.salsalemania.de/salsa-partys/mambita-mambo-cafe.jpg",
+            "name": "Salsa-Party: Mambo Café @ Mambita",
+            "description": "Mit Cafe und leckerem Kuchen nachmittags & in den Abend hinein tanzen (bis 20:00). <br> Dj Flori | bettina_lady.mambo<br> 16 – 17 Uhr ChaChaChá mit Suzanne",
+            "startdate": "2025-09-13",
+            "url": "Salsa-Party: Mambo Café @ Mambita"
+          },
+          {
+            "image": "https://www.salsalemania.de/salsa-partys/e-r-p-b-2025.jpg",
+            "name": "Salsa-Party: Salsa Sommer",
+            "description": "Salsa Open Air mitten auf dem Ernst-Reuter-Platz - Zugang über U-Bahn-Tunnel<br> immer 18:00 - 22:00 Uhr mit DJ Ronny",
+            "startdate": "2025-09-19",
+            "url": "Salsa-Party: Salsa Sommer"
+          },
+          {
+            "image": "https://www.salsalemania.de/salsa-partys/mambita.jpg",
+            "name": "Salsa-Party: Salsa Party @ La Mambita",
+            "description": "Salsa Party in der Tanzschule Mambita<br> Dj Flori | bettina_lady.mambo",
+            "startdate": "2025-09-26",
+            "url": "Salsa-Party: Salsa Party @ La Mambita"
+          },
+          {
+            "image": "https://www.salsalemania.de/salsa-partys/mambita-mambo-cafe.jpg",
+            "name": "Salsa-Party: Mambo Café @ Mambita",
+            "description": "Mit Cafe und leckerem Kuchen nachmittags & in den Abend hinein tanzen (bis 20:00). <br> Dj Flori | bettina_lady.mambo<br> 16 – 17 Uhr ChaChaChá mit Suzanne",
+            "startdate": "2025-10-11",
+            "url": "Salsa-Party: Mambo Café @ Mambita"
+          },
+          {
+            "image": "https://www.salsalemania.de/salsa-partys/mambita.jpg",
+            "name": "Salsa-Party: Salsa Party @ La Mambita",
+            "description": "Salsa Party in der Tanzschule Mambita<br> Dj Flori | bettina_lady.mambo",
+            "startdate": "2025-10-24",
+            "url": "Salsa-Party: Salsa Party @ La Mambita"
+          },
+          {
+            "image": "https://www.salsalemania.de/salsa-partys/mambita-mambo-cafe.jpg",
+            "name": "Salsa-Party: Mambo Café @ Mambita",
+            "description": "Mit Cafe und leckerem Kuchen nachmittags & in den Abend hinein tanzen (bis 20:00). <br> Dj Flori | bettina_lady.mambo<br> 16 – 17 Uhr ChaChaChá mit Suzanne",
+            "startdate": "2025-11-08",
+            "url": "Salsa-Party: Mambo Café @ Mambita"
+          },
+          {
+            "image": "https://www.salsalemania.de/salsa-partys/mambita.jpg",
+            "name": "Salsa-Party: Salsa Party @ La Mambita",
+            "description": "Salsa Party in der Tanzschule Mambita<br> Dj Flori | bettina_lady.mambo",
+            "startdate": "2025-11-21",
+            "url": "Salsa-Party: Salsa Party @ La Mambita"
+          },
+          {
+            "image": "https://www.salsalemania.de/salsa-partys/mambita-mambo-cafe.jpg",
+            "name": "Salsa-Party: Mambo Café @ Mambita",
+            "description": "Mit Cafe und leckerem Kuchen nachmittags & in den Abend hinein tanzen (bis 20:00). <br> Dj Flori | bettina_lady.mambo<br> 16 – 17 Uhr ChaChaChá mit Suzanne",
+            "startdate": "2025-12-06",
+            "url": "Salsa-Party: Mambo Café @ Mambita"
+          },
+          {
+            "image": "https://www.salsalemania.de/salsa-partys/mambita.jpg",
+            "name": "Salsa-Party: Salsa Party @ La Mambita",
+            "description": "Salsa Party in der Tanzschule Mambita<br> Dj Flori | bettina_lady.mambo",
+            "startdate": "2025-12-19",
+            "url": "Salsa-Party: Salsa Party @ La Mambita"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Soda Club Berlin - Dein Club im Herzen von Berlin",
+      "htmlTitle": "Soda Club <b>Berlin</b> - Dein Club im Herzen von <b>Berlin</b>",
+      "link": "https://soda-berlin.de/",
+      "displayLink": "soda-berlin.de",
+      "snippet": "Der Soda Club ist die Party Location in Berlin. Party every weekend since '99! Tanze zu RnB, Black, Dance und Electro durch die Nacht! Jeden Freitag ...",
+      "htmlSnippet": "Der Soda Club ist die Party Location in <b>Berlin</b>. Party every weekend since &#39;99! Tanze zu RnB, Black, Dance und Electro durch die Nacht! Jeden <b>Freitag</b>&nbsp;...",
+      "formattedUrl": "https://soda-berlin.de/",
+      "htmlFormattedUrl": "https://soda-<b>berlin</b>.de/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQik3pRMAMXVdyUa8cQSwSizASwRA-nZmeEGPvFVWjAnH4dmGvDtokewxw&s",
+            "width": "219",
+            "height": "231"
+          }
+        ],
+        "metatags": [
+          {
+            "msapplication-tilecolor": "#fff",
+            "theme-color": "#fff",
+            "viewport": "width=device-width,initial-scale=1"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.soda-berlin.de/media/default/assets/config/soda/images/home/submodules/app_preview/0.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Salsa tanzen in Berlin | visitBerlin.de",
+      "htmlTitle": "<b>Salsa</b> tanzen in <b>Berlin</b> | <b>visitBerlin</b>.de",
+      "link": "https://www.visitberlin.de/de/salsa-tanzen-berlin",
+      "displayLink": "www.visitberlin.de",
+      "snippet": "Der Sodaclub in der Kulturbrauerei bietet jeden Donnerstag und Sonntag Tanzkurse zu Salsa, Kizomba und Mambo an. Gleich im Anschluss beginnt die Salsa Party, ...",
+      "htmlSnippet": "Der Sodaclub in der Kulturbrauerei bietet jeden Donnerstag und Sonntag Tanzkurse zu <b>Salsa</b>, Kizomba und Mambo an. Gleich im Anschluss beginnt die <b>Salsa</b> Party,&nbsp;...",
+      "formattedUrl": "https://www.visitberlin.de/de/salsa-tanzen-berlin",
+      "htmlFormattedUrl": "https://www.visit<b>berlin</b>.de/de/<b>salsa</b>-tanzen-<b>berlin</b>",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ5is-oem60Uz-GGjGlYhH1wL9kDeigu7y32j0aeth_GN1a_UEo0oTdtmw&s",
+            "width": "348",
+            "height": "145"
+          }
+        ],
+        "metatags": [
+          {
+            "application-name": "visitBerlin",
+            "msapplication-tilecolor": "#b20e10",
+            "og:image": "https://www.visitberlin.de/system/files/styles/visitberlin_hero_visitberlin_desktop_2x/private/image/Tango_Nacht__MG_5168_c_G%C3%BCnter%20Steffen_DL_PPT_0.jpg.webp?itok=BO1ogQ-6",
+            "msapplication-config": "/themes/custom/visitberlin/static/browserconfig.xml?v=8",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "Salsa tanzen in Berlin",
+            "theme-color": "#ffffff",
+            "handheldfriendly": "true",
+            "og:title": "Salsa tanzen in Berlin",
+            "apple-mobile-web-app-title": "visitBerlin",
+            "msapplication-tileimage": "/themes/custom/visitberlin/static/mstile-144x144.png?v=8",
+            "twitter:image": "https://www.visitberlin.de/system/files/styles/visitberlin_hero_visitberlin_desktop_2x/private/image/Tango_Nacht__MG_5168_c_G%C3%BCnter%20Steffen_DL_PPT_0.jpg.webp?itok=BO1ogQ-6",
+            "twitter:site": "@visitberlin",
+            "viewport": "width=device-width, initial-scale=1.0",
+            "mobileoptimized": "width",
+            "format-detection": "telephone=no"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.visitberlin.de/system/files/styles/visitberlin_hero_visitberlin_desktop_2x/private/image/Tango_Nacht__MG_5168_c_G%C3%BCnter%20Steffen_DL_PPT_0.jpg.webp?itok=BO1ogQ-6"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Salsa tanzen Berlin - Salsa-Partys in Berlin, Salsa-Tanzschulen in ...",
+      "htmlTitle": "<b>Salsa</b> tanzen <b>Berlin</b> - <b>Salsa</b>-Partys in <b>Berlin</b>, <b>Salsa</b>-Tanzschulen in ...",
+      "link": "https://www.salsa-und-tango.de/salsa-magazin/salsa-tanzen-berlin/",
+      "displayLink": "www.salsa-und-tango.de",
+      "snippet": "Salsa freitags in Berlin tanzen. Für nicht regelmäßige Salsa-Partys am Freitag in Berlin siehe unser Stichwort Salsa-Berlin. Freitags ist Salsa-Party im ...",
+      "htmlSnippet": "<b>Salsa freitags</b> in <b>Berlin</b> tanzen. Für nicht regelmäßige <b>Salsa</b>-Partys am <b>Freitag</b> in <b>Berlin</b> siehe unser Stichwort <b>Salsa</b>-<b>Berlin</b>. <b>Freitags</b> ist <b>Salsa</b>-Party im&nbsp;...",
+      "formattedUrl": "https://www.salsa-und-tango.de/salsa-magazin/salsa-tanzen-berlin/",
+      "htmlFormattedUrl": "https://www.<b>salsa</b>-und-tango.de/<b>salsa</b>-magazin/<b>salsa</b>-tanzen-<b>berlin</b>/",
+      "pagemap": {
+        "hcard": [
+          {
+            "fn": "Romana",
+            "nickname": "Romana"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIsgTwmUUDLpMqT47fS7cUMFGl3LAVBNTkPOL-uMBsiPgdGgA0BQR2YRgD&s",
+            "width": "268",
+            "height": "188"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://www.salsa-und-tango.de/wp-content/uploads/2009/05/Salsa-tanzen-Berlin.jpg",
+            "og:type": "article",
+            "viewport": "width=device-width, initial-scale=1",
+            "news_keywords": "Berlin, Salsa, Salsa tanzen Berlin, Salsa Partys Berlin, Salsa Tanzschulen Berlin, Salsa heute in Berlin, Salsa open air Berlin, Salsa montags Berlin, Salsa dienstags Berlin, Salsa mittwochs Berlin, Salsa donnerstags Berlin, Salsa freitags Berlin, Salsa samstags Berlin, Salsa sonntags Berlin",
+            "og:title": "Salsa tanzen Berlin - Salsa-Partys in Berlin, Salsa-Tanzschulen in Berlin",
+            "og:url": "https://www.salsa-und-tango.de/salsa-magazin/salsa-tanzen-berlin/",
+            "og:description": "Salsa tanzen in Berlin! In Berlin gibt es (fast) jeden Tag Salsa-Partys, bei denen Ihr Salsa tanzen könnt. Hier findet Ihr, bei welchen Salsa-Partys, wo man an bestimmten Wochentagen in Berlin Salsa tanzen kann und welche Salsa-Tanzschulen in Berlin wir empfehlen.",
+            "verification": "0fa070f867aaf8103833ccbf086c6cfe"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.salsa-und-tango.de/wp-content/uploads/2009/05/Salsa-tanzen-Berlin.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Tanzabende und Tanzkurse unter freiem Himmel – Berlin.de",
+      "htmlTitle": "Tanzabende und Tanzkurse unter freiem Himmel – <b>Berlin</b>.de",
+      "link": "https://www.berlin.de/kultur-und-tickets/tipps/draussen/7490847-6199728-tanzen-und-tanzkurse-unter-freiem-himmel.html",
+      "displayLink": "www.berlin.de",
+      "snippet": "Montags und donnerstags steht Salsa auf dem Programm, am Dienstag und ... freitags Swing auf dem Programm steht. Bei schlechtem und kaltem Wetter ...",
+      "htmlSnippet": "Montags und donnerstags steht <b>Salsa</b> auf dem Programm, am Dienstag und ... <b>freitags</b> Swing auf dem Programm steht. Bei schlechtem und kaltem Wetter&nbsp;...",
+      "formattedUrl": "https://www.berlin.de/.../7490847-6199728-tanzen-und-tanzkurse-unter-fre...",
+      "htmlFormattedUrl": "https://www.<b>berlin</b>.de/.../7490847-6199728-tanzen-und-tanzkurse-unter-fre...",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrmm0XmuAMFRH48_btVEPU4VoMsB5jn2h-_poudtSqaIZQggkLShdCzsD3&s",
+            "width": "259",
+            "height": "194"
+          }
+        ],
+        "metatags": [
+          {
+            "msapplication-tilecolor": "#2b5797",
+            "og:image": "https://www.berlin.de/binaries/asset/image_assets/8240861/ratio_4_3/1686743770/800x600/",
+            "msapplication-config": "/browserconfig.xml",
+            "og:image:width": "800",
+            "og:image:alt": "Karneval der Kulturen 2023 (3)",
+            "theme-color": "#ffffff",
+            "og:site_name": "berlin.de",
+            "og:title": "Tanzabende und Tanzkurse unter freiem Himmel",
+            "og:image:height": "600",
+            "og:description": "Jeden Sommer können Hauptstädter und Gäste unter dem Berliner Sternenhimmel auch fernab von Techno-Beats beschwingt das Tanzbein schwingen.",
+            "og:image:secure_url": "/css/berlin_de/foxtrot/images/favicons/berlin_de_fb_social.png",
+            "cm.info": "articles-7490847-61435",
+            "viewport": "width=device-width, initial-scale=1.0",
+            "dc.title": "Tanzabende und Tanzkurse unter freiem Himmel",
+            "og:url": "https://www.berlin.de/kultur-und-tickets/tipps/draussen/7490847-6199728-tanzen-und-tanzkurse-unter-freiem-himmel.html"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.berlin.de/binaries/asset/image_assets/8240861/ratio_4_3/1686743770/800x600/"
+          }
+        ],
+        "listitem": [
+          {
+            "item": "Startseite",
+            "name": "Startseite",
+            "position": "1"
+          },
+          {
+            "item": "Kultur und Tickets",
+            "name": "Kultur und Tickets",
+            "position": "2"
+          },
+          {
+            "item": "Tipps",
+            "name": "Tipps",
+            "position": "3"
+          },
+          {
+            "item": "Draußen",
+            "name": "Draußen",
+            "position": "4"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Salsa Berlin – So Tanzt Du Durch Die Hauptstadt!",
+      "htmlTitle": "<b>Salsa Berlin</b> – So Tanzt Du Durch Die Hauptstadt!",
+      "link": "https://cumbancha.de/salsa-berlin-so-tanzt-du-durch-die-hauptstadt/",
+      "displayLink": "cumbancha.de",
+      "snippet": "... Berlin ab 20:00 eine Salsa und Bachata After-Work-Party. Das bringt gute Laune nach einem anstrengenden Arbeitstag. Auch Freitag und Samstag kannst du ab 22 ...",
+      "htmlSnippet": "... <b>Berlin</b> ab 20:00 eine <b>Salsa</b> und Bachata After-Work-Party. Das bringt gute Laune nach einem anstrengenden Arbeitstag. Auch <b>Freitag</b> und Samstag kannst du ab 22&nbsp;...",
+      "formattedUrl": "https://cumbancha.de/salsa-berlin-so-tanzt-du-durch-die-hauptstadt/",
+      "htmlFormattedUrl": "https://cumbancha.de/<b>salsa</b>-<b>berlin</b>-so-tanzt-du-durch-die-hauptstadt/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJjw_736XW8MaMzyVmrc3VWgyCD7MYpCn8p--3s-vM_s5sgfFW3aRNaJWu&s",
+            "width": "300",
+            "height": "168"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://cumbancha.de/wp-content/uploads/2023/11/Salsa-Berlin.png",
+            "og:image:width": "1920",
+            "article:published_time": "2023-10-24T12:02:57+02:00",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "Cumbancha - Die Salsa Tanzschule in Berlin / Kreuzberg",
+            "twitter:label1": "Time to read",
+            "og:image:type": "image/png",
+            "msapplication-tileimage": "https://cumbancha.de/wp-content/uploads/2022/05/cropped-logo_fuer_hell-1-270x270.png",
+            "og:description": "💃🕺 Salsa Berlin! Wir möchten allen Salsa Begeisterten einen kleinen Überblick über das Angebot in der Stadt geben. Salsa in Berlin zu tanzen steckt an!",
+            "twitter:creator": "@Hardy",
+            "article:publisher": "https://www.facebook.com/Salsa.Tanzschule.Berlin",
+            "og:image:secure_url": "https://cumbancha.de/wp-content/uploads/2023/11/Salsa-Berlin.png",
+            "twitter:image": "https://cumbancha.de/wp-content/uploads/2023/11/Salsa-Berlin.png",
+            "twitter:data1": "6 minutes",
+            "article:modified_time": "2025-07-08T09:40:34+02:00",
+            "og:type": "article",
+            "og:image:alt": "Salsa Berlin",
+            "twitter:title": "Salsa Berlin – So Tanzt Du Durch Die Hauptstadt!",
+            "og:title": "Salsa Berlin – So Tanzt Du Durch Die Hauptstadt!",
+            "og:image:height": "1080",
+            "og:updated_time": "2025-07-08T09:40:34+02:00",
+            "facebook-domain-verification": "7g752swjebmakyh8ankc0ervpyrs36",
+            "fb:app_id": "143697848984640",
+            "viewport": "width=device-width, initial-scale=1",
+            "twitter:description": "💃🕺 Salsa Berlin! Wir möchten allen Salsa Begeisterten einen kleinen Überblick über das Angebot in der Stadt geben. Salsa in Berlin zu tanzen steckt an!",
+            "og:locale": "en_US",
+            "og:url": "https://cumbancha.de/salsa-berlin-so-tanzt-du-durch-die-hauptstadt/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://cumbancha.de/wp-content/uploads/2023/11/Salsa-Berlin.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Salsa Party - RUMBA SALSERA BERLIN Tickets, Sat, Jan 4, 2025 at ...",
+      "htmlTitle": "<b>Salsa</b> Party - RUMBA SALSERA <b>BERLIN</b> Tickets, Sat, Jan 4, 2025 at ...",
+      "link": "https://www.eventbrite.de/e/salsa-party-rumba-salsera-berlin-tickets-1074250354729",
+      "displayLink": "www.eventbrite.de",
+      "snippet": "Eventbrite - ART Stalker presents Salsa Party - RUMBA SALSERA BERLIN - Saturday, January 4, 2025 at ART Stalker - Kunst + Bar + Events, Berlin, BE.",
+      "htmlSnippet": "Eventbrite - ART Stalker presents <b>Salsa</b> Party - RUMBA SALSERA <b>BERLIN</b> - Saturday, January 4, 2025 at ART Stalker - Kunst + Bar + Events, <b>Berlin</b>, BE.",
+      "formattedUrl": "https://www.eventbrite.de/.../salsa-party-rumba-salsera-berlin-tickets-10742...",
+      "htmlFormattedUrl": "https://www.eventbrite.de/.../<b>salsa</b>-party-rumba-salsera-<b>berlin</b>-tickets-10742...",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJQXw2s8Rvtup3HxQz126m9mXizLXWJpJmXfvq1l2v6fO_jEHavCPYXX8&s",
+            "width": "146",
+            "height": "200"
+          }
+        ],
+        "metatags": [
+          {
+            "og:determiner": "an",
+            "twitter:app:url:iphone": "com-eventbrite-attendee://event/1074250354729/?referrer=eiosurlxtcar&",
+            "twitter:app:id:googleplay": "com.eventbrite.attendee",
+            "og:image": "https://cdn.evbuc.com/images/892041283/116393153455/1/logo.20241105-122632",
+            "theme-color": "#f6682f",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "Eventbrite",
+            "apple-mobile-web-app-title": "Eventbrite",
+            "al:android:package": "com.eventbrite.attendee",
+            "twitter:app:name:googleplay": "Eventbrite",
+            "event:location:longitude": "13.30231",
+            "y_key": "d92e23811007b438",
+            "msapplication-tileimage": "https://cdn.evbstatic.com/s3-build/prod/1990039-rc2025-07-10_20.04-py27-339238d/django/images/favicons/mstile-144x144.png",
+            "twitter:app:id:iphone": "487922291",
+            "twitter:image": "https://cdn.evbuc.com/images/892041283/116393153455/1/logo.20241105-122632",
+            "twitter:site": "@eventbrite",
+            "application-name": "Eventbrite",
+            "msapplication-tilecolor": "#f6682f",
+            "twitter:title": "Salsa Party - RUMBA SALSERA BERLIN",
+            "og:type": "events.event",
+            "branch:deeplink:customactionparams": "{\"EventId\":\"1074250354729\"}",
+            "msvalidate.01": "A9AB07B7E430E4608E0BC57AFA5004AA",
+            "branch:deeplink:displaybranchbanner": "1",
+            "og:title": "Salsa Party - RUMBA SALSERA BERLIN",
+            "branch:deeplink:custom_action": "DisplayBranchBanner",
+            "event:start_time": "2025-01-04T19:00:00+01:00",
+            "al:android:url": "com-eventbrite-attendee://event/1074250354729/?referrer=eandurlxfbk&",
+            "twitter:app:url:googleplay": "com-eventbrite-attendee://event/1074250354729/?referrer=eandurlxtcar&",
+            "fb:app_id": "28218816837",
+            "event:end_time": "2025-01-04T22:00:00+01:00",
+            "viewport": "initial-scale=1, width=device-width",
+            "event:location:latitude": "52.509285",
+            "og:locale": "en_US",
+            "og:ttl": "777600",
+            "og:url": "https://www.eventbrite.de/e/salsa-party-rumba-salsera-berlin-tickets-1074250354729",
+            "twitter:app:name:iphone": "Eventbrite",
+            "al:android:app_name": "Eventbrite"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://cdn.evbuc.com/images/892041283/116393153455/1/logo.20241105-122632"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "HAVANNA Berlin",
+      "htmlTitle": "HAVANNA <b>Berlin</b>",
+      "link": "https://www.havanna-berlin.de/",
+      "displayLink": "www.havanna-berlin.de",
+      "snippet": "Havanna in Berlin: Salsa tanzen und Party feiern mit Black Music, R'n'B, Salsa, Merengue, Bachata, Reggaeton, Hits der 80er und 90er.",
+      "htmlSnippet": "Havanna in <b>Berlin</b>: <b>Salsa</b> tanzen und Party feiern mit Black Music, R&#39;n&#39;B, <b>Salsa</b>, Merengue, Bachata, Reggaeton, Hits der 80er und 90er.",
+      "formattedUrl": "https://www.havanna-berlin.de/",
+      "htmlFormattedUrl": "https://www.havanna-<b>berlin</b>.de/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlzf0p79RQczMUiwQoYLVFDVQL15L1wsSIABui-wcDDb6XMwmSnoybug&s",
+            "width": "180",
+            "height": "41"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "http://static1.squarespace.com/static/568d0402a128e6a4d712eadf/t/56d58ff420c6470d70421ae3/1456836597078/Logo.png?format=1500w",
+            "og:type": "website",
+            "og:image:width": "180",
+            "twitter:title": "HAVANNA Berlin",
+            "twitter:card": "summary",
+            "og:site_name": "HAVANNA Berlin",
+            "twitter:url": "https://www.havanna-berlin.de",
+            "og:title": "HAVANNA Berlin",
+            "og:image:height": "41",
+            "og:description": "Havanna in Berlin: Salsa tanzen und Party feiern mit Black Music, R’n’B, Salsa, Merengue, Bachata, Reggaeton, Hits der 80er und 90er",
+            "twitter:image": "http://static1.squarespace.com/static/568d0402a128e6a4d712eadf/t/56d58ff420c6470d70421ae3/1456836597078/Logo.png?format=1500w",
+            "referrer": "no-referrer",
+            "viewport": "width=device-width,initial-scale=1",
+            "twitter:description": "Havanna in Berlin: Salsa tanzen und Party feiern mit Black Music, R’n’B, Salsa, Merengue, Bachata, Reggaeton, Hits der 80er und 90er",
+            "og:url": "https://www.havanna-berlin.de"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "http://static1.squarespace.com/static/568d0402a128e6a4d712eadf/t/56d58ff420c6470d70421ae3/1456836597078/Logo.png?format=1500w"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Welcome — SALSA School of Analytical Sciences Adlershof",
+      "htmlTitle": "Welcome — <b>SALSA</b> School of Analytical Sciences Adlershof",
+      "link": "https://fakultaeten.hu-berlin.de/en/mnf/forschung_internationales/grs/salsa",
+      "displayLink": "fakultaeten.hu-berlin.de",
+      "snippet": "... event in the SALSA year 2022 thanks to the participation of everyone. We were ... For the Zoom link, please contact the SALSA team: salsa[at]hu-berlin.de ...",
+      "htmlSnippet": "... event in the <b>SALSA</b> year 2022 thanks to the participation of everyone. We were ... For the Zoom link, please contact the <b>SALSA</b> team: <b>salsa</b>[at]hu-<b>berlin</b>.de&nbsp;...",
+      "formattedUrl": "https://fakultaeten.hu-berlin.de/en/mnf/forschung_internationales/grs/salsa",
+      "htmlFormattedUrl": "https://fakultaeten.hu-<b>berlin</b>.de/en/mnf/forschung_internationales/grs/<b>salsa</b>",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlSrs9kJdVluc0yJfSUEey39y0_SnGwMQmRfQc4kYn-kjjK3KyCusGGsU&s",
+            "width": "310",
+            "height": "163"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://fakultaeten.hu-berlin.de/@@site-logo/og_logo.png",
+            "twitter:card": "summary",
+            "og:type": "website",
+            "og:site_name": "Fakultäten an der HU",
+            "og:title": "Welcome",
+            "dc.format": "text/html",
+            "og:image:type": "image/png",
+            "dc.date.created": "2012-09-25T11:37:12+02:00",
+            "dc.type": "Page",
+            "viewport": "width=device-width, initial-scale=1.0",
+            "dc.date.valid_range": "2012/09/25 -",
+            "dc.date.modified": "2025-06-20T10:31:42+02:00",
+            "og:url": "https://fakultaeten.hu-berlin.de/en/mnf/forschung_internationales/grs/salsa",
+            "dc.language": "en"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://fakultaeten.hu-berlin.de/@@site-logo/og_logo.png"
+          }
+        ]
+      }
+    }
+  ]
+}

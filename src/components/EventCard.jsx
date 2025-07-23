@@ -26,7 +26,7 @@ function getWeekKey(date) {
  * @param {function(number):void} props.onToggleFavorite - Callback when favorite status is toggled.
  * @returns {JSX.Element} The event card component.
  */
-function EventCard({ event, votes = [], onVote, lastVoted, isFavorite = false, onToggleFavorite }) {
+function EventCard({ event, votes = [], onVote, lastVoted, isFavorite = false, onToggleFavorite, venueVotes = [], onVenueVote, lastVenueVoted = null }) {
   const [showDetails, setShowDetails] = React.useState(false);
 
   // Calculate weekly and total vote stats
@@ -52,6 +52,13 @@ function EventCard({ event, votes = [], onVote, lastVoted, isFavorite = false, o
   const thisWeekExists = weekVotes[thisWeek]?.exists || 0;
   const thisWeekNotExists = weekVotes[thisWeek]?.notexists || 0;
   const likelyReal = totalExists > totalNotExists;
+
+  // Venue voting stats
+  const venueCounts = venueVotes.reduce((acc, v) => {
+    if (v.type === 'indoor') acc.indoor++;
+    if (v.type === 'outdoor') acc.outdoor++;
+    return acc;
+  }, { indoor: 0, outdoor: 0 });
 
   /**
    * Toggle the details section.
@@ -109,7 +116,24 @@ function EventCard({ event, votes = [], onVote, lastVoted, isFavorite = false, o
         </div>
         <div style={{ color: '#fff', opacity: 0.85, margin: '0.3em 0' }}>{event.date}</div>
         <div style={{ color: '#fff', opacity: 0.7 }}>{event.address}</div>
-        <div style={{ color: '#fff', opacity: 0.6, fontSize: '0.95em', marginBottom: '0.7em' }}>{event.source}</div>
+        {event.source && (
+          <div style={{ marginBottom: '0.7em' }}>
+            <a 
+              href={event.source} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              style={{ 
+                color: '#E92932', 
+                opacity: 0.8, 
+                fontSize: '0.95em',
+                textDecoration: 'none',
+                borderBottom: '1px solid #E92932'
+              }}
+            >
+              View Original Event
+            </a>
+          </div>
+        )}
         <button 
           style={{ 
             marginRight: '1em',
@@ -223,7 +247,7 @@ function EventCard({ event, votes = [], onVote, lastVoted, isFavorite = false, o
               </div>
             )}
             {/* Existence voting buttons */}
-            <div style={{ display: 'flex', gap: '1em', alignItems: 'center' }}>
+            <div style={{ display: 'flex', gap: '1em', alignItems: 'center', justifyContent: 'center' }}>
               <button
                 style={{ background: '#388e3c', minWidth: '120px', opacity: lastVoted === 'exists' ? 0.7 : 1 }}
                 onClick={() => handleVote('exists')}
@@ -246,6 +270,59 @@ function EventCard({ event, votes = [], onVote, lastVoted, isFavorite = false, o
             <div style={{ color: '#fff', fontSize: '0.9em', marginTop: '1em', opacity: 0.7 }}>
               Showing total votes and this week's trend
             </div>
+            {/* Venue type voting if not specified */}
+            {!event.venueType && (
+              <div style={{ marginBottom: '1.2em', color: '#fff', fontWeight: 500 }}>
+                <div style={{ marginBottom: '0.5em', textAlign: 'center' }}>What type of venue is this event?</div>
+                <div style={{ display: 'flex', gap: '1em', alignItems: 'center', justifyContent: 'center' }}>
+                  <button
+                    style={{
+                      background: '#E92932',
+                      color: '#fff',
+                      borderRadius: '999px',
+                      border: 'none',
+                      padding: '0.5em 1.2em',
+                      fontWeight: 600,
+                      fontSize: '1em',
+                      opacity: lastVenueVoted === 'indoor' ? 0.7 : 1,
+                      boxShadow: lastVenueVoted === 'indoor' ? '0 0 0 2px #fff' : undefined,
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '0.5em',
+                      cursor: 'pointer',
+                    }}
+                    onClick={() => onVenueVote && onVenueVote('indoor')}
+                  >
+                    <span role="img" aria-label="indoor">🏠</span> Indoor
+                    <span style={{ marginLeft: 6, background: '#fff', color: '#E92932', borderRadius: 8, padding: '0 8px' }}>{venueCounts.indoor}</span>
+                  </button>
+                  <button
+                    style={{
+                      background: '#388e3c',
+                      color: '#fff',
+                      borderRadius: '999px',
+                      border: 'none',
+                      padding: '0.5em 1.2em',
+                      fontWeight: 600,
+                      fontSize: '1em',
+                      opacity: lastVenueVoted === 'outdoor' ? 0.7 : 1,
+                      boxShadow: lastVenueVoted === 'outdoor' ? '0 0 0 2px #fff' : undefined,
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '0.5em',
+                      cursor: 'pointer',
+                    }}
+                    onClick={() => onVenueVote && onVenueVote('outdoor')}
+                  >
+                    <span role="img" aria-label="outdoor">🌳</span> Outdoor
+                    <span style={{ marginLeft: 6, background: '#fff', color: '#388e3c', borderRadius: 8, padding: '0 8px' }}>{venueCounts.outdoor}</span>
+                  </button>
+                </div>
+                <div style={{ color: '#fff', fontSize: '0.9em', marginTop: '0.5em', opacity: 0.7, textAlign: 'center' }}>
+                  Vote to help others know if this event is indoors or outdoors.
+                </div>
+              </div>
+            )}
           </div>
         )}
       </div>

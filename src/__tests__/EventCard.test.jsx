@@ -90,4 +90,51 @@ describe('EventCard', () => {
     expect(screen.getByLabelText('indoor')).toBeInTheDocument();
     expect(screen.queryByText(/weather warning/i)).not.toBeInTheDocument();
   });
+
+  it('shows venue type voting when venueType is not specified', () => {
+    const event = { ...baseEvent, venueType: undefined };
+    const venueVotes = [
+      { type: 'indoor', date: '2025-07-10', user_id: 'abc' },
+      { type: 'outdoor', date: '2025-07-10', user_id: 'def' },
+      { type: 'indoor', date: '2025-07-10', user_id: 'xyz' },
+    ];
+    render(
+      <EventCard
+        event={event}
+        votes={votes}
+        venueVotes={venueVotes}
+        lastVenueVoted={null}
+        onVenueVote={jest.fn()}
+      />
+    );
+    fireEvent.click(screen.getByRole('button', { name: /details/i }));
+    expect(screen.getByText('What type of venue is this event?')).toBeInTheDocument();
+    expect(screen.getByLabelText('indoor')).toBeInTheDocument();
+    expect(screen.getByLabelText('outdoor')).toBeInTheDocument();
+    expect(screen.getByText('2')).toBeInTheDocument(); // indoor count
+    expect(screen.getByText('1')).toBeInTheDocument(); // outdoor count
+  });
+
+  it('highlights user venue vote and calls onVenueVote', () => {
+    const event = { ...baseEvent, venueType: undefined };
+    const venueVotes = [
+      { type: 'indoor', date: '2025-07-10', user_id: 'abc' },
+      { type: 'outdoor', date: '2025-07-10', user_id: 'def' },
+    ];
+    const onVenueVote = jest.fn();
+    render(
+      <EventCard
+        event={event}
+        votes={votes}
+        venueVotes={venueVotes}
+        lastVenueVoted={'indoor'}
+        onVenueVote={onVenueVote}
+      />
+    );
+    fireEvent.click(screen.getByRole('button', { name: /details/i }));
+    const indoorBtn = screen.getByRole('button', { name: /indoor/i });
+    expect(indoorBtn).toHaveStyle('opacity: 0.7');
+    fireEvent.click(screen.getByRole('button', { name: /outdoor/i }));
+    expect(onVenueVote).toHaveBeenCalledWith('outdoor');
+  });
 });

@@ -50,6 +50,21 @@ button:hover {
   background: var(--color-label-selected);
 }
 
+/* Spinner animation for loading indicator in the search button */
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+.spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #fff;
+  border-top: 3px solid #E92932;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  vertical-align: middle;
+}
+
 /* Responsive styles for mobile and tablet */
 @media (max-width: 900px) {
   form {

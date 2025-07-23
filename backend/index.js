@@ -6,6 +6,7 @@ const express = require('express');
 const cors = require('cors');
 const rateLimit = require('express-rate-limit');
 const { pool, initDb, voteEvent } = require('./db.cjs');
+const { collectSalsaEvents } = require('./scraper');
 
 const app = express();
 const PORT = process.env.PORT || 4000;
@@ -34,9 +35,10 @@ app.get('/api/health', (req, res) => {
  */
 app.get('/api/events', async (req, res) => {
   try {
-    const result = await pool.query('SELECT *, venuetype AS "venueType" FROM events ORDER BY date ASC');
+    const result = await pool.query('SELECT *, venue_type AS "venueType" FROM events ORDER BY date ASC');
     res.json(result.rows);
   } catch (err) {
+    console.error('Error fetching events:', err);
     res.status(500).json({ error: err.message });
   }
 });
@@ -131,6 +133,34 @@ app.get('/api/venue-votes', async (req, res) => {
   }
 });
 
+/**
+ * GET /api/scrape-events?city=CityName&date=YYYY-MM-DD&styles=...
+ * Triggers Google search, scraping, and LLM extraction for new events.
+ * Returns status only (results are fetched from DB).
+ */
+app.get('/api/scrape-events', async (req, res) => {
+  const { city, date } = req.query;
+  if (!city || typeof city !== 'string') {
+    return res.status(400).json({ error: 'City is required' });
+  }
+  let weekday = '';
+  if (date) {
+    try {
+      const d = new Date(date);
+      const weekdays = ['Sonntag','Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag'];
+      weekday = weekdays[d.getDay()];
+    } catch {}
+  }
+  try {
+    const status = { steps: [] };
+    // Wrap collectSalsaEvents to collect stepwise status
+    await require('./scraper').collectSalsaEvents(city, date, weekday, status);
+    res.json({ status });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 // Rate limiting: 100 requests per 15 minutes per IP
 const apiLimiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
@@ -141,8 +171,8 @@ const apiLimiter = rateLimit({
 app.use('/api/', apiLimiter);
 
 if (require.main === module) {
-  app.listen(PORT, () => {
-    console.log(`Salsa Event Finder backend running on port ${PORT}`);
+  app.listen(PORT, '127.0.0.1', () => {
+    console.log(`Salsa Event Finder backend running on http://127.0.0.1:${PORT}`);
   });
 }
 

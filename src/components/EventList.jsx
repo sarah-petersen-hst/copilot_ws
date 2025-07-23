@@ -14,7 +14,7 @@ import '../styles/theme.css';
  * @param {string} [props.headline='Found Events'] - Headline for the event list section.
  * @returns {JSX.Element} The event list component.
  */
-function EventList({ events, votesByEvent = {}, onVote, lastVotedByEvent = {}, favoriteEventIds = [], onToggleFavorite, headline = "Found Events" }) {
+function EventList({ events, votesByEvent = {}, onVote, lastVotedByEvent = {}, favoriteEventIds = [], onToggleFavorite, headline = "Found Events", venueVotesByEvent = {}, lastVenueVotedByEvent = {}, onVenueVote }) {
   // Renders a list of EventCard components for each event.
   return (
     <section style={{
@@ -39,6 +39,9 @@ function EventList({ events, votesByEvent = {}, onVote, lastVotedByEvent = {}, f
             lastVoted={lastVotedByEvent[event.id] || null}
             isFavorite={favoriteEventIds.includes(event.id)}
             onToggleFavorite={onToggleFavorite}
+            venueVotes={venueVotesByEvent[event.id] || []}
+            onVenueVote={type => onVenueVote(event.id, type)}
+            lastVenueVoted={lastVenueVotedByEvent[event.id] || null}
           />
         ))
       )}
