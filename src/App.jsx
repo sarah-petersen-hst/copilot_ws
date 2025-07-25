@@ -22,8 +22,6 @@ function App() {
   const [favoriteEventIds, setFavoriteEventIds] = useState([]);
   const [loading, setLoading] = useState(true);
   const [page, setPage] = useState('find'); // 'find' or 'saved'
-  // Add notification state for scraper status
-  const [scraperStatus, setScraperStatus] = useState(null);
 
   // Load favorites from localStorage on component mount
   useEffect(() => {
@@ -162,7 +160,6 @@ function App() {
    */
   async function handleSearch({ city, date, styles }) {
     setLoading(true);
-    setScraperStatus(null);
     try {
       // Build query params
       const params = new URLSearchParams();
@@ -176,20 +173,13 @@ function App() {
       setEvents(data);
       // 2. Trigger scraping for new events
       url = `http://localhost:4000/api/scrape-events?${params.toString()}`;
-      const scrapeRes = await fetch(url);
-      const scrapeJson = await scrapeRes.json();
-      if (scrapeJson.status && scrapeJson.status.steps) {
-        setScraperStatus(scrapeJson.status.steps.map(s => `${s.step}: ${typeof s.message === 'object' ? JSON.stringify(s.message) : s.message}`).join('\n'));
-      } else {
-        setScraperStatus(scrapeJson.status || 'Scraper triggered');
-      }
+      await fetch(url);
       // 3. Fetch again to get any new events
       res = await fetch(`http://localhost:4000/api/events/search?${params.toString()}`);
       data = await res.json();
       setEvents(data);
     } catch {
       setEvents([]);
-      setScraperStatus('Fehler beim Abrufen oder Scrapen der Events.');
     }
     setLoading(false);
   }
@@ -201,9 +191,6 @@ function App() {
       {page === 'find' && (
         <>
           <FilterBar onSearch={handleSearch} loading={loading} />
-          {scraperStatus && (
-            <div style={{ color: '#ffb347', textAlign: 'center', marginTop: '1em' }}>{scraperStatus}</div>
-          )}
           {loading ? (
             <div style={{ color: '#fff', textAlign: 'center', marginTop: '2em' }}>Loading events...</div>
           ) : (

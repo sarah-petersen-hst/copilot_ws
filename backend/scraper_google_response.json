@@ -7,9 +7,9 @@
   "queries": {
     "request": [
       {
-        "title": "Google Custom Search - Salsa Veranstaltung Dienstag München site:.de",
-        "totalResults": "157000",
-        "searchTerms": "Salsa Veranstaltung Dienstag München site:.de",
+        "title": "Google Custom Search - Salsa Veranstaltung Kizomba Freitag Darmstadt site:.de",
+        "totalResults": "735",
+        "searchTerms": "Salsa Veranstaltung Kizomba Freitag Darmstadt site:.de",
         "count": 10,
         "startIndex": 1,
         "inputEncoding": "utf8",
@@ -21,9 +21,9 @@
     ],
     "nextPage": [
       {
-        "title": "Google Custom Search - Salsa Veranstaltung Dienstag München site:.de",
-        "totalResults": "157000",
-        "searchTerms": "Salsa Veranstaltung Dienstag München site:.de",
+        "title": "Google Custom Search - Salsa Veranstaltung Kizomba Freitag Darmstadt site:.de",
+        "totalResults": "735",
+        "searchTerms": "Salsa Veranstaltung Kizomba Freitag Darmstadt site:.de",
         "count": 10,
         "startIndex": 11,
         "inputEncoding": "utf8",
@@ -38,72 +38,73 @@
     "title": "Latindance Event Searchengine"
   },
   "searchInformation": {
-    "searchTime": 0.303542,
-    "formattedSearchTime": "0.30",
-    "totalResults": "157000",
-    "formattedTotalResults": "157,000"
+    "searchTime": 0.204959,
+    "formattedSearchTime": "0.20",
+    "totalResults": "735",
+    "formattedTotalResults": "735"
   },
   "items": [
     {
       "kind": "customsearch#result",
-      "title": "Salsa in München: Clubs, Tanzschulen, Events - |salsa-staedte|",
-      "htmlTitle": "<b>Salsa</b> in <b>München</b>: Clubs, Tanzschulen, Events - |<b>salsa</b>-staedte|",
-      "link": "https://www.salsalemania.de/salsa-in-muenchen/",
+      "title": "Salsa in Darmstadt: Clubs, Tanzschulen, Events - |salsa-staedte|",
+      "htmlTitle": "<b>Salsa</b> in <b>Darmstadt</b>: Clubs, Tanzschulen, Events - |<b>salsa</b>-staedte|",
+      "link": "https://www.salsalemania.de/salsa-in-darmstadt/",
       "displayLink": "www.salsalemania.de",
-      "snippet": "Alles über Salsa in München: Clubs, Tanzschulen, Partys und Salsa Tanzpartner in München. ... jeden Dienstag ab 20:00 Uhr, Legenday Salsa Social Dance Party @ ...",
-      "htmlSnippet": "Alles über <b>Salsa</b> in <b>München</b>: Clubs, Tanzschulen, Partys und <b>Salsa</b> Tanzpartner in <b>München</b>. ... jeden <b>Dienstag</b> ab 20:00 Uhr, Legenday <b>Salsa</b> Social Dance Party @&nbsp;...",
-      "formattedUrl": "https://www.salsalemania.de/salsa-in-muenchen/",
-      "htmlFormattedUrl": "https://www.<b>salsa</b>lemania.de/<b>salsa</b>-in-muenchen/",
+      "snippet": "Genau heute abend gibt es mehrere Gelegenheiten, Salsa in Darmstadt zu tanzen oder bei einem Salsa-Konzert dabeizusein! Salsa Partys und Events am Freitag, ...",
+      "htmlSnippet": "Genau heute abend gibt es mehrere Gelegenheiten, <b>Salsa</b> in <b>Darmstadt</b> zu tanzen oder bei einem <b>Salsa</b>-<b>Konzert</b> dabeizusein! <b>Salsa</b> Partys und Events am <b>Freitag</b>,&nbsp;...",
+      "formattedUrl": "https://www.salsalemania.de/salsa-in-darmstadt/",
+      "htmlFormattedUrl": "https://www.<b>salsa</b>lemania.de/<b>salsa</b>-in-<b>darmstadt</b>/",
       "pagemap": {
+        "offer": [
+          {
+            "pricecurrency": "EUR",
+            "price": "7.00",
+            "name": "Eintritt",
+            "url": "https://www.salsalemania.de/salsa-partys/?ID=after-work-salsa-party-darmstadt"
+          }
+        ],
         "nightclub": [
           {
-            "image": "https://www.salsalemania.de/salsa-clubs/muenchen/salsaclub-munich/salsa-club-munich_sm.png",
-            "name": "Salsa Beats @ Salsa Club Munich",
-            "description": "Salsa Beats<br> Unsere traditionelle Salsa und Bachata Party. Ab 21:00 Uhr tolle Musik für alle Tanzstile und mit Guest Djs: Salsa, Bachata, Mambo, Guaguanco, Charanga, Cha Cha Cha 150 qm..."
+            "image": "https://www.salsalemania.de/salsa-clubs/darmstadt/salon-latino/Salon-Latino-Club_small.jpg",
+            "name": "Salon Latino",
+            "description": "Machen Kurse MI-FR-SA und anschliessend Salsa Party oder Latin Party. Einfach auf Homepage schauen."
           },
           {
-            "image": "https://www.salsalemania.de/salsa-clubs/muenchen/circulo/circulo_small.png",
-            "name": "Circulo",
-            "description": "Dienstags: Salsa-Party (1 Area)<br><br> Samstags: 3 Area Latin Party <br><br> Wir zelebrieren einen in München einmaligen Party Samstag! <br><br> Area 1: Salsa Cubana Party - mit bester Musik..."
-          },
-          {
-            "image": "https://www.salsalemania.de/salsa-clubs/muenchen/salsea/legendary-dance-party_small.jpg",
-            "name": "Legenday Salsa Social Dance Party @ Salsea",
-            "description": "Ein aufregender Abend voller Tanz und Musik Musik AUF 2 Areas (Salsa Area, Bachata Area) mit unseren DJS, der die besten Salsa, Mambo, Son und Bachata Hits auflegen.<br> <br> Kostenlose Schnupperku..."
-          },
-          {
-            "image": "https://www.salsalemania.de/salsa-clubs/muenchen/megano/megano_small.png",
-            "name": "Megano Tanzschule",
-            "description": "Die Salsa Tanzschule von Joycce in Obersendling für Salsa Cubana, Timba, Rumba, Son, Afro!"
+            "image": "https://www.salsalemania.de/salsa-clubs/darmstadt/latin-club/latin-club-darmstadt_small.jpg",
+            "name": "Latin Club"
           }
         ],
         "cse_thumbnail": [
           {
-            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGbPoffa4c83Vfo4e1hJf32DjZ_Cf-KPMHJmZL2Nde4f0kSKOTsh6hIQOP&s",
-            "width": "132",
-            "height": "166"
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoS1pwITWwh-HnWoW60goY2wsNixEQyUZ5UW1nuG8lgl_omx2ZBpurww4&s",
+            "width": "110",
+            "height": "165"
           }
         ],
         "postaladdress": [
           {
-            "addresslocality": "München",
-            "postalcode": "80331",
-            "streetaddress": "Westenrieder Str 41 /Tal 32 ( Passage)"
+            "addresslocality": "Darmstadt",
+            "postalcode": "64283",
+            "name": "Goldene Krone",
+            "streetaddress": "Schustergasse 18"
           },
           {
-            "addresslocality": "München",
-            "postalcode": "81671",
-            "streetaddress": "Rosenheimer Straße 139"
+            "addresslocality": "Darmstadt",
+            "postalcode": "64295",
+            "streetaddress": "Rheinstraße 99"
           },
           {
-            "addresslocality": "München",
-            "postalcode": "80798",
-            "streetaddress": "Heßstr. 48b"
-          },
+            "addresslocality": "Darmstadt",
+            "postalcode": "64293",
+            "streetaddress": "Dornheimerweg 79"
+          }
+        ],
+        "hcalendar": [
           {
-            "addresslocality": "München",
-            "postalcode": "81379",
-            "streetaddress": "Geretsriederstr. 6"
+            "summary": "Salsa-Party: After Work Salsa Party",
+            "photo": "https://www.salsalemania.de/salsa-partys/after-work-goldene-krone.jpg",
+            "dtstart": "2025-07-29",
+            "url": "https://www.salsalemania.de/salsa-partys/?ID=after-work-salsa-party-darmstadt"
           }
         ],
         "metatags": [
@@ -112,443 +113,93 @@
             "author": "salsalemania.de"
           }
         ],
-        "cse_image": [
+        "place": [
           {
-            "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/DEU_M%C3%BCnchen_COA.svg/132px-DEU_M%C3%BCnchen_COA.svg.png"
-          }
-        ]
-      }
-    },
-    {
-      "kind": "customsearch#result",
-      "title": "Megano Tanzschule: Salsa Tanzschule München",
-      "htmlTitle": "Megano Tanzschule: <b>Salsa</b> Tanzschule <b>München</b>",
-      "link": "https://megano-tanzschule.de/",
-      "displayLink": "megano-tanzschule.de",
-      "snippet": "Events. Dienstag. SALSA PARTY. Kleine Party! Für alle Megano Schüler, die ... Am Samstagabend findet unsere große kubanische Salsa Übungsparty statt. Das ...",
-      "htmlSnippet": "Events. <b>Dienstag</b>. <b>SALSA</b> PARTY. Kleine Party! Für alle Megano Schüler, die ... Am Samstagabend findet unsere große kubanische <b>Salsa</b> Übungsparty statt. Das&nbsp;...",
-      "formattedUrl": "https://megano-tanzschule.de/",
-      "htmlFormattedUrl": "https://megano-tanzschule.de/",
-      "pagemap": {
-        "metatags": [
-          {
-            "og:type": "website",
-            "viewport": "width=device-width, initial-scale=1.0",
-            "og:title": "Salsa Tanzschule München",
-            "og:url": "https://megano-tanzschule.de/",
-            "og:description": "DIE Tanzschule in Obersendling für kubanische Tänze - Salsa, Son, Rumba, Afro. Wo Tanzen Leidenschaft ist. Kostenfreie Schnupperkurse bei der Samstagsparty.salsa tanzschule münchen kubanische salsa casino son rumba salsa tanzschule rueda de casino rumba timba"
-          }
-        ]
-      }
-    },
-    {
-      "kind": "customsearch#result",
-      "title": "SALSA CLUB MUNICH - Salsa und Bachata in München by HAKAN",
-      "htmlTitle": "<b>SALSA</b> CLUB MUNICH - <b>Salsa</b> und Bachata in <b>München</b> by HAKAN",
-      "link": "https://salsaclub-munich.de/",
-      "displayLink": "salsaclub-munich.de",
-      "snippet": "Salsa in München bei Salsa Club München - Salsakurse, Salsa-Workshops, Tanzkurse, Kurse, Bachata, Salsakurs München, Salsa on 2, Mambo, Privatstunden in ...",
-      "htmlSnippet": "<b>Salsa</b> in <b>München</b> bei <b>Salsa</b> Club <b>München</b> - Salsakurse, <b>Salsa</b>-Workshops, Tanzkurse, Kurse, Bachata, Salsakurs <b>München</b>, <b>Salsa</b> on 2, Mambo, Privatstunden in&nbsp;...",
-      "formattedUrl": "https://salsaclub-munich.de/",
-      "htmlFormattedUrl": "https://<b>salsa</b>club-munich.de/",
-      "pagemap": {
-        "cse_thumbnail": [
-          {
-            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQExF6zei1mkZ_03Ipeaxx44_R2WMeyditAf49ufQVD_nMthsqdiqA4qf-s&s",
-            "width": "206",
-            "height": "244"
-          }
-        ],
-        "metatags": [
-          {
-            "msapplication-tilecolor": "#ffffff",
-            "og:image": "/img/favicon/apple-icon.png",
-            "msapplication-square70x70logo": "/img/favicon/win8-tile-70x70.png",
-            "theme-color": "#ffffff",
-            "og:type": "website",
-            "twitter:card": "summary",
-            "msapplication-square144x144logo": "/img/favicon/win8-tile-144x144.png",
-            "og:title": "SALSA CLUB MUNICH - Salsa und Bachata in München by HAKAN",
-            "msapplication-wide310x150logo": "/img/favicon/win8-tile-310x150.png",
-            "msapplication-tileimage": "/img/favicon/win8-tile-144x144.png",
-            "msapplication-navbutton-color": "#ffffff",
-            "msapplication-square150x150logo": "/img/favicon/win8-tile-150x150.png",
-            "og:description": "SALSA CLUB MUNICH - Salsa und Bachata in München by HAKAN",
-            "facebook-domain-verification": "6gk2bmplxw46s6t5foztyhzm0zoqgu",
-            "viewport": "width=device-width, initial-scale=1",
-            "msapplication-square310x310logo": "/img/favicon/win8-tile-310x310.png",
-            "twitter:description": "SALSA CLUB MUNICH - Salsa und Bachata in München by HAKAN",
-            "og:url": "https://www.salsaclub-munich.de/"
+            "name": "Goldene Krone",
+            "url": "https://maps.app.goo.gl/bKf4Zy1A7NyAic6x5"
           }
         ],
         "cse_image": [
           {
-            "src": "https://salsaclub-munich.de/img/heroVideo.jpg"
+            "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Wappen_Darmstadt.png/110px-Wappen_Darmstadt.png"
+          }
+        ],
+        "event": [
+          {
+            "summary": "Salsa-Party: After Work Salsa Party",
+            "location": "Darmstadt",
+            "dtstart": "2025-07-29",
+            "url": "https://www.salsalemania.de/salsa-partys/?ID=after-work-salsa-party-darmstadt"
+          }
+        ],
+        "danceevent": [
+          {
+            "image": "https://www.salsalemania.de/salsa-partys/after-work-goldene-krone.jpg",
+            "name": "Salsa-Party: After Work Salsa Party",
+            "startdate": "2025-07-29",
+            "url": "Salsa-Party: After Work Salsa Party"
           }
         ]
       }
     },
     {
       "kind": "customsearch#result",
-      "title": "Veranstaltung Salsa Roja - Tollwood München: Veranstaltungen ...",
-      "htmlTitle": "<b>Veranstaltung Salsa</b> Roja - Tollwood <b>München</b>: <b>Veranstaltungen</b> ...",
-      "link": "https://www.tollwood.de/en/veranstaltungen/2025/salsa-roja/",
-      "displayLink": "www.tollwood.de",
-      "snippet": "26.06.2025 ... Andechser Zelt | Fiery salsa classics with Salsa Roja on Thursday, June 26 at the Tollwood Summer Festival 2025. Free admission!",
-      "htmlSnippet": "26.06.2025 <b>...</b> Andechser Zelt | Fiery <b>salsa</b> classics with <b>Salsa</b> Roja on Thursday, June 26 at the Tollwood Summer Festival 2025. Free admission!",
-      "formattedUrl": "https://www.tollwood.de/en/veranstaltungen/2025/salsa-roja/",
-      "htmlFormattedUrl": "https://www.tollwood.de/en/<b>veranstaltung</b>en/2025/<b>salsa</b>-roja/",
+      "title": "Salsa & Kizomba Afterwork Party (2 Floors) | Partyamt.de ...",
+      "htmlTitle": "<b>Salsa</b> &amp; <b>Kizomba</b> Afterwork Party (2 Floors) | Partyamt.de ...",
+      "link": "https://www.partyamt.de/index.php?action=single&id=112784&date=",
+      "displayLink": "www.partyamt.de",
+      "snippet": "Location: Level 6. Kasinostraße 60 64293 Darmstadt. Location auf der Karte anzeigen. Weitere Events mit diesem Titel, in dieser Location, an diesem Datum ...",
+      "htmlSnippet": "Location: Level 6. Kasinostraße 60 64293 <b>Darmstadt</b>. Location auf der Karte anzeigen. Weitere Events mit diesem Titel, in dieser Location, an diesem Datum&nbsp;...",
+      "formattedUrl": "https://www.partyamt.de/index.php?action=single&id=112784&date=",
+      "htmlFormattedUrl": "https://www.partyamt.de/index.php?action=single&amp;id=112784&amp;date=",
       "pagemap": {
-        "cse_thumbnail": [
-          {
-            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjgPP8p42-fJt7U4PgAznXgLrUr11L1nHlqy-paemCVsw3V6BAmic41cBn&s",
-            "width": "300",
-            "height": "168"
-          }
-        ],
         "metatags": [
           {
-            "msapplication-tilecolor": "#da532c",
-            "og:image": "https://www.tollwood.de/wp-content/uploads/2025/04/06-26-andechser-zelt-tollwood-salsaroja-c-salsaroja.jpg",
-            "msapplication-config": "https://www.tollwood.de/wp-content/themes/ContexLabs/assets/favicon/browserconfig.xml",
-            "og:type": "article",
-            "og:image:width": "1280",
-            "twitter:card": "summary_large_image",
-            "theme-color": "#fd4638",
-            "og:site_name": "Tollwood München: Veranstaltungen, Konzerte, Theater, Markt",
-            "og:title": "Veranstaltung Salsa Roja - Tollwood München: Veranstaltungen, Konzerte, Theater, Markt",
-            "og:image:height": "720",
-            "og:image:type": "image/jpeg",
-            "msapplication-tileimage": "https://www.tollwood.de/wp-content/themes/ContexLabs/assets/favicon/mstile-144x144.png",
-            "og:description": "Andechser Zelt | Fiery salsa classics with Salsa Roja on Thursday, June 26 at the Tollwood Summer Festival 2025. Free admission!",
-            "article:publisher": "https://www.facebook.com/Tollwood/",
-            "twitter:site": "@Tollwoodmunich",
-            "article:modified_time": "2025-04-29T09:28:30+00:00",
-            "viewport": "width=device-width, initial-scale=1",
-            "og:locale": "en_US",
-            "og:url": "https://www.tollwood.de/en/veranstaltungen/2025/salsa-roja/"
-          }
-        ],
-        "cse_image": [
-          {
-            "src": "https://www.tollwood.de/wp-content/uploads/2025/04/06-26-andechser-zelt-tollwood-salsaroja-c-salsaroja.jpg"
+            "viewport": "width=device-width; initial-scale=1.0"
           }
         ]
       }
     },
     {
       "kind": "customsearch#result",
-      "title": "Events - München",
-      "htmlTitle": "Events - <b>München</b>",
-      "link": "https://salsaclub-munich.de/events.php",
-      "displayLink": "salsaclub-munich.de",
-      "snippet": "Anastasia Susi und Siempre Salsa e.V.. >> zur Anmeldung. Salsa Beats Social | Donnerstags. start - 21:00 Uhr Unser traditioneller Salsa und Bachata Party.",
-      "htmlSnippet": "Anastasia Susi und Siempre <b>Salsa</b> e.V.. &gt;&gt; zur Anmeldung. <b>Salsa</b> Beats Social | Donnerstags. start - 21:00 Uhr Unser traditioneller <b>Salsa</b> und Bachata Party.",
-      "formattedUrl": "https://salsaclub-munich.de/events.php",
-      "htmlFormattedUrl": "https://<b>salsa</b>club-munich.de/events.php",
+      "title": "Home Salon-Latino Darmstadt",
+      "htmlTitle": "Home Salon-Latino <b>Darmstadt</b>",
+      "link": "https://www.salon-latino.de/",
+      "displayLink": "www.salon-latino.de",
+      "snippet": "Tanzschule & Dance Club für Salsa, Bachata, Cha-Cha-Cha, Reggaeton und viel mehr könnt ihr im karibischen Ambiente bei uns genießen.",
+      "htmlSnippet": "Tanzschule &amp; Dance Club für <b>Salsa</b>, <b>Bachata</b>, Cha-Cha-Cha, Reggaeton und viel mehr könnt ihr im karibischen Ambiente bei uns genießen.",
+      "formattedUrl": "https://www.salon-latino.de/",
+      "htmlFormattedUrl": "https://www.salon-latino.de/",
       "pagemap": {
-        "cse_thumbnail": [
-          {
-            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTHb6gGN0buWaz2fwPKNMCq1Rz61hjRHa8btBGAjK78NSWtNzSvWvWUFs&s",
-            "width": "192",
-            "height": "192"
-          }
-        ],
         "metatags": [
           {
-            "msapplication-tilecolor": "#ffffff",
-            "og:image": "/img/favicon/apple-icon.png",
-            "msapplication-square70x70logo": "/img/favicon/win8-tile-70x70.png",
-            "theme-color": "#ffffff",
-            "og:type": "website",
-            "twitter:card": "summary",
-            "msapplication-square144x144logo": "/img/favicon/win8-tile-144x144.png",
-            "og:title": "Events",
-            "msapplication-wide310x150logo": "/img/favicon/win8-tile-310x150.png",
-            "msapplication-tileimage": "/img/favicon/win8-tile-144x144.png",
-            "msapplication-navbutton-color": "#ffffff",
-            "msapplication-square150x150logo": "/img/favicon/win8-tile-150x150.png",
-            "og:description": "Events",
-            "facebook-domain-verification": "6gk2bmplxw46s6t5foztyhzm0zoqgu",
-            "viewport": "width=device-width, initial-scale=1",
-            "msapplication-square310x310logo": "/img/favicon/win8-tile-310x310.png",
-            "twitter:description": "Events",
-            "og:url": "https://www.salsaclub-munich.de/"
-          }
-        ],
-        "cse_image": [
-          {
-            "src": "https://salsaclub-munich.de/img/favicon/apple-icon.png"
+            "zipcode": "64295",
+            "country": "Germany",
+            "copyright": "JCC",
+            "geo.region": "DE-Hessen",
+            "viewport": "width=device-width, minimum-scale=1.0, initial-scale=1.0",
+            "city": "Darmstadt",
+            "og:title": "SALON-LATINO.de dance,tanzen, baila, Salsa, Mambo, Bachata im Salon-Latino Darmstadt",
+            "og:description": "Tanzschule & Dance Club für Salsa, Bachata, Cha-Cha-Cha, Reggaeton und viel mehr könnt ihr im karibischen Ambiente bei uns genießen. Ein Stück Lateinamerika im Salon Latino Darmstadt.",
+            "geo.placename": "Darmstadt"
           }
         ]
       }
     },
     {
       "kind": "customsearch#result",
-      "title": "wöchentlich | München Salsa",
-      "htmlTitle": "wöchentlich | <b>München Salsa</b>",
-      "link": "https://www.msalsa.de/taxonomy/term/36",
-      "displayLink": "www.msalsa.de",
-      "snippet": "München ,. Wir freuen uns, euch zu der wöchentlichen Salsa & Bachata Party einzuladen, die bereits seit 2003 jeden Dienstag in unserer Location stattfindet!",
-      "htmlSnippet": "<b>München</b> ,. Wir freuen uns, euch zu der wöchentlichen <b>Salsa</b> &amp; Bachata Party einzuladen, die bereits seit 2003 jeden <b>Dienstag</b> in unserer Location stattfindet!",
-      "formattedUrl": "https://www.msalsa.de/taxonomy/term/36",
-      "htmlFormattedUrl": "https://www.m<b>salsa</b>.de/taxonomy/term/36",
-      "pagemap": {
-        "hcard": [
-          {
-            "fn": "Salsea",
-            "nickname": "Salsea"
-          },
-          {
-            "fn": "Salsea",
-            "nickname": "Salsea"
-          },
-          {
-            "fn": "Mint Club"
-          },
-          {
-            "fn": "Mint Club"
-          },
-          {
-            "fn": "Megano",
-            "nickname": "Megano"
-          },
-          {
-            "fn": "Megano",
-            "nickname": "Megano"
-          },
-          {
-            "fn": "Salsamas Pasing"
-          },
-          {
-            "fn": "Salsamas Pasing"
-          },
-          {
-            "fn": "OnStage",
-            "nickname": "OnStage"
-          },
-          {
-            "fn": "OnStage",
-            "nickname": "OnStage"
-          }
-        ],
-        "Concept": [
-          {
-            "prefLabel": "wöchentlich",
-            "label": "wöchentlich"
-          }
-        ],
-        "cse_thumbnail": [
-          {
-            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg0bw-1tw0B2NpMSfxIT2jOd4NNBR2kOBVh-AzqteHwG1MGuU74dJBveY&s",
-            "width": "191",
-            "height": "130"
-          }
-        ],
-        "Item": [
-          {
-            "num_replies": "0"
-          },
-          {
-            "num_replies": "0"
-          },
-          {
-            "num_replies": "0",
-            "title": "Legenday Salsa Social Dance Party",
-            "encoded": "Wir freuen uns, euch zu der wöchentlichen Salsa & Bachata Party einzuladen, die bereits seit 2003 jeden Dienstag in unserer Location stattfindet! Seid Teil dieser lebendigen Tradition und..."
-          },
-          {
-            "num_replies": "0",
-            "title": "SALSEA Montags Party",
-            "encoded": "SALSEA Montagsparty: Salsa, Timba, Son, und Bachata Ort: Mint Club - Leopoldstr. 25. 80802 München Preis: 10€ Studenten: 8 € (inkl. Schnupperkurs) Abendkasse und Vorverkauf"
-          },
-          {
-            "num_replies": "0",
-            "title": "Salsa & Bachata - All Styles",
-            "encoded": "ab 21:00 Uhr Mit DJ MEL﻿﻿ ﻿ Programm • Inkl. Schnupperkurs: 21:00 - 21:30 • Party ab 21:30﻿﻿ Eintrittspreis • Regulär: 10 €"
-          }
-        ],
-        "person": [
-          {
-            "location": "München"
-          }
-        ],
-        "postaladdress": [
-          {
-            "addresslocality": "München",
-            "name": "Salsea",
-            "addresscountry": "Deutschland",
-            "streetaddress": "Heßstr. 48B"
-          },
-          {
-            "addresslocality": "München",
-            "name": "Salsea",
-            "streetaddress": "Heßstr. 48B"
-          },
-          {
-            "addresslocality": "München",
-            "name": "Mint Club",
-            "addresscountry": "Deutschland",
-            "streetaddress": "Leopoldstr. 25"
-          },
-          {
-            "addresslocality": "München",
-            "name": "Mint Club",
-            "streetaddress": "Leopoldstr. 25"
-          },
-          {
-            "addresslocality": "München",
-            "name": "Megano",
-            "addresscountry": "Deutschland",
-            "streetaddress": "Geretsrieder Str. 6"
-          },
-          {
-            "addresslocality": "München",
-            "name": "Megano",
-            "streetaddress": "Geretsrieder Str. 6"
-          },
-          {
-            "addresslocality": "München Pasing",
-            "name": "Salsamas Pasing",
-            "addresscountry": "Deutschland",
-            "streetaddress": "Am Schützeneck 3"
-          },
-          {
-            "addresslocality": "München Pasing",
-            "name": "Salsamas Pasing",
-            "streetaddress": "Am Schützeneck 3"
-          },
-          {
-            "addresslocality": "München",
-            "name": "OnStage",
-            "addresscountry": "Deutschland",
-            "streetaddress": "Neumarkter Str. 71"
-          },
-          {
-            "addresslocality": "München",
-            "name": "OnStage",
-            "streetaddress": "Neumarkter Str. 71"
-          },
-          {
-            "addresslocality": "München",
-            "name": "Salsa Club Munich",
-            "addresscountry": "Deutschland",
-            "streetaddress": "Westenrieder Str 41"
-          },
-          {
-            "addresslocality": "München",
-            "name": "Salsa Club Munich",
-            "streetaddress": "Westenrieder Str 41"
-          },
-          {
-            "addresslocality": "München",
-            "name": "NachtKantine",
-            "addresscountry": "Deutschland",
-            "streetaddress": "Grafingerstr.6"
-          },
-          {
-            "addresslocality": "München",
-            "name": "NachtKantine",
-            "streetaddress": "Grafingerstr.6"
-          },
-          {
-            "addresslocality": "München",
-            "name": "Mint Club",
-            "addresscountry": "Deutschland",
-            "streetaddress": "Leopoldstraße 25"
-          },
-          {
-            "addresslocality": "München",
-            "name": "Mint Club",
-            "streetaddress": "Leopoldstraße 25"
-          }
-        ],
-        "metatags": [
-          {
-            "og:type": "article",
-            "og:site_name": "MSalsa - München Salsa",
-            "handheldfriendly": "true",
-            "dcterms.type": "Text",
-            "og:title": "wöchentlich",
-            "dcterms.title": "wöchentlich",
-            "rdfs:label skos:preflabel": "wöchentlich",
-            "viewport": "width=device-width, initial-scale=1",
-            "apple-mobile-web-app-capable": "yes",
-            "mobileoptimized": "width",
-            "dcterms.format": "text/html",
-            "og:url": "https://www.msalsa.de/taxonomy/term/36",
-            "dcterms.identifier": "https://www.msalsa.de/taxonomy/term/36"
-          }
-        ],
-        "cse_image": [
-          {
-            "src": "https://www.msalsa.de/sites/default/files/logo.jpg"
-          }
-        ]
-      }
-    },
-    {
-      "kind": "customsearch#result",
-      "title": "Veranstaltung Salsa Thursday - Tollwood München ...",
-      "htmlTitle": "<b>Veranstaltung Salsa</b> Thursday - Tollwood <b>München</b> ...",
-      "link": "https://www.tollwood.de/en/veranstaltungen/2025/salsa-thursday-4/",
-      "displayLink": "www.tollwood.de",
-      "snippet": "The legendary salsa party every Thursday with Marion Morena and DJ Daniel. Visitors learn the basic steps to the respective dances.",
-      "htmlSnippet": "The legendary <b>salsa</b> party every Thursday with Marion Morena and DJ Daniel. Visitors learn the basic steps to the respective dances.",
-      "formattedUrl": "https://www.tollwood.de/en/veranstaltungen/2025/salsa-thursday-4/",
-      "htmlFormattedUrl": "https://www.tollwood.de/en/<b>veranstaltung</b>en/2025/<b>salsa</b>-thursday-4/",
-      "pagemap": {
-        "cse_thumbnail": [
-          {
-            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ9ZskQwOudN2_684U6AQCS9Mf_tezsszyuv1vuLbR9JSbQJHu6s9J8U4&s",
-            "width": "300",
-            "height": "168"
-          }
-        ],
-        "metatags": [
-          {
-            "msapplication-tilecolor": "#da532c",
-            "og:image": "https://www.tollwood.de/wp-content/uploads/2024/04/salsa-thursday-half-moon-bar-c-alexander-scharf.jpg",
-            "msapplication-config": "https://www.tollwood.de/wp-content/themes/ContexLabs/assets/favicon/browserconfig.xml",
-            "og:type": "article",
-            "og:image:width": "1280",
-            "twitter:card": "summary_large_image",
-            "theme-color": "#fd4638",
-            "og:site_name": "Tollwood München: Veranstaltungen, Konzerte, Theater, Markt",
-            "og:title": "Veranstaltung Salsa Thursday - Tollwood München: Veranstaltungen, Konzerte, Theater, Markt",
-            "og:image:height": "720",
-            "og:image:type": "image/jpeg",
-            "msapplication-tileimage": "https://www.tollwood.de/wp-content/themes/ContexLabs/assets/favicon/mstile-144x144.png",
-            "og:description": "Half Moon Bar | The legendary salsa party every Thursday at the Tollwood Summer Festival 2025. Free admission!",
-            "article:publisher": "https://www.facebook.com/Tollwood/",
-            "twitter:site": "@Tollwoodmunich",
-            "article:modified_time": "2025-05-16T10:53:21+00:00",
-            "viewport": "width=device-width, initial-scale=1",
-            "og:locale": "en_US",
-            "og:url": "https://www.tollwood.de/en/veranstaltungen/2025/salsa-thursday-4/"
-          }
-        ],
-        "cse_image": [
-          {
-            "src": "https://www.tollwood.de/wp-content/uploads/2024/04/salsa-thursday-half-moon-bar-c-alexander-scharf.jpg"
-          }
-        ]
-      }
-    },
-    {
-      "kind": "customsearch#result",
-      "title": "Salsa München | Salsango",
-      "htmlTitle": "<b>Salsa München</b> | <b>Salsango</b>",
-      "link": "https://www.salsa-und-tango.de/salsa/salsa-muenchen/",
+      "title": "Salsa Darmstadt | Salsango",
+      "htmlTitle": "<b>Salsa Darmstadt</b> | <b>Salsango</b>",
+      "link": "https://www.salsa-und-tango.de/salsa-darmstadt/",
       "displayLink": "www.salsa-und-tango.de",
-      "snippet": "... München, sortiert nach Tag (heute), Tanzschule und Art der Veranstaltung ... Salsa-Party München am Dienstag. Eine Salsa-Party diesntags in München ist ...",
-      "htmlSnippet": "... <b>München</b>, sortiert nach Tag (heute), Tanzschule und Art der <b>Veranstaltung</b> ... <b>Salsa</b>-Party <b>München</b> am <b>Dienstag</b>. Eine <b>Salsa</b>-Party diesntags in <b>München</b> ist&nbsp;...",
-      "formattedUrl": "https://www.salsa-und-tango.de/salsa/salsa-muenchen/",
-      "htmlFormattedUrl": "https://www.<b>salsa</b>-und-tango.de/<b>salsa</b>/<b>salsa</b>-muenchen/",
+      "snippet": "Andere Termine für Salsa-Partys in Darmstadt. Salsa-Party Latin Dance Station in der Linie 9 Darmstadt, Salsa, Bachata und Kizomba ab 21.00 Uhr, Eintritt 8 € ( ...",
+      "htmlSnippet": "Andere Termine für <b>Salsa</b>-Partys in <b>Darmstadt</b>. <b>Salsa</b>-Party Latin Dance Station in der Linie 9 <b>Darmstadt</b>, <b>Salsa</b>, <b>Bachata</b> und <b>Kizomba</b> ab 21.00 Uhr, Eintritt 8 € (&nbsp;...",
+      "formattedUrl": "https://www.salsa-und-tango.de/salsa-darmstadt/",
+      "htmlFormattedUrl": "https://www.<b>salsa</b>-und-tango.de/<b>salsa</b>-<b>darmstadt</b>/",
       "pagemap": {
         "cse_thumbnail": [
           {
-            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQJnlVIhdIfhalIrZfwf2qYneI6p4lbATg-odefsjlTmb67AAw0T9zwJg&s",
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9MZ0z1I6__XYA1lUGNKMI-A9TgSCs6O2bhpRcUo0DSss5eolCwdA-gUc&s",
             "width": "275",
             "height": "183"
           }
@@ -557,115 +208,277 @@
           {
             "og:type": "website",
             "viewport": "width=device-width, initial-scale=1",
-            "og:title": "Salsa München | Salsango",
-            "og:url": "https://www.salsa-und-tango.de/salsa/salsa-muenchen/",
-            "og:description": "Salsa München: Salsa-Partys, Konzerte, Salsa-Kurse und -Workshops in München, sortiert nach Tag (heute), Tanzschule und Art der Veranstaltung.",
+            "og:title": "Salsa Darmstadt | Salsango",
+            "og:url": "https://www.salsa-und-tango.de/salsa-darmstadt/",
+            "og:description": "Unter Salsa Darmstadt findet Ihr, wo Ihr in Darmstadt Salsa tanzen und Salsa lernen könnt, Partys, Tanzkurse, Workshops, Tanzschulen usw..",
             "verification": "0fa070f867aaf8103833ccbf086c6cfe"
           }
         ],
         "cse_image": [
           {
-            "src": "https://www.salsa-und-tango.de/wp-content/uploads/2023/08/Salsa-in-Muenchen.jpg"
+            "src": "https://www.salsa-und-tango.de/wp-content/uploads/2022/09/Salsa-Darmstadt-Salsa-Partys-Kurse-und-Workshops.jpg"
           }
         ]
       }
     },
     {
       "kind": "customsearch#result",
-      "title": "Salsa Club Munich (@salsaclubmunich) • Instagram photos and ...",
-      "htmlTitle": "<b>Salsa</b> Club Munich (@<b>salsaclubmunich</b>) • Instagram photos and ...",
-      "link": "https://newsletter.salsaclub-munich.de/i/_6mttu38dfZ32fJntYPPXs08Nxdfr3sipbetgjzHCUc",
-      "displayLink": "newsletter.salsaclub-munich.de",
-      "snippet": "6669 Followers, 1692 Following, 375 Posts - Salsa Club Munich (@salsaclubmunich) on Instagram: \"Mambo | Salsa | Bachata by Hakan Seven Salsa Party every ...",
-      "htmlSnippet": "6669 Followers, 1692 Following, 375 Posts - <b>Salsa</b> Club Munich (@salsaclubmunich) on Instagram: &quot;Mambo | <b>Salsa</b> | Bachata by Hakan Seven <b>Salsa</b> Party every&nbsp;...",
-      "formattedUrl": "https://newsletter.salsaclub-munich.de/.../_6mttu38dfZ32fJntYPPXs08Nxdf...",
-      "htmlFormattedUrl": "https://newsletter.<b>salsa</b>club-munich.de/.../_6mttu38dfZ32fJntYPPXs08Nxdf...",
+      "title": "Events und Latinpartys im Salon-Latino Darmstadt",
+      "htmlTitle": "Events und Latinpartys im Salon-Latino <b>Darmstadt</b>",
+      "link": "https://salon-latino.de/events.php/",
+      "displayLink": "salon-latino.de",
+      "snippet": "Salsa, Bachata, Events und Latinparty Programm. 25.07.25 Freitag ☆ Havana-Night mit DJ-Calentador. Fee_und_kai_bei_Salon_Latino ☆LATIN PARTY MIT BACHATA ...",
+      "htmlSnippet": "<b>Salsa</b>, <b>Bachata</b>, Events und Latinparty Programm. 25.07.25 <b>Freitag</b> ☆ Havana-Night mit DJ-Calentador. Fee_und_kai_bei_Salon_Latino ☆LATIN PARTY MIT <b>BACHATA</b>&nbsp;...",
+      "formattedUrl": "https://salon-latino.de/events.php/",
+      "htmlFormattedUrl": "https://salon-latino.de/events.php/",
       "pagemap": {
         "cse_thumbnail": [
           {
-            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXSk8xg9mDKl17qzvT_8zUR4uU9-CbjoHiPyIzxY9WvPEPqpPpK48C61M&s",
-            "width": "168",
-            "height": "299"
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1ZGKN9IscWQ9g-wT_3BY5lFtaFU1dBKZmX_2WCn0eL7tLlVe8xVvVeS0&s",
+            "width": "295",
+            "height": "171"
           }
         ],
         "metatags": [
           {
-            "og:image": "https://scontent-iad3-2.cdninstagram.com/v/t51.2885-19/274068661_1773876596138994_6371858222564618755_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=111&ccb=1-7&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=algKXaXkNPYQ7kNvwFmJPpp&_nc_oc=AdnZ5FPOxz3xDFiMriu4Q4FCs0H0V2LYCYe4nHDblnapHN_YqkeQwiR_GsvleJY83LA&_nc_zt=24&_nc_ht=scontent-iad3-2.cdninstagram.com&oh=00_AfRLHXt441J65ZEKokbYY5AfpT1CVMz5lp8lYuWoiwAGtg&oe=68890256",
-            "theme-color": "#FFFFFF",
-            "og:type": "profile",
-            "al:ios:app_name": "Instagram",
-            "og:title": "Salsa Club Munich (@salsaclubmunich) • Instagram photos and videos",
-            "application-title": "Instagram",
-            "al:android:package": "com.instagram.android",
-            "bingbot": "noarchive",
-            "al:ios:url": "instagram://user?username=salsaclubmunich",
-            "color-scheme": "light",
-            "og:description": "6,669 Followers, 1,692 Following, 375 Posts - See Instagram photos and videos from Salsa Club Munich (@salsaclubmunich)",
-            "al:ios:app_store_id": "389801252",
-            "al:android:url": "https://instagram.com/_u/salsaclubmunich/",
-            "apple-mobile-web-app-status-bar-style": "default",
-            "viewport": "width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover",
-            "mobile-web-app-capable": "yes",
-            "og:url": "https://www.instagram.com/salsaclubmunich/",
-            "al:android:app_name": "Instagram"
+            "zipcode": "64295",
+            "country": "Germany",
+            "copyright": "JCC",
+            "geo.region": "DE-Hessen",
+            "viewport": "width=device-width, minimum-scale=1.0, initial-scale=1.0",
+            "city": "Darmstadt",
+            "og:title": "SALON-LATINO.de dance,tanzen, baila, Salsa, Mambo, Bachata im Salon-Latino Darmstadt",
+            "og:description": "Tanzschule & Dance Club für Salsa, Bachata, Cha-Cha-Cha, Reggaeton und viel mehr könnt ihr im karibischen Ambiente bei uns genießen. Ein Stück Lateinamerika im Salon Latino Darmstadt.",
+            "geo.placename": "Darmstadt"
           }
         ],
         "cse_image": [
           {
-            "src": "https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3679365166742518450"
+            "src": "https://www.salon-latino.de/imagen/Fee_Kai_Salon.jpg"
           }
         ]
       }
     },
     {
       "kind": "customsearch#result",
-      "title": "Salsa Y Corazon ::: Die Tanzschule in München für Salsa und Bachata",
-      "htmlTitle": "<b>Salsa</b> Y Corazon ::: Die Tanzschule in <b>München</b> für <b>Salsa</b> und Bachata",
-      "link": "https://www.salsa-y-corazon.de/",
-      "displayLink": "www.salsa-y-corazon.de",
-      "snippet": "TANZKURSE - EVENTS - TANZSCHIFFFAHRTEN - TANZREISEN · In unseren regulären Kursen achten wir auf ausgeglichene Kurse. · Singles bekommen einen Tanzpartner/in ...",
-      "htmlSnippet": "TANZKURSE - EVENTS - TANZSCHIFFFAHRTEN - TANZREISEN &middot; In unseren regulären Kursen achten wir auf ausgeglichene Kurse. &middot; Singles bekommen einen Tanzpartner/in&nbsp;...",
-      "formattedUrl": "https://www.salsa-y-corazon.de/",
-      "htmlFormattedUrl": "https://www.<b>salsa</b>-y-corazon.de/",
+      "title": "Salsa Picknick Marathon und Open Air Party - Darmstadt",
+      "htmlTitle": "<b>Salsa</b> Picknick Marathon und Open Air Party - <b>Darmstadt</b>",
+      "link": "https://www.salsatu.de/2017/06/13/salsa-picknick-marathon-und-open-air-party/",
+      "displayLink": "www.salsatu.de",
+      "snippet": "13.06.2017 ... Lasst uns bei herrlichem Wetter gemeinsam Salsa, Bachata, Kizomba und Rueda tanzen! Am Samstag, den 17.06. findet auf dem Bürgerpark in ...",
+      "htmlSnippet": "13.06.2017 <b>...</b> Lasst uns bei herrlichem Wetter gemeinsam <b>Salsa</b>, <b>Bachata</b>, <b>Kizomba</b> und Rueda tanzen! Am Samstag, den 17.06. findet auf dem Bürgerpark in&nbsp;...",
+      "formattedUrl": "https://www.salsatu.de/2017/.../salsa-picknick-marathon-und-open-air-party...",
+      "htmlFormattedUrl": "https://www.<b>salsa</b>tu.de/2017/.../<b>salsa</b>-picknick-marathon-und-open-air-party...",
       "pagemap": {
         "cse_thumbnail": [
           {
-            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlnQpcnyxAvaBvahb069fggntyqFVtwFYs_icZ_fVkNpsxq1Hc7fnV_lZg&s",
-            "width": "310",
-            "height": "163"
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8IYCuJcY5-d4WDoIL7eN-1bly56K0bvoyFZ44LKKypLbnGD9XRsWgxHQ&s",
+            "width": "150",
+            "height": "150"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1",
+            "msapplication-tileimage": "https://www.salsatu.de/wp-content/uploads/2022/10/favicon.png"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.salsatu.de/wp-content/uploads/2022/10/logo2.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Leidenschaft auf der Tanzfläche – TU Darmstadt",
+      "htmlTitle": "Leidenschaft auf der Tanzfläche – TU <b>Darmstadt</b>",
+      "link": "https://www.tu-darmstadt.de/universitaet/aktuelles_meldungen/archiv_2/2017/2017quartal1/einzelansicht_174272.de.jsp",
+      "displayLink": "www.tu-darmstadt.de",
+      "snippet": "13.03.2017 ... Von Salsa en Linea, Bachata, Kizomba über Salsa Cubana bis hin zu Rueda de Casino ist alles vertreten“, sagt Freddy Aguilar, der seit zwei ...",
+      "htmlSnippet": "13.03.2017 <b>...</b> Von <b>Salsa</b> en Linea, <b>Bachata</b>, <b>Kizomba</b> über <b>Salsa</b> Cubana bis hin zu Rueda de Casino ist alles vertreten“, sagt Freddy Aguilar, der seit zwei&nbsp;...",
+      "formattedUrl": "https://www.tu-darmstadt.de/universitaet/.../einzelansicht_174272.de.jsp",
+      "htmlFormattedUrl": "https://www.tu-<b>darmstadt</b>.de/universitaet/.../einzelansicht_174272.de.jsp",
+      "pagemap": {
+        "hcard": [
+          {
+            "fn": "Kontakt für Medien"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTImWxglYkeIwUGI-PVed2wPIxFnxurBLMPfEcfJz7quSPvYBtcR_CilNY&s",
+            "width": "259",
+            "height": "194"
+          }
+        ],
+        "person": [
+          {
+            "location": "Darmstadt"
+          }
+        ],
+        "organization": [
+          {
+            "image": "https://www.tu-darmstadt.de/media/daa_responsives_design/02_studium_medien/icons_4/chat_415x415.png",
+            "jobtitle": "Science Communication Centre",
+            "name": "Kontakt für Medien",
+            "addresscountry": "DE",
+            "email": "presse@tu-..."
           }
         ],
         "postaladdress": [
           {
-            "addresslocality": "München",
-            "postalcode": "80337",
-            "name": "Salsa Y Corazon",
-            "streetaddress": "Zenettistraße 7",
-            "telephone": "0172-965 95 79",
-            "faxnumber": "089-158 149 44",
-            "email": "info@salsa-y-corazon.de"
+            "addresslocality": "Darmstadt",
+            "postalcode": "64283",
+            "streetaddress": "Residenzschloss"
           }
         ],
         "metatags": [
           {
-            "og:image": "https://www.salsa-y-corazon.de/images/website-thumbnail_1200x630.jpg",
-            "og:type": "website",
-            "og:image:width": "1200",
-            "geo.region": "DE-Bayern",
-            "author": "Salsa Y Corazon - Marion Morena",
-            "og:title": "Salsa Y Corazon ::: Die Tanzschule in München für Salsa und Bachata",
-            "og:image:height": "630",
-            "geo.position": "48.1232;11.557859",
-            "og:description": "Die Tanzschule in München für Salsa und Bachata. Tanzkurse für Singles und Paare für jung und alt, jeder soll die Freude, den Spaß am Tanzen erleben.",
-            "icbm": "48.1232,11.557859",
+            "zoomcategory": "News-Artikel",
+            "og:image": "https://www.tu-darmstadt.de/media/daa_responsives_design/01_die_universitaet_medien/aktuelles_6/news_1/medien_news_aelter/2017_4/Salsa_RuedaAfterclass_1180x0.jpg",
+            "og:type": "article",
+            "twitter:card": "summary",
+            "twitter:title": "Leidenschaft auf der Tanzfläche",
+            "og:image:width": "1180",
+            "og:image:alt": "Lasst uns tanzen! Monatlich findet in den Räumen der TU Darmstadt ein kostenloser Salsa-Übungsabend statt. Bild: SalsaTUDe",
+            "dcterms.language": "de",
+            "og:site_name": "TU Darmstadt",
+            "og:expiration_time": "2020-03-13",
+            "zoomimage": "https://www.tu-darmstadt.de/media/daa_responsives_design/01_die_universitaet_medien/aktuelles_6/news_1/medien_news_aelter/2017_4/Salsa_RuedaAfterclass_285x0.jpg",
+            "dcterms.title": "Leidenschaft auf der Tanzfläche",
+            "og:title": "Leidenschaft auf der Tanzfläche",
+            "og:image:height": "885",
+            "dcterms.creator": "Technische Universität Darmstadt",
+            "og:image:type": "image/jpg",
+            "dcterms.date": "2017-03-13T10:47:47Z",
+            "og:description": "Es scheint, als würden ihre rhythmischen Bewegungen mit den Klängen der lateinamerikanischen Musik verschmelzen. Jede Tanzbewegung der Studierenden sitzt, die Choreografie mit dem fließenden Partnerwechsel ist stimmig. SalsaTUDe heißt die Salsagruppe der TU Darmstadt, die sich für den Tanzsport begeistert.",
+            "twitter:image": "https://www.tu-darmstadt.de/media/daa_responsives_design/01_die_universitaet_medien/aktuelles_6/news_1/medien_news_aelter/2017_4/Salsa_RuedaAfterclass_1180x0.jpg",
+            "twitter:image:alt": "Lasst uns tanzen! Monatlich findet in den Räumen der TU Darmstadt ein kostenloser Salsa-Übungsabend statt. Bild: SalsaTUDe",
             "viewport": "width=device-width, initial-scale=1",
-            "og:url": "https://www.salsa-y-corazon.de/",
-            "geo.placename": "Zenettistraße 7, 80337 München, DE"
+            "twitter:description": "Es scheint, als würden ihre rhythmischen Bewegungen mit den Klängen der lateinamerikanischen Musik verschmelzen. Jede Tanzbewegung der Studierenden sitzt, die Choreografie mit dem fließenden Partnerwechsel ist stimmig. SalsaTUDe heißt die Salsagruppe der TU Darmstadt, die sich für den Tanzsport begeistert.",
+            "og:published_time": "2017-03-13",
+            "format-detection": "telephone=no"
           }
         ],
         "cse_image": [
           {
-            "src": "https://www.salsa-y-corazon.de/images/website-thumbnail_1200x630.jpg"
+            "src": "https://www.tu-darmstadt.de/media/daa_responsives_design/01_die_universitaet_medien/aktuelles_6/news_1/medien_news_aelter/2017_4/Salsa_RuedaAfterclass_1180x0.jpg"
+          }
+        ],
+        "article": [
+          {
+            "author": "Campusreporterin Ursula Ziegler",
+            "alternativeheadline": "Hochschulsport im Fokus: Die Salsagruppe der TU Darmstadt",
+            "headline": "Leidenschaft auf der Tanzfläche",
+            "datepublished": "2017-03-13"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Conexion",
+      "htmlTitle": "Conexion",
+      "link": "https://conexion.de/",
+      "displayLink": "conexion.de",
+      "snippet": "Liebe Tanz-Begeisterte, Salsa-, Bachata-, Kizomba-, Reggaeton-Fans,. als Tanzschule und Partyveranstalter in Frankfurt arbeiten wir seit Jahren mit ...",
+      "htmlSnippet": "Liebe Tanz-Begeisterte, <b>Salsa</b>-, <b>Bachata</b>-, <b>Kizomba</b>-, Reggaeton-Fans,. als Tanzschule und Partyveranstalter in Frankfurt arbeiten wir seit Jahren mit&nbsp;...",
+      "formattedUrl": "https://conexion.de/",
+      "htmlFormattedUrl": "https://conexion.de/",
+      "pagemap": {
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1.0",
+            "csrf-token": "oDOlX6pdE3olUrJ9OvhRW2JFWD3+hvV76CGidHwfask+D2Ykora7TIUiFt5VXBuASDs2Ss226GiAPkuwufPxQA==",
+            "csrf-param": "authenticity_token",
+            "title": "start"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Xmas Workshopday 2018 – salsatude",
+      "htmlTitle": "Xmas Workshopday 2018 – salsatude",
+      "link": "https://www.salsatu.de/xmas-workshopday-2018/",
+      "displayLink": "www.salsatu.de",
+      "snippet": "06.09.2018 ... Ihre Tanzerfahrungen reichen u.a. von Ballett und Modern Dance über Salsa NY, Bachata und Cha Cha Chá zu Kizomba, Urban Kiz und Tarraxa. Während ...",
+      "htmlSnippet": "06.09.2018 <b>...</b> Ihre Tanzerfahrungen reichen u.a. von Ballett und Modern Dance über <b>Salsa</b> NY, <b>Bachata</b> und Cha Cha Chá zu <b>Kizomba</b>, Urban Kiz und Tarraxa. Während&nbsp;...",
+      "formattedUrl": "https://www.salsatu.de/xmas-workshopday-2018/",
+      "htmlFormattedUrl": "https://www.<b>salsa</b>tu.de/xmas-workshopday-2018/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8IYCuJcY5-d4WDoIL7eN-1bly56K0bvoyFZ44LKKypLbnGD9XRsWgxHQ&s",
+            "width": "150",
+            "height": "150"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1",
+            "msapplication-tileimage": "https://www.salsatu.de/wp-content/uploads/2022/10/favicon.png"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.salsatu.de/wp-content/uploads/2022/10/logo2.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Neuer Glanz & mehr Komfort – was sich bei uns getan hat – Mike ...",
+      "htmlTitle": "Neuer Glanz &amp; mehr Komfort – was sich bei uns getan hat – Mike ...",
+      "link": "https://mike-dance.de/neuer-glanz-mehr-komfort-was-sich-bei-uns-getan-hat/",
+      "displayLink": "mike-dance.de",
+      "snippet": "„Kasonga“ – Kizomba Party-Event in München mit Salsa in separatem Raum! Freitag, 25.07.2025 21:00-23:59.",
+      "htmlSnippet": "„Kasonga“ – <b>Kizomba</b> Party-Event in München mit <b>Salsa</b> in separatem Raum! <b>Freitag</b>, 25.07.2025 21:00-23:59.",
+      "formattedUrl": "https://mike-dance.de/neuer-glanz-mehr-komfort-was-sich-bei-uns-getan-hat/",
+      "htmlFormattedUrl": "https://mike-dance.de/neuer-glanz-mehr-komfort-was-sich-bei-uns-getan-hat/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr_ojgdz_1_AnMVz6h-gLiCHLHP1A5S7lQbR3tMTCIqZTz4zfGEL402B0&s",
+            "width": "300",
+            "height": "168"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://mike-dance.de/wp-content/uploads/2025-06-26_mike-dance-tanzschule_01.jpg",
+            "article:published_time": "2025-07-03T08:17:06+00:00",
+            "og:image:width": "1456",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "Mike Dance Tanzschule München",
+            "twitter:label1": "Verfasst von",
+            "twitter:label2": "Geschätzte Lesezeit",
+            "og:image:type": "image/jpeg",
+            "msapplication-tileimage": "https://mike-dance.de/wp-content/uploads/2024/09/cropped-mike-agbevenou-logo_1-270x270.png",
+            "og:description": "In den letzten Wochen hat sich bei Mike Dance München einiges getan – und wir sind richtig happy mit dem Ergebnis!",
+            "article:publisher": "https://www.facebook.com/mike.agbevenou",
+            "twitter:image": "https://mike-dance.de/wp-content/uploads/2025-06-26_mike-dance-tanzschule_01.jpg",
+            "twitter:data1": "Mike",
+            "twitter:data2": "4 Minuten",
+            "article:modified_time": "2025-07-04T08:19:52+00:00",
+            "og:type": "article",
+            "twitter:title": "Neuer Glanz & mehr Komfort – was sich bei uns getan hat – Mike Dance Tanzschule München",
+            "author": "Mike",
+            "og:title": "Neuer Glanz & mehr Komfort – was sich bei uns getan hat – Mike Dance Tanzschule München",
+            "og:image:height": "818",
+            "article:author": "https://www.facebook.com/mike.agbevenou",
+            "viewport": "width=device-width, initial-scale=1",
+            "twitter:description": "In den letzten Wochen hat sich bei Mike Dance München einiges getan – und wir sind richtig happy mit dem Ergebnis!",
+            "og:locale": "de_DE",
+            "og:url": "https://mike-dance.de/neuer-glanz-mehr-komfort-was-sich-bei-uns-getan-hat/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://mike-dance.de/wp-content/uploads/2025-06-26_mike-dance-tanzschule_01.jpg"
           }
         ]
       }

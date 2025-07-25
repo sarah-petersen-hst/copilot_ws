@@ -27,9 +27,22 @@ const pool = new Pool({
 /**
  * Build a Google search query for salsa events in a city on a given date/weekday.
  */
-function buildSearchQuery(city, date, weekday) {
-  // Example: Salsa Veranstaltung Dienstag Berlin site:.de
-  return `Salsa Veranstaltung ${weekday} ${city} site:.de`;
+function buildSearchQuery(city, date, weekday, styles = []) {
+  // Include dance styles in search query if provided
+  let searchTerms = ['Salsa', 'Veranstaltung'];
+  
+  // Add specific dance styles to search if provided
+  if (styles && styles.length > 0) {
+    // Add the first style to the search terms (avoid overly long queries)
+    searchTerms.push(styles[0]);
+  }
+  
+  // Add weekday and city
+  if (weekday) searchTerms.push(weekday);
+  searchTerms.push(city);
+  searchTerms.push('site:.de');
+  
+  return searchTerms.join(' ');
 }
 
 /**
@@ -399,6 +412,7 @@ Return VALID JSON in this exact format (or {"events": []} if no dance events fou
 6. For multiple specific dates, use the FIRST/EARLIEST date in the main date field
 7. Extract ALL dates found and put them in multiple_dates array (format: YYYY-MM-DD)
 8. DOUBLE-CHECK: In DD.MM format, FIRST number is DAY, SECOND is MONTH
+9. If no year is mentioned in connection with a specific event, assume the current year. Do not use any year that appears elsewhere on the website unless it is explicitly linked to that particular event.
 
 📅 MULTIPLE DATES EXTRACTION:
 - Look for patterns like "13. April, 15. Juni, 31. August, 12. Oktober, 30. November"
@@ -682,9 +696,9 @@ async function insertEventDates(eventId, dates, time) {
 /**
  * Main function: search Google API and extract events using full scraping + Gemini AI.
  */
-async function collectSalsaEvents(city, date, weekday, statusObj) {
-  console.log('[SCRAPER ENDPOINT CALLED]', city, date, weekday);
-  const query = buildSearchQuery(city, date, weekday);
+async function collectSalsaEvents(city, date, weekday, styles = [], statusObj) {
+  console.log('[SCRAPER ENDPOINT CALLED]', city, date, weekday, 'styles:', styles);
+  const query = buildSearchQuery(city, date, weekday, styles);
   
   if (statusObj) statusObj.steps.push({ step: 'google_query', message: query });
   

@@ -77,11 +77,11 @@ app.get('/api/votes', async (req, res) => {
 });
 
 /**
- * GET /api/events/search?city=CityName&date=YYYY-MM-DD
- * Returns events filtered by city and optionally by date (case-insensitive, safe from injection).
+ * GET /api/events/search?city=CityName&date=YYYY-MM-DD&styles=Style1,Style2
+ * Returns events filtered by city and optionally by date and dance styles (case-insensitive, safe from injection).
  */
 app.get('/api/events/search', async (req, res) => {
-  const { city, date } = req.query;
+  const { city, date, styles } = req.query;
   if (!city || typeof city !== 'string') {
     return res.status(400).json({ error: 'City is required' });
   }
@@ -107,7 +107,29 @@ app.get('/api/events/search', async (req, res) => {
     query += ' ORDER BY date ASC';
     
     const result = await pool.query(query, params);
-    res.json(result.rows);
+    let events = result.rows;
+    
+    // Filter by dance styles if provided (done in JavaScript since dance_styles is JSON)
+    if (styles && typeof styles === 'string') {
+      const searchStyles = styles.split(',').map(s => s.trim().toLowerCase()).filter(s => s.length > 0);
+      if (searchStyles.length > 0) {
+        events = events.filter(event => {
+          if (!event.dance_styles) return false;
+          const eventStyles = Array.isArray(event.dance_styles) 
+            ? event.dance_styles 
+            : JSON.parse(event.dance_styles || '[]');
+          
+          return searchStyles.some(searchStyle => 
+            eventStyles.some(eventStyle => 
+              eventStyle.toLowerCase().includes(searchStyle) || 
+              searchStyle.includes(eventStyle.toLowerCase())
+            )
+          );
+        });
+      }
+    }
+    
+    res.json(events);
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -152,7 +174,7 @@ app.get('/api/venue-votes', async (req, res) => {
  * Returns status only (results are fetched from DB).
  */
 app.get('/api/scrape-events', async (req, res) => {
-  const { city, date } = req.query;
+  const { city, date, styles } = req.query;
   if (!city || typeof city !== 'string') {
     return res.status(400).json({ error: 'City is required' });
   }
@@ -164,10 +186,17 @@ app.get('/api/scrape-events', async (req, res) => {
       weekday = weekdays[d.getDay()];
     } catch {}
   }
+  
+  // Parse styles parameter
+  let searchStyles = [];
+  if (styles && typeof styles === 'string') {
+    searchStyles = styles.split(',').map(s => s.trim()).filter(s => s.length > 0);
+  }
+  
   try {
     const status = { steps: [] };
     // Wrap collectSalsaEvents to collect stepwise status
-    await require('./scraper').collectSalsaEvents(city, date, weekday, status);
+    await require('./scraper').collectSalsaEvents(city, date, weekday, searchStyles, status);
     res.json({ status });
   } catch (err) {
     res.status(500).json({ error: err.message });
