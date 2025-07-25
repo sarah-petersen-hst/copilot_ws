@@ -18,9 +18,8 @@ async function initDb() {
       title TEXT NOT NULL,
       date TEXT NOT NULL,
       time TEXT DEFAULT '20:00',
-      venue_name TEXT,
-      address TEXT,
-      source TEXT,
+      address TEXT NOT NULL,
+      source TEXT NOT NULL,
       dance_styles JSONB,
       venue_type TEXT DEFAULT 'Unspecified',
       workshop_date TEXT,
@@ -48,6 +47,25 @@ async function initDb() {
       user_id TEXT
     );
   `);
+
+  // Update existing NULL values before adding NOT NULL constraints
+  await pool.query(`UPDATE events SET address = 'Location TBD' WHERE address IS NULL;`);
+  await pool.query(`UPDATE events SET source = 'No source available' WHERE source IS NULL;`);
+
+  // Add NOT NULL constraints to existing columns if they don't have them
+  try {
+    await pool.query(`ALTER TABLE events ALTER COLUMN address SET NOT NULL;`);
+    console.log('Added NOT NULL constraint to address column');
+  } catch (err) {
+    console.log('Note: address column may already have NOT NULL constraint');
+  }
+
+  try {
+    await pool.query(`ALTER TABLE events ALTER COLUMN source SET NOT NULL;`);
+    console.log('Added NOT NULL constraint to source column');
+  } catch (err) {
+    console.log('Note: source column may already have NOT NULL constraint');
+  }
 
   // Clean up old columns if they exist
   try {

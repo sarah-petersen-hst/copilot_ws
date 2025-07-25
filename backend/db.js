@@ -20,6 +20,7 @@ async function initDb() {
       time TEXT DEFAULT '20:00',
       venue_name TEXT,
       venue_address TEXT,
+      city TEXT NOT NULL,
       source_url TEXT,
       dance_styles JSONB,
       venue_type TEXT DEFAULT 'Unspecified',
@@ -33,8 +34,21 @@ async function initDb() {
       trusted BOOLEAN DEFAULT FALSE,
       workshops JSONB,
       party JSONB,
-      recurrence TEXT
+      recurrence TEXT,
+      recurring_pattern TEXT,
+      original_event_id INTEGER
     );
+    
+    CREATE TABLE IF NOT EXISTS event_dates (
+      id SERIAL PRIMARY KEY,
+      event_id INTEGER REFERENCES events(id) ON DELETE CASCADE,
+      event_date DATE NOT NULL,
+      event_time TIME,
+      is_primary BOOLEAN DEFAULT FALSE,
+      created_at TIMESTAMP DEFAULT NOW(),
+      UNIQUE(event_id, event_date)
+    );
+    
     CREATE TABLE IF NOT EXISTS votes (
       id SERIAL PRIMARY KEY,
       event_id INTEGER REFERENCES events(id),
@@ -43,10 +57,20 @@ async function initDb() {
       user_id TEXT
     );
     
+    CREATE TABLE IF NOT EXISTS scraped_urls (
+      id SERIAL PRIMARY KEY,
+      url TEXT NOT NULL UNIQUE,
+      scraped_at TIMESTAMP DEFAULT NOW(),
+      success BOOLEAN DEFAULT FALSE,
+      events_count INTEGER DEFAULT 0,
+      last_scraped TIMESTAMP DEFAULT NOW()
+    );
+    
     -- Add missing columns if they don't exist
     ALTER TABLE events ADD COLUMN IF NOT EXISTS time TEXT DEFAULT '20:00';
     ALTER TABLE events ADD COLUMN IF NOT EXISTS venue_name TEXT;
     ALTER TABLE events ADD COLUMN IF NOT EXISTS venue_address TEXT;
+    ALTER TABLE events ADD COLUMN IF NOT EXISTS city TEXT;
     ALTER TABLE events ADD COLUMN IF NOT EXISTS source_url TEXT;
     ALTER TABLE events ADD COLUMN IF NOT EXISTS dance_styles JSONB;
     ALTER TABLE events ADD COLUMN IF NOT EXISTS venue_type TEXT DEFAULT 'Unspecified';
@@ -56,6 +80,8 @@ async function initDb() {
     ALTER TABLE events ADD COLUMN IF NOT EXISTS party_time TEXT;
     ALTER TABLE events ADD COLUMN IF NOT EXISTS timestamp TIMESTAMP DEFAULT NOW();
     ALTER TABLE events ADD COLUMN IF NOT EXISTS recurrence TEXT;
+    ALTER TABLE events ADD COLUMN IF NOT EXISTS recurring_pattern TEXT;
+    ALTER TABLE events ADD COLUMN IF NOT EXISTS original_event_id INTEGER;
     ALTER TABLE events ADD COLUMN IF NOT EXISTS venueType TEXT;
   `);
 }

@@ -35,7 +35,7 @@ app.get('/api/health', (req, res) => {
  */
 app.get('/api/events', async (req, res) => {
   try {
-    const result = await pool.query('SELECT *, venue_type AS "venueType" FROM events ORDER BY date ASC');
+    const result = await pool.query('SELECT * FROM events ORDER BY date ASC');
     res.json(result.rows);
   } catch (err) {
     console.error('Error fetching events:', err);
@@ -77,11 +77,11 @@ app.get('/api/votes', async (req, res) => {
 });
 
 /**
- * GET /api/events/search?city=CityName
- * Returns events filtered by city (case-insensitive, safe from injection).
+ * GET /api/events/search?city=CityName&date=YYYY-MM-DD
+ * Returns events filtered by city and optionally by date (case-insensitive, safe from injection).
  */
 app.get('/api/events/search', async (req, res) => {
-  const { city } = req.query;
+  const { city, date } = req.query;
   if (!city || typeof city !== 'string') {
     return res.status(400).json({ error: 'City is required' });
   }
@@ -89,11 +89,24 @@ app.get('/api/events/search', async (req, res) => {
   if (!/^[a-zA-ZÀ-ÿ\s'-]+$/.test(city.trim())) {
     return res.status(400).json({ error: 'Invalid city name' });
   }
+  
   try {
-    const result = await pool.query(
-      'SELECT *, venuetype AS "venueType" FROM events WHERE LOWER(address) LIKE LOWER($1) ORDER BY date ASC',
-      [`%${city.trim()}%`]
-    );
+    let query = 'SELECT *, venue_type AS "venueType" FROM events WHERE LOWER(city) = LOWER($1)';
+    let params = [city.trim()];
+    
+    // Add date filter if provided
+    if (date && typeof date === 'string') {
+      // Validate date format (YYYY-MM-DD)
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) {
+        return res.status(400).json({ error: 'Invalid date format. Use YYYY-MM-DD' });
+      }
+      query += ' AND date = $2';
+      params.push(date);
+    }
+    
+    query += ' ORDER BY date ASC';
+    
+    const result = await pool.query(query, params);
     res.json(result.rows);
   } catch (err) {
     res.status(500).json({ error: err.message });
@@ -156,6 +169,43 @@ app.get('/api/scrape-events', async (req, res) => {
     // Wrap collectSalsaEvents to collect stepwise status
     await require('./scraper').collectSalsaEvents(city, date, weekday, status);
     res.json({ status });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+/**
+ * GET /api/events/group/:eventId
+ * Returns all date instances for a specific event (including linked events with same original_event_id).
+ */
+app.get('/api/events/group/:eventId', async (req, res) => {
+  const { eventId } = req.params;
+  if (!eventId || isNaN(eventId)) {
+    return res.status(400).json({ error: 'Valid event ID is required' });
+  }
+  
+  try {
+    // First, get the event to find its original_event_id or use itself as original
+    const eventResult = await pool.query(
+      'SELECT id, original_event_id FROM events WHERE id = $1',
+      [eventId]
+    );
+    
+    if (eventResult.rows.length === 0) {
+      return res.status(404).json({ error: 'Event not found' });
+    }
+    
+    const event = eventResult.rows[0];
+    const originalId = event.original_event_id || event.id;
+    
+    // Get all events that are part of this group
+    const result = await pool.query(`
+      SELECT *, venue_type AS "venueType" FROM events 
+      WHERE (id = $1 OR original_event_id = $1) 
+      ORDER BY date ASC
+    `, [originalId]);
+    
+    res.json(result.rows);
   } catch (err) {
     res.status(500).json({ error: err.message });
   }

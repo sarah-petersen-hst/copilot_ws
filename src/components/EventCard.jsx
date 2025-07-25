@@ -116,6 +116,31 @@ function EventCard({ event, votes = [], onVote, lastVoted, isFavorite = false, o
         </div>
         <div style={{ color: '#fff', opacity: 0.85, margin: '0.3em 0' }}>{event.date}</div>
         <div style={{ color: '#fff', opacity: 0.7 }}>{event.address}</div>
+        
+        {/* Dance Styles Labels */}
+        {event.dance_styles && Array.isArray(event.dance_styles) && event.dance_styles.length > 0 && (
+          <div style={{ margin: '0.7em 0' }}>
+            {event.dance_styles.map((style, index) => (
+              <span
+                key={index}
+                style={{
+                  background: '#E92932',
+                  color: '#fff',
+                  borderRadius: '999px',
+                  padding: '0.3em 0.7em',
+                  fontSize: '0.8em',
+                  marginRight: '0.5em',
+                  marginBottom: '0.3em',
+                  display: 'inline-block',
+                  fontWeight: '500',
+                }}
+              >
+                {style}
+              </span>
+            ))}
+          </div>
+        )}
+        
         {event.source && (
           <div style={{ marginBottom: '0.7em' }}>
             <a 
@@ -321,6 +346,23 @@ function EventCard({ event, votes = [], onVote, lastVoted, isFavorite = false, o
                 <div style={{ color: '#fff', fontSize: '0.9em', marginTop: '0.5em', opacity: 0.7, textAlign: 'center' }}>
                   Vote to help others know if this event is indoors or outdoors.
                 </div>
+              </div>
+            )}
+            {/* Multi-date series indicator */}
+            {event.original_event_id && (
+              <div style={{ margin: '0.7em 0' }}>
+                <span style={{
+                  background: '#444',
+                  color: '#fff',
+                  borderRadius: '999px',
+                  padding: '0.3em 0.7em',
+                  fontSize: '0.8em',
+                  marginRight: '0.5em',
+                  display: 'inline-block',
+                  fontWeight: '500',
+                }}>
+                  📅 Part of event series
+                </span>
               </div>
             )}
           </div>

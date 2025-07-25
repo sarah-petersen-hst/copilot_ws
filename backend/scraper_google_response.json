@@ -7,9 +7,9 @@
   "queries": {
     "request": [
       {
-        "title": "Google Custom Search - Salsa Veranstaltung Freitag Berlin site:.de",
-        "totalResults": "280000",
-        "searchTerms": "Salsa Veranstaltung Freitag Berlin site:.de",
+        "title": "Google Custom Search - Salsa Veranstaltung Dienstag München site:.de",
+        "totalResults": "157000",
+        "searchTerms": "Salsa Veranstaltung Dienstag München site:.de",
         "count": 10,
         "startIndex": 1,
         "inputEncoding": "utf8",
@@ -21,9 +21,9 @@
     ],
     "nextPage": [
       {
-        "title": "Google Custom Search - Salsa Veranstaltung Freitag Berlin site:.de",
-        "totalResults": "280000",
-        "searchTerms": "Salsa Veranstaltung Freitag Berlin site:.de",
+        "title": "Google Custom Search - Salsa Veranstaltung Dienstag München site:.de",
+        "totalResults": "157000",
+        "searchTerms": "Salsa Veranstaltung Dienstag München site:.de",
         "count": 10,
         "startIndex": 11,
         "inputEncoding": "utf8",
@@ -38,350 +38,72 @@
     "title": "Latindance Event Searchengine"
   },
   "searchInformation": {
-    "searchTime": 0.442272,
-    "formattedSearchTime": "0.44",
-    "totalResults": "280000",
-    "formattedTotalResults": "280,000"
+    "searchTime": 0.303542,
+    "formattedSearchTime": "0.30",
+    "totalResults": "157000",
+    "formattedTotalResults": "157,000"
   },
   "items": [
     {
       "kind": "customsearch#result",
-      "title": "Berliner Salsa Kalender - Salsa Events in Berlin",
-      "htmlTitle": "<b>Berliner Salsa</b> Kalender - <b>Salsa</b> Events in <b>Berlin</b>",
-      "link": "https://www.salsa-berlin.de/kalender/",
-      "displayLink": "www.salsa-berlin.de",
-      "snippet": "Salsa Events heute und in den nächsten 14 Tagen. Achtung, wir bemühen uns immer möglichst viele Veranstaltungen zu erfassen, können aber nicht für ...",
-      "htmlSnippet": "<b>Salsa</b> Events heute und in den nächsten 14 Tagen. Achtung, wir bemühen uns immer möglichst viele <b>Veranstaltungen</b> zu erfassen, können aber nicht für&nbsp;...",
-      "formattedUrl": "https://www.salsa-berlin.de/kalender/",
-      "htmlFormattedUrl": "https://www.<b>salsa</b>-<b>berlin</b>.de/kalender/",
-      "pagemap": {
-        "cse_thumbnail": [
-          {
-            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgSuBoNWLyW6HrrDsM95vpjLgQg91cnFRrtaLxkxzTbBfSqokTO29OeZw&s",
-            "width": "150",
-            "height": "108"
-          }
-        ],
-        "postaladdress": [
-          {
-            "addresslocality": "Berlin",
-            "postalcode": "10435",
-            "name": "Salsa-Berlin - Kultur",
-            "streetaddress": "Schönhauser Allee 36"
-          }
-        ],
-        "metatags": [
-          {
-            "viewport": "width=device-width, initial-scale=1.0",
-            "author": "(c) 1996-2019 by salsa-berlin.de"
-          }
-        ],
-        "place": [
-          {
-            "name": "Salsa-Berlin.de",
-            "url": "https://www.salsa-berlin.de"
-          }
-        ],
-        "cse_image": [
-          {
-            "src": "https://www.salsa-berlin.de/kalender/kalender.jpg"
-          }
-        ],
-        "danceevent": [
-          {
-            "image": "https://www.salsa-berlin.de/kalender/kalender.jpg",
-            "name": "Salsa Events in Berlin",
-            "description": "Hier findet Ihr Termine und Informationen zu Salsa Events in Berlin und Umgebung",
-            "startdate": "2025-07-18",
-            "url": "https://www.salsa-berlin.de/kalender/"
-          }
-        ]
-      }
-    },
-    {
-      "kind": "customsearch#result",
-      "title": "Salsa in Berlin: Clubs, Tanzschulen, Events - |salsa-staedte|",
-      "htmlTitle": "<b>Salsa</b> in <b>Berlin</b>: Clubs, Tanzschulen, Events - |<b>salsa</b>-staedte|",
-      "link": "https://www.salsalemania.de/salsa-in-berlin/",
+      "title": "Salsa in München: Clubs, Tanzschulen, Events - |salsa-staedte|",
+      "htmlTitle": "<b>Salsa</b> in <b>München</b>: Clubs, Tanzschulen, Events - |<b>salsa</b>-staedte|",
+      "link": "https://www.salsalemania.de/salsa-in-muenchen/",
       "displayLink": "www.salsalemania.de",
-      "snippet": "Gleich 3 Salsa Clubs laden an regelmässigen Terminen zum Salsa Tanzen ein. Entdecke die Salsa-Szene in Berlin. Gleich heute abend gibt es ein Salsa-Event! Und ...",
-      "htmlSnippet": "Gleich 3 <b>Salsa</b> Clubs laden an regelmässigen Terminen zum <b>Salsa</b> Tanzen ein. Entdecke die <b>Salsa</b>-Szene in <b>Berlin</b>. Gleich heute abend gibt es ein <b>Salsa</b>-Event! Und&nbsp;...",
-      "formattedUrl": "https://www.salsalemania.de/salsa-in-berlin/",
-      "htmlFormattedUrl": "https://www.<b>salsa</b>lemania.de/<b>salsa</b>-in-<b>berlin</b>/",
+      "snippet": "Alles über Salsa in München: Clubs, Tanzschulen, Partys und Salsa Tanzpartner in München. ... jeden Dienstag ab 20:00 Uhr, Legenday Salsa Social Dance Party @ ...",
+      "htmlSnippet": "Alles über <b>Salsa</b> in <b>München</b>: Clubs, Tanzschulen, Partys und <b>Salsa</b> Tanzpartner in <b>München</b>. ... jeden <b>Dienstag</b> ab 20:00 Uhr, Legenday <b>Salsa</b> Social Dance Party @&nbsp;...",
+      "formattedUrl": "https://www.salsalemania.de/salsa-in-muenchen/",
+      "htmlFormattedUrl": "https://www.<b>salsa</b>lemania.de/<b>salsa</b>-in-muenchen/",
       "pagemap": {
-        "offer": [
-          {
-            "pricecurrency": "EUR",
-            "price": "8.00",
-            "name": "Eintritt",
-            "url": "https://www.salsalemania.de/salsa-partys/?ID=mambita-mambo-cafe&DT=2025-09-13"
-          },
-          {
-            "pricecurrency": "EUR",
-            "price": "8.00",
-            "name": "Eintritt",
-            "url": "https://www.salsalemania.de/salsa-partys/?ID=mambita-freitag&DT=2025-09-26"
-          },
-          {
-            "pricecurrency": "EUR",
-            "price": "8.00",
-            "name": "Eintritt",
-            "url": "https://www.salsalemania.de/salsa-partys/?ID=mambita-mambo-cafe&DT=2025-10-11"
-          },
-          {
-            "pricecurrency": "EUR",
-            "price": "8.00",
-            "name": "Eintritt",
-            "url": "https://www.salsalemania.de/salsa-partys/?ID=mambita-freitag&DT=2025-10-24"
-          },
-          {
-            "pricecurrency": "EUR",
-            "price": "8.00",
-            "name": "Eintritt",
-            "url": "https://www.salsalemania.de/salsa-partys/?ID=mambita-mambo-cafe&DT=2025-11-08"
-          },
-          {
-            "pricecurrency": "EUR",
-            "price": "8.00",
-            "name": "Eintritt",
-            "url": "https://www.salsalemania.de/salsa-partys/?ID=mambita-freitag&DT=2025-11-21"
-          },
-          {
-            "pricecurrency": "EUR",
-            "price": "8.00",
-            "name": "Eintritt",
-            "url": "https://www.salsalemania.de/salsa-partys/?ID=mambita-mambo-cafe&DT=2025-12-06"
-          },
-          {
-            "pricecurrency": "EUR",
-            "price": "8.00",
-            "name": "Eintritt",
-            "url": "https://www.salsalemania.de/salsa-partys/?ID=mambita-freitag&DT=2025-12-19"
-          }
-        ],
         "nightclub": [
           {
-            "image": "https://www.salsalemania.de/salsa-clubs/berlin/havanna/havanna-berlin_small.png",
-            "name": "Havanna",
-            "description": "Salsa Partys, Reggaeton, Bachata - Achtung: Samstags nur Bachata & Reggaeton"
+            "image": "https://www.salsalemania.de/salsa-clubs/muenchen/salsaclub-munich/salsa-club-munich_sm.png",
+            "name": "Salsa Beats @ Salsa Club Munich",
+            "description": "Salsa Beats<br> Unsere traditionelle Salsa und Bachata Party. Ab 21:00 Uhr tolle Musik für alle Tanzstile und mit Guest Djs: Salsa, Bachata, Mambo, Guaguanco, Charanga, Cha Cha Cha 150 qm..."
           },
           {
-            "image": "https://www.salsalemania.de/salsa-clubs/berlin/soda/soda-berlin_small.png",
-            "name": "Soda-Club"
+            "image": "https://www.salsalemania.de/salsa-clubs/muenchen/circulo/circulo_small.png",
+            "name": "Circulo",
+            "description": "Dienstags: Salsa-Party (1 Area)<br><br> Samstags: 3 Area Latin Party <br><br> Wir zelebrieren einen in München einmaligen Party Samstag! <br><br> Area 1: Salsa Cubana Party - mit bester Musik..."
           },
           {
-            "image": "https://www.salsalemania.de/salsa-clubs/berlin/claerchens-ballhaus/claerchens-logo-small.png",
-            "name": "Clärchens Ballhaus",
-            "description": "Salsa Party in Berlins ältestem Ballhaus.Jeden Montag ab 19 Uhr. Mit DJ Flori & Wilber. Eintritt 10 EUR"
+            "image": "https://www.salsalemania.de/salsa-clubs/muenchen/salsea/legendary-dance-party_small.jpg",
+            "name": "Legenday Salsa Social Dance Party @ Salsea",
+            "description": "Ein aufregender Abend voller Tanz und Musik Musik AUF 2 Areas (Salsa Area, Bachata Area) mit unseren DJS, der die besten Salsa, Mambo, Son und Bachata Hits auflegen.<br> <br> Kostenlose Schnupperku..."
+          },
+          {
+            "image": "https://www.salsalemania.de/salsa-clubs/muenchen/megano/megano_small.png",
+            "name": "Megano Tanzschule",
+            "description": "Die Salsa Tanzschule von Joycce in Obersendling für Salsa Cubana, Timba, Rumba, Son, Afro!"
           }
         ],
-        "festival": [
+        "cse_thumbnail": [
           {
-            "image": "https://www.salsalemania.de/salsa-festivals/berlinsalsafestival_2026.jpg",
-            "enddate": "2026-03-29",
-            "name": "Festival: Berlin Salsa Festival \"Fiesta elegante\"",
-            "description": "We are ready for the third edition with an exclusive mind blowing line up. The Artist Lineup is cherry picked and carefully chosen, it will just blow your mind. <br> <br> Artists:<br> <br>...",
-            "startdate": "2026-03-27",
-            "url": "Festival: Berlin Salsa Festival \"Fiesta elegante\""
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGbPoffa4c83Vfo4e1hJf32DjZ_Cf-KPMHJmZL2Nde4f0kSKOTsh6hIQOP&s",
+            "width": "132",
+            "height": "166"
           }
         ],
         "postaladdress": [
           {
-            "addresslocality": "Berlin",
-            "postalcode": "10115",
-            "name": "Wilder Als Erwartet",
-            "streetaddress": "Caroline-Michaelis-Str. 1 (am Nordbahnhof)"
+            "addresslocality": "München",
+            "postalcode": "80331",
+            "streetaddress": "Westenrieder Str 41 /Tal 32 ( Passage)"
           },
           {
-            "addresslocality": "Berlin",
-            "postalcode": "10587",
-            "name": "Ernst-Reuter-Platz"
+            "addresslocality": "München",
+            "postalcode": "81671",
+            "streetaddress": "Rosenheimer Straße 139"
           },
           {
-            "addresslocality": "Berlin",
-            "postalcode": "10587",
-            "name": "Ernst-Reuter-Platz"
+            "addresslocality": "München",
+            "postalcode": "80798",
+            "streetaddress": "Heßstr. 48b"
           },
           {
-            "addresslocality": "Berlin",
-            "postalcode": "10587",
-            "name": "Ernst-Reuter-Platz"
-          },
-          {
-            "addresslocality": "Berlin",
-            "postalcode": "10829",
-            "name": "La Mambita",
-            "streetaddress": "Kolonnenstr. 29"
-          },
-          {
-            "addresslocality": "Berlin",
-            "postalcode": "10587",
-            "name": "Ernst-Reuter-Platz"
-          },
-          {
-            "addresslocality": "Berlin",
-            "postalcode": "10829",
-            "name": "La Mambita",
-            "streetaddress": "Kolonnenstr. 29"
-          },
-          {
-            "addresslocality": "Berlin",
-            "postalcode": "10829",
-            "name": "La Mambita",
-            "streetaddress": "Kolonnenstr. 29"
-          },
-          {
-            "addresslocality": "Berlin",
-            "postalcode": "10829",
-            "name": "La Mambita",
-            "streetaddress": "Kolonnenstr. 29"
-          },
-          {
-            "addresslocality": "Berlin",
-            "postalcode": "10829",
-            "name": "La Mambita",
-            "streetaddress": "Kolonnenstr. 29"
-          },
-          {
-            "addresslocality": "Berlin",
-            "postalcode": "10829",
-            "name": "La Mambita",
-            "streetaddress": "Kolonnenstr. 29"
-          },
-          {
-            "addresslocality": "Berlin",
-            "postalcode": "10829",
-            "name": "La Mambita",
-            "streetaddress": "Kolonnenstr. 29"
-          },
-          {
-            "addresslocality": "Berlin",
-            "postalcode": "10829",
-            "name": "La Mambita",
-            "streetaddress": "Kolonnenstr. 29"
-          },
-          {
-            "addresslocality": "Berlin",
-            "postalcode": "13507",
-            "name": "Tegeler Seeterrassen",
-            "streetaddress": "Wilkestr. 1"
-          },
-          {
-            "addresslocality": "Berlin",
-            "postalcode": "10827",
-            "streetaddress": "Hauptstr. 30"
-          },
-          {
-            "addresslocality": "Berlin",
-            "postalcode": "10435",
-            "streetaddress": "Schönhauser Allee 36",
-            "telephone": "030 - 44 31 51 55"
-          },
-          {
-            "addresslocality": "Berlin",
-            "postalcode": "10117",
-            "streetaddress": "Auguststr. 24/25"
-          }
-        ],
-        "hcalendar": [
-          {
-            "summary": "Salsa-Party: Salsa-Cafe",
-            "description": "Für alle die authentische und besondere Salsa Musik hören und auch tanzen möchten öffnet das Salsa-Cafe in der \"Wilder-als-erwartet\" Bar am 5. März, so wie an jedem 1. Mittwoch im Monat,wieder...",
-            "photo": "https://www.salsalemania.de/salsa-partys/Salsa-Cafe-Wednesday.png",
-            "dtstart": "2025-08-06",
-            "url": "https://www.salsalemania.de/salsa-partys/?ID=salsa-cafe&DT=2025-08-06"
-          },
-          {
-            "summary": "Salsa-Party: Salsa Sommer",
-            "description": "Salsa Open Air mitten auf dem Ernst-Reuter-Platz - Zugang über U-Bahn-Tunnel<br> immer 18:00 - 22:00 Uhr mit DJ Ronny",
-            "photo": "https://www.salsalemania.de/salsa-partys/e-r-p-b-2025.jpg",
-            "dtstart": "2025-08-15",
-            "url": "https://www.salsalemania.de/salsa-partys/?ID=salsa-sommer-berlin-2025&DT=2025-08-15"
-          },
-          {
-            "summary": "Salsa-Party: Salsa Sommer",
-            "description": "Salsa Open Air mitten auf dem Ernst-Reuter-Platz - Zugang über U-Bahn-Tunnel<br> immer 18:00 - 22:00 Uhr mit DJ Ronny",
-            "photo": "https://www.salsalemania.de/salsa-partys/e-r-p-b-2025.jpg",
-            "dtstart": "2025-08-22",
-            "url": "https://www.salsalemania.de/salsa-partys/?ID=salsa-sommer-berlin-2025&DT=2025-08-22"
-          },
-          {
-            "summary": "Salsa-Party: Salsa Sommer",
-            "description": "Salsa Open Air mitten auf dem Ernst-Reuter-Platz - Zugang über U-Bahn-Tunnel<br> immer 18:00 - 22:00 Uhr mit DJ Ronny",
-            "photo": "https://www.salsalemania.de/salsa-partys/e-r-p-b-2025.jpg",
-            "dtstart": "2025-09-05",
-            "url": "https://www.salsalemania.de/salsa-partys/?ID=salsa-sommer-berlin-2025&DT=2025-09-05"
-          },
-          {
-            "summary": "Salsa-Party: Mambo Café @ Mambita",
-            "description": "Mit Cafe und leckerem Kuchen nachmittags & in den Abend hinein tanzen (bis 20:00). <br> Dj Flori | bettina_lady.mambo<br> 16 – 17 Uhr ChaChaChá mit Suzanne",
-            "photo": "https://www.salsalemania.de/salsa-partys/mambita-mambo-cafe.jpg",
-            "dtstart": "2025-09-13",
-            "url": "https://www.salsalemania.de/salsa-partys/?ID=mambita-mambo-cafe&DT=2025-09-13"
-          },
-          {
-            "summary": "Salsa-Party: Salsa Sommer",
-            "description": "Salsa Open Air mitten auf dem Ernst-Reuter-Platz - Zugang über U-Bahn-Tunnel<br> immer 18:00 - 22:00 Uhr mit DJ Ronny",
-            "photo": "https://www.salsalemania.de/salsa-partys/e-r-p-b-2025.jpg",
-            "dtstart": "2025-09-19",
-            "url": "https://www.salsalemania.de/salsa-partys/?ID=salsa-sommer-berlin-2025&DT=2025-09-19"
-          },
-          {
-            "summary": "Salsa-Party: Salsa Party @ La Mambita",
-            "description": "Salsa Party in der Tanzschule Mambita<br> Dj Flori | bettina_lady.mambo",
-            "photo": "https://www.salsalemania.de/salsa-partys/mambita.jpg",
-            "dtstart": "2025-09-26",
-            "url": "https://www.salsalemania.de/salsa-partys/?ID=mambita-freitag&DT=2025-09-26"
-          },
-          {
-            "summary": "Salsa-Party: Mambo Café @ Mambita",
-            "description": "Mit Cafe und leckerem Kuchen nachmittags & in den Abend hinein tanzen (bis 20:00). <br> Dj Flori | bettina_lady.mambo<br> 16 – 17 Uhr ChaChaChá mit Suzanne",
-            "photo": "https://www.salsalemania.de/salsa-partys/mambita-mambo-cafe.jpg",
-            "dtstart": "2025-10-11",
-            "url": "https://www.salsalemania.de/salsa-partys/?ID=mambita-mambo-cafe&DT=2025-10-11"
-          },
-          {
-            "summary": "Salsa-Party: Salsa Party @ La Mambita",
-            "description": "Salsa Party in der Tanzschule Mambita<br> Dj Flori | bettina_lady.mambo",
-            "photo": "https://www.salsalemania.de/salsa-partys/mambita.jpg",
-            "dtstart": "2025-10-24",
-            "url": "https://www.salsalemania.de/salsa-partys/?ID=mambita-freitag&DT=2025-10-24"
-          },
-          {
-            "summary": "Salsa-Party: Mambo Café @ Mambita",
-            "description": "Mit Cafe und leckerem Kuchen nachmittags & in den Abend hinein tanzen (bis 20:00). <br> Dj Flori | bettina_lady.mambo<br> 16 – 17 Uhr ChaChaChá mit Suzanne",
-            "photo": "https://www.salsalemania.de/salsa-partys/mambita-mambo-cafe.jpg",
-            "dtstart": "2025-11-08",
-            "url": "https://www.salsalemania.de/salsa-partys/?ID=mambita-mambo-cafe&DT=2025-11-08"
-          },
-          {
-            "summary": "Salsa-Party: Salsa Party @ La Mambita",
-            "description": "Salsa Party in der Tanzschule Mambita<br> Dj Flori | bettina_lady.mambo",
-            "photo": "https://www.salsalemania.de/salsa-partys/mambita.jpg",
-            "dtstart": "2025-11-21",
-            "url": "https://www.salsalemania.de/salsa-partys/?ID=mambita-freitag&DT=2025-11-21"
-          },
-          {
-            "summary": "Salsa-Party: Mambo Café @ Mambita",
-            "description": "Mit Cafe und leckerem Kuchen nachmittags & in den Abend hinein tanzen (bis 20:00). <br> Dj Flori | bettina_lady.mambo<br> 16 – 17 Uhr ChaChaChá mit Suzanne",
-            "photo": "https://www.salsalemania.de/salsa-partys/mambita-mambo-cafe.jpg",
-            "dtstart": "2025-12-06",
-            "url": "https://www.salsalemania.de/salsa-partys/?ID=mambita-mambo-cafe&DT=2025-12-06"
-          },
-          {
-            "summary": "Salsa-Party: Salsa Party @ La Mambita",
-            "description": "Salsa Party in der Tanzschule Mambita<br> Dj Flori | bettina_lady.mambo",
-            "photo": "https://www.salsalemania.de/salsa-partys/mambita.jpg",
-            "dtstart": "2025-12-19",
-            "url": "https://www.salsalemania.de/salsa-partys/?ID=mambita-freitag&DT=2025-12-19"
-          },
-          {
-            "summary": "Festival: Berlin Salsa Festival \"Fiesta elegante\"",
-            "description": "We are ready for the third edition with an exclusive mind blowing line up. The Artist Lineup is cherry picked and carefully chosen, it will just blow your mind. <br> <br> Artists:<br> <br>...",
-            "photo": "https://www.salsalemania.de/salsa-festivals/berlinsalsafestival_2026.jpg",
-            "dtend": "2026-03-29",
-            "dtstart": "2026-03-27",
-            "url": "https://www.salsalemania.de/salsa-festivals/?ID=berlinsalsafestival"
+            "addresslocality": "München",
+            "postalcode": "81379",
+            "streetaddress": "Geretsriederstr. 6"
           }
         ],
         "metatags": [
@@ -390,558 +112,560 @@
             "author": "salsalemania.de"
           }
         ],
-        "place": [
-          {
-            "name": "Wilder Als Erwartet",
-            "url": "https://maps.app.goo.gl/9N5dfUwGX95jA7QQ7"
-          },
-          {
-            "name": "Ernst-Reuter-Platz",
-            "url": "https://maps.app.goo.gl/TwbA3NSEs6hzdj6c7"
-          },
-          {
-            "name": "Ernst-Reuter-Platz",
-            "url": "https://maps.app.goo.gl/TwbA3NSEs6hzdj6c7"
-          },
-          {
-            "name": "Ernst-Reuter-Platz",
-            "url": "https://maps.app.goo.gl/TwbA3NSEs6hzdj6c7"
-          },
-          {
-            "name": "La Mambita",
-            "url": "https://goo.gl/maps/BScFLcNj1FJ2"
-          },
-          {
-            "name": "Ernst-Reuter-Platz",
-            "url": "https://maps.app.goo.gl/TwbA3NSEs6hzdj6c7"
-          },
-          {
-            "name": "La Mambita",
-            "url": "https://goo.gl/maps/BScFLcNj1FJ2"
-          },
-          {
-            "name": "La Mambita",
-            "url": "https://goo.gl/maps/BScFLcNj1FJ2"
-          },
-          {
-            "name": "La Mambita",
-            "url": "https://goo.gl/maps/BScFLcNj1FJ2"
-          },
-          {
-            "name": "La Mambita",
-            "url": "https://goo.gl/maps/BScFLcNj1FJ2"
-          },
-          {
-            "name": "La Mambita",
-            "url": "https://goo.gl/maps/BScFLcNj1FJ2"
-          },
-          {
-            "name": "La Mambita",
-            "url": "https://goo.gl/maps/BScFLcNj1FJ2"
-          },
-          {
-            "name": "La Mambita",
-            "url": "https://goo.gl/maps/BScFLcNj1FJ2"
-          },
-          {
-            "name": "Tegeler Seeterrassen",
-            "url": "https://goo.gl/maps/Aja6AkZnttSDUaV8A"
-          }
-        ],
-        "event": [
-          {
-            "summary": "Salsa-Party: Salsa-Cafe",
-            "location": "Berlin",
-            "dtstart": "2025-08-06",
-            "url": "https://www.salsalemania.de/salsa-partys/?ID=salsa-cafe&DT=2025-08-06"
-          }
-        ],
-        "danceevent": [
-          {
-            "image": "https://www.salsalemania.de/salsa-partys/Salsa-Cafe-Wednesday.png",
-            "name": "Salsa-Party: Salsa-Cafe",
-            "description": "Für alle die authentische und besondere Salsa Musik hören und auch tanzen möchten öffnet das Salsa-Cafe in der \"Wilder-als-erwartet\" Bar am 5. März, so wie an jedem 1. Mittwoch im Monat,wieder...",
-            "startdate": "2025-08-06",
-            "url": "Salsa-Party: Salsa-Cafe"
-          },
-          {
-            "image": "https://www.salsalemania.de/salsa-partys/e-r-p-b-2025.jpg",
-            "name": "Salsa-Party: Salsa Sommer",
-            "description": "Salsa Open Air mitten auf dem Ernst-Reuter-Platz - Zugang über U-Bahn-Tunnel<br> immer 18:00 - 22:00 Uhr mit DJ Ronny",
-            "startdate": "2025-08-15",
-            "url": "Salsa-Party: Salsa Sommer"
-          },
-          {
-            "image": "https://www.salsalemania.de/salsa-partys/e-r-p-b-2025.jpg",
-            "name": "Salsa-Party: Salsa Sommer",
-            "description": "Salsa Open Air mitten auf dem Ernst-Reuter-Platz - Zugang über U-Bahn-Tunnel<br> immer 18:00 - 22:00 Uhr mit DJ Ronny",
-            "startdate": "2025-08-22",
-            "url": "Salsa-Party: Salsa Sommer"
-          },
-          {
-            "image": "https://www.salsalemania.de/salsa-partys/e-r-p-b-2025.jpg",
-            "name": "Salsa-Party: Salsa Sommer",
-            "description": "Salsa Open Air mitten auf dem Ernst-Reuter-Platz - Zugang über U-Bahn-Tunnel<br> immer 18:00 - 22:00 Uhr mit DJ Ronny",
-            "startdate": "2025-09-05",
-            "url": "Salsa-Party: Salsa Sommer"
-          },
-          {
-            "image": "https://www.salsalemania.de/salsa-partys/mambita-mambo-cafe.jpg",
-            "name": "Salsa-Party: Mambo Café @ Mambita",
-            "description": "Mit Cafe und leckerem Kuchen nachmittags & in den Abend hinein tanzen (bis 20:00). <br> Dj Flori | bettina_lady.mambo<br> 16 – 17 Uhr ChaChaChá mit Suzanne",
-            "startdate": "2025-09-13",
-            "url": "Salsa-Party: Mambo Café @ Mambita"
-          },
-          {
-            "image": "https://www.salsalemania.de/salsa-partys/e-r-p-b-2025.jpg",
-            "name": "Salsa-Party: Salsa Sommer",
-            "description": "Salsa Open Air mitten auf dem Ernst-Reuter-Platz - Zugang über U-Bahn-Tunnel<br> immer 18:00 - 22:00 Uhr mit DJ Ronny",
-            "startdate": "2025-09-19",
-            "url": "Salsa-Party: Salsa Sommer"
-          },
-          {
-            "image": "https://www.salsalemania.de/salsa-partys/mambita.jpg",
-            "name": "Salsa-Party: Salsa Party @ La Mambita",
-            "description": "Salsa Party in der Tanzschule Mambita<br> Dj Flori | bettina_lady.mambo",
-            "startdate": "2025-09-26",
-            "url": "Salsa-Party: Salsa Party @ La Mambita"
-          },
-          {
-            "image": "https://www.salsalemania.de/salsa-partys/mambita-mambo-cafe.jpg",
-            "name": "Salsa-Party: Mambo Café @ Mambita",
-            "description": "Mit Cafe und leckerem Kuchen nachmittags & in den Abend hinein tanzen (bis 20:00). <br> Dj Flori | bettina_lady.mambo<br> 16 – 17 Uhr ChaChaChá mit Suzanne",
-            "startdate": "2025-10-11",
-            "url": "Salsa-Party: Mambo Café @ Mambita"
-          },
-          {
-            "image": "https://www.salsalemania.de/salsa-partys/mambita.jpg",
-            "name": "Salsa-Party: Salsa Party @ La Mambita",
-            "description": "Salsa Party in der Tanzschule Mambita<br> Dj Flori | bettina_lady.mambo",
-            "startdate": "2025-10-24",
-            "url": "Salsa-Party: Salsa Party @ La Mambita"
-          },
-          {
-            "image": "https://www.salsalemania.de/salsa-partys/mambita-mambo-cafe.jpg",
-            "name": "Salsa-Party: Mambo Café @ Mambita",
-            "description": "Mit Cafe und leckerem Kuchen nachmittags & in den Abend hinein tanzen (bis 20:00). <br> Dj Flori | bettina_lady.mambo<br> 16 – 17 Uhr ChaChaChá mit Suzanne",
-            "startdate": "2025-11-08",
-            "url": "Salsa-Party: Mambo Café @ Mambita"
-          },
-          {
-            "image": "https://www.salsalemania.de/salsa-partys/mambita.jpg",
-            "name": "Salsa-Party: Salsa Party @ La Mambita",
-            "description": "Salsa Party in der Tanzschule Mambita<br> Dj Flori | bettina_lady.mambo",
-            "startdate": "2025-11-21",
-            "url": "Salsa-Party: Salsa Party @ La Mambita"
-          },
-          {
-            "image": "https://www.salsalemania.de/salsa-partys/mambita-mambo-cafe.jpg",
-            "name": "Salsa-Party: Mambo Café @ Mambita",
-            "description": "Mit Cafe und leckerem Kuchen nachmittags & in den Abend hinein tanzen (bis 20:00). <br> Dj Flori | bettina_lady.mambo<br> 16 – 17 Uhr ChaChaChá mit Suzanne",
-            "startdate": "2025-12-06",
-            "url": "Salsa-Party: Mambo Café @ Mambita"
-          },
-          {
-            "image": "https://www.salsalemania.de/salsa-partys/mambita.jpg",
-            "name": "Salsa-Party: Salsa Party @ La Mambita",
-            "description": "Salsa Party in der Tanzschule Mambita<br> Dj Flori | bettina_lady.mambo",
-            "startdate": "2025-12-19",
-            "url": "Salsa-Party: Salsa Party @ La Mambita"
-          }
-        ]
-      }
-    },
-    {
-      "kind": "customsearch#result",
-      "title": "Soda Club Berlin - Dein Club im Herzen von Berlin",
-      "htmlTitle": "Soda Club <b>Berlin</b> - Dein Club im Herzen von <b>Berlin</b>",
-      "link": "https://soda-berlin.de/",
-      "displayLink": "soda-berlin.de",
-      "snippet": "Der Soda Club ist die Party Location in Berlin. Party every weekend since '99! Tanze zu RnB, Black, Dance und Electro durch die Nacht! Jeden Freitag ...",
-      "htmlSnippet": "Der Soda Club ist die Party Location in <b>Berlin</b>. Party every weekend since &#39;99! Tanze zu RnB, Black, Dance und Electro durch die Nacht! Jeden <b>Freitag</b>&nbsp;...",
-      "formattedUrl": "https://soda-berlin.de/",
-      "htmlFormattedUrl": "https://soda-<b>berlin</b>.de/",
-      "pagemap": {
-        "cse_thumbnail": [
-          {
-            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQik3pRMAMXVdyUa8cQSwSizASwRA-nZmeEGPvFVWjAnH4dmGvDtokewxw&s",
-            "width": "219",
-            "height": "231"
-          }
-        ],
-        "metatags": [
-          {
-            "msapplication-tilecolor": "#fff",
-            "theme-color": "#fff",
-            "viewport": "width=device-width,initial-scale=1"
-          }
-        ],
         "cse_image": [
           {
-            "src": "https://www.soda-berlin.de/media/default/assets/config/soda/images/home/submodules/app_preview/0.png"
+            "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/DEU_M%C3%BCnchen_COA.svg/132px-DEU_M%C3%BCnchen_COA.svg.png"
           }
         ]
       }
     },
     {
       "kind": "customsearch#result",
-      "title": "Salsa tanzen in Berlin | visitBerlin.de",
-      "htmlTitle": "<b>Salsa</b> tanzen in <b>Berlin</b> | <b>visitBerlin</b>.de",
-      "link": "https://www.visitberlin.de/de/salsa-tanzen-berlin",
-      "displayLink": "www.visitberlin.de",
-      "snippet": "Der Sodaclub in der Kulturbrauerei bietet jeden Donnerstag und Sonntag Tanzkurse zu Salsa, Kizomba und Mambo an. Gleich im Anschluss beginnt die Salsa Party, ...",
-      "htmlSnippet": "Der Sodaclub in der Kulturbrauerei bietet jeden Donnerstag und Sonntag Tanzkurse zu <b>Salsa</b>, Kizomba und Mambo an. Gleich im Anschluss beginnt die <b>Salsa</b> Party,&nbsp;...",
-      "formattedUrl": "https://www.visitberlin.de/de/salsa-tanzen-berlin",
-      "htmlFormattedUrl": "https://www.visit<b>berlin</b>.de/de/<b>salsa</b>-tanzen-<b>berlin</b>",
+      "title": "Megano Tanzschule: Salsa Tanzschule München",
+      "htmlTitle": "Megano Tanzschule: <b>Salsa</b> Tanzschule <b>München</b>",
+      "link": "https://megano-tanzschule.de/",
+      "displayLink": "megano-tanzschule.de",
+      "snippet": "Events. Dienstag. SALSA PARTY. Kleine Party! Für alle Megano Schüler, die ... Am Samstagabend findet unsere große kubanische Salsa Übungsparty statt. Das ...",
+      "htmlSnippet": "Events. <b>Dienstag</b>. <b>SALSA</b> PARTY. Kleine Party! Für alle Megano Schüler, die ... Am Samstagabend findet unsere große kubanische <b>Salsa</b> Übungsparty statt. Das&nbsp;...",
+      "formattedUrl": "https://megano-tanzschule.de/",
+      "htmlFormattedUrl": "https://megano-tanzschule.de/",
       "pagemap": {
-        "cse_thumbnail": [
-          {
-            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ5is-oem60Uz-GGjGlYhH1wL9kDeigu7y32j0aeth_GN1a_UEo0oTdtmw&s",
-            "width": "348",
-            "height": "145"
-          }
-        ],
         "metatags": [
           {
-            "application-name": "visitBerlin",
-            "msapplication-tilecolor": "#b20e10",
-            "og:image": "https://www.visitberlin.de/system/files/styles/visitberlin_hero_visitberlin_desktop_2x/private/image/Tango_Nacht__MG_5168_c_G%C3%BCnter%20Steffen_DL_PPT_0.jpg.webp?itok=BO1ogQ-6",
-            "msapplication-config": "/themes/custom/visitberlin/static/browserconfig.xml?v=8",
-            "twitter:card": "summary_large_image",
-            "twitter:title": "Salsa tanzen in Berlin",
-            "theme-color": "#ffffff",
-            "handheldfriendly": "true",
-            "og:title": "Salsa tanzen in Berlin",
-            "apple-mobile-web-app-title": "visitBerlin",
-            "msapplication-tileimage": "/themes/custom/visitberlin/static/mstile-144x144.png?v=8",
-            "twitter:image": "https://www.visitberlin.de/system/files/styles/visitberlin_hero_visitberlin_desktop_2x/private/image/Tango_Nacht__MG_5168_c_G%C3%BCnter%20Steffen_DL_PPT_0.jpg.webp?itok=BO1ogQ-6",
-            "twitter:site": "@visitberlin",
+            "og:type": "website",
             "viewport": "width=device-width, initial-scale=1.0",
-            "mobileoptimized": "width",
-            "format-detection": "telephone=no"
-          }
-        ],
-        "cse_image": [
-          {
-            "src": "https://www.visitberlin.de/system/files/styles/visitberlin_hero_visitberlin_desktop_2x/private/image/Tango_Nacht__MG_5168_c_G%C3%BCnter%20Steffen_DL_PPT_0.jpg.webp?itok=BO1ogQ-6"
+            "og:title": "Salsa Tanzschule München",
+            "og:url": "https://megano-tanzschule.de/",
+            "og:description": "DIE Tanzschule in Obersendling für kubanische Tänze - Salsa, Son, Rumba, Afro. Wo Tanzen Leidenschaft ist. Kostenfreie Schnupperkurse bei der Samstagsparty.salsa tanzschule münchen kubanische salsa casino son rumba salsa tanzschule rueda de casino rumba timba"
           }
         ]
       }
     },
     {
       "kind": "customsearch#result",
-      "title": "Salsa tanzen Berlin - Salsa-Partys in Berlin, Salsa-Tanzschulen in ...",
-      "htmlTitle": "<b>Salsa</b> tanzen <b>Berlin</b> - <b>Salsa</b>-Partys in <b>Berlin</b>, <b>Salsa</b>-Tanzschulen in ...",
-      "link": "https://www.salsa-und-tango.de/salsa-magazin/salsa-tanzen-berlin/",
-      "displayLink": "www.salsa-und-tango.de",
-      "snippet": "Salsa freitags in Berlin tanzen. Für nicht regelmäßige Salsa-Partys am Freitag in Berlin siehe unser Stichwort Salsa-Berlin. Freitags ist Salsa-Party im ...",
-      "htmlSnippet": "<b>Salsa freitags</b> in <b>Berlin</b> tanzen. Für nicht regelmäßige <b>Salsa</b>-Partys am <b>Freitag</b> in <b>Berlin</b> siehe unser Stichwort <b>Salsa</b>-<b>Berlin</b>. <b>Freitags</b> ist <b>Salsa</b>-Party im&nbsp;...",
-      "formattedUrl": "https://www.salsa-und-tango.de/salsa-magazin/salsa-tanzen-berlin/",
-      "htmlFormattedUrl": "https://www.<b>salsa</b>-und-tango.de/<b>salsa</b>-magazin/<b>salsa</b>-tanzen-<b>berlin</b>/",
+      "title": "SALSA CLUB MUNICH - Salsa und Bachata in München by HAKAN",
+      "htmlTitle": "<b>SALSA</b> CLUB MUNICH - <b>Salsa</b> und Bachata in <b>München</b> by HAKAN",
+      "link": "https://salsaclub-munich.de/",
+      "displayLink": "salsaclub-munich.de",
+      "snippet": "Salsa in München bei Salsa Club München - Salsakurse, Salsa-Workshops, Tanzkurse, Kurse, Bachata, Salsakurs München, Salsa on 2, Mambo, Privatstunden in ...",
+      "htmlSnippet": "<b>Salsa</b> in <b>München</b> bei <b>Salsa</b> Club <b>München</b> - Salsakurse, <b>Salsa</b>-Workshops, Tanzkurse, Kurse, Bachata, Salsakurs <b>München</b>, <b>Salsa</b> on 2, Mambo, Privatstunden in&nbsp;...",
+      "formattedUrl": "https://salsaclub-munich.de/",
+      "htmlFormattedUrl": "https://<b>salsa</b>club-munich.de/",
       "pagemap": {
-        "hcard": [
-          {
-            "fn": "Romana",
-            "nickname": "Romana"
-          }
-        ],
         "cse_thumbnail": [
           {
-            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIsgTwmUUDLpMqT47fS7cUMFGl3LAVBNTkPOL-uMBsiPgdGgA0BQR2YRgD&s",
-            "width": "268",
-            "height": "188"
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQExF6zei1mkZ_03Ipeaxx44_R2WMeyditAf49ufQVD_nMthsqdiqA4qf-s&s",
+            "width": "206",
+            "height": "244"
           }
         ],
         "metatags": [
           {
-            "og:image": "https://www.salsa-und-tango.de/wp-content/uploads/2009/05/Salsa-tanzen-Berlin.jpg",
-            "og:type": "article",
+            "msapplication-tilecolor": "#ffffff",
+            "og:image": "/img/favicon/apple-icon.png",
+            "msapplication-square70x70logo": "/img/favicon/win8-tile-70x70.png",
+            "theme-color": "#ffffff",
+            "og:type": "website",
+            "twitter:card": "summary",
+            "msapplication-square144x144logo": "/img/favicon/win8-tile-144x144.png",
+            "og:title": "SALSA CLUB MUNICH - Salsa und Bachata in München by HAKAN",
+            "msapplication-wide310x150logo": "/img/favicon/win8-tile-310x150.png",
+            "msapplication-tileimage": "/img/favicon/win8-tile-144x144.png",
+            "msapplication-navbutton-color": "#ffffff",
+            "msapplication-square150x150logo": "/img/favicon/win8-tile-150x150.png",
+            "og:description": "SALSA CLUB MUNICH - Salsa und Bachata in München by HAKAN",
+            "facebook-domain-verification": "6gk2bmplxw46s6t5foztyhzm0zoqgu",
             "viewport": "width=device-width, initial-scale=1",
-            "news_keywords": "Berlin, Salsa, Salsa tanzen Berlin, Salsa Partys Berlin, Salsa Tanzschulen Berlin, Salsa heute in Berlin, Salsa open air Berlin, Salsa montags Berlin, Salsa dienstags Berlin, Salsa mittwochs Berlin, Salsa donnerstags Berlin, Salsa freitags Berlin, Salsa samstags Berlin, Salsa sonntags Berlin",
-            "og:title": "Salsa tanzen Berlin - Salsa-Partys in Berlin, Salsa-Tanzschulen in Berlin",
-            "og:url": "https://www.salsa-und-tango.de/salsa-magazin/salsa-tanzen-berlin/",
-            "og:description": "Salsa tanzen in Berlin! In Berlin gibt es (fast) jeden Tag Salsa-Partys, bei denen Ihr Salsa tanzen könnt. Hier findet Ihr, bei welchen Salsa-Partys, wo man an bestimmten Wochentagen in Berlin Salsa tanzen kann und welche Salsa-Tanzschulen in Berlin wir empfehlen.",
-            "verification": "0fa070f867aaf8103833ccbf086c6cfe"
+            "msapplication-square310x310logo": "/img/favicon/win8-tile-310x310.png",
+            "twitter:description": "SALSA CLUB MUNICH - Salsa und Bachata in München by HAKAN",
+            "og:url": "https://www.salsaclub-munich.de/"
           }
         ],
         "cse_image": [
           {
-            "src": "https://www.salsa-und-tango.de/wp-content/uploads/2009/05/Salsa-tanzen-Berlin.jpg"
+            "src": "https://salsaclub-munich.de/img/heroVideo.jpg"
           }
         ]
       }
     },
     {
       "kind": "customsearch#result",
-      "title": "Tanzabende und Tanzkurse unter freiem Himmel – Berlin.de",
-      "htmlTitle": "Tanzabende und Tanzkurse unter freiem Himmel – <b>Berlin</b>.de",
-      "link": "https://www.berlin.de/kultur-und-tickets/tipps/draussen/7490847-6199728-tanzen-und-tanzkurse-unter-freiem-himmel.html",
-      "displayLink": "www.berlin.de",
-      "snippet": "Montags und donnerstags steht Salsa auf dem Programm, am Dienstag und ... freitags Swing auf dem Programm steht. Bei schlechtem und kaltem Wetter ...",
-      "htmlSnippet": "Montags und donnerstags steht <b>Salsa</b> auf dem Programm, am Dienstag und ... <b>freitags</b> Swing auf dem Programm steht. Bei schlechtem und kaltem Wetter&nbsp;...",
-      "formattedUrl": "https://www.berlin.de/.../7490847-6199728-tanzen-und-tanzkurse-unter-fre...",
-      "htmlFormattedUrl": "https://www.<b>berlin</b>.de/.../7490847-6199728-tanzen-und-tanzkurse-unter-fre...",
+      "title": "Veranstaltung Salsa Roja - Tollwood München: Veranstaltungen ...",
+      "htmlTitle": "<b>Veranstaltung Salsa</b> Roja - Tollwood <b>München</b>: <b>Veranstaltungen</b> ...",
+      "link": "https://www.tollwood.de/en/veranstaltungen/2025/salsa-roja/",
+      "displayLink": "www.tollwood.de",
+      "snippet": "26.06.2025 ... Andechser Zelt | Fiery salsa classics with Salsa Roja on Thursday, June 26 at the Tollwood Summer Festival 2025. Free admission!",
+      "htmlSnippet": "26.06.2025 <b>...</b> Andechser Zelt | Fiery <b>salsa</b> classics with <b>Salsa</b> Roja on Thursday, June 26 at the Tollwood Summer Festival 2025. Free admission!",
+      "formattedUrl": "https://www.tollwood.de/en/veranstaltungen/2025/salsa-roja/",
+      "htmlFormattedUrl": "https://www.tollwood.de/en/<b>veranstaltung</b>en/2025/<b>salsa</b>-roja/",
       "pagemap": {
         "cse_thumbnail": [
           {
-            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrmm0XmuAMFRH48_btVEPU4VoMsB5jn2h-_poudtSqaIZQggkLShdCzsD3&s",
-            "width": "259",
-            "height": "194"
-          }
-        ],
-        "metatags": [
-          {
-            "msapplication-tilecolor": "#2b5797",
-            "og:image": "https://www.berlin.de/binaries/asset/image_assets/8240861/ratio_4_3/1686743770/800x600/",
-            "msapplication-config": "/browserconfig.xml",
-            "og:image:width": "800",
-            "og:image:alt": "Karneval der Kulturen 2023 (3)",
-            "theme-color": "#ffffff",
-            "og:site_name": "berlin.de",
-            "og:title": "Tanzabende und Tanzkurse unter freiem Himmel",
-            "og:image:height": "600",
-            "og:description": "Jeden Sommer können Hauptstädter und Gäste unter dem Berliner Sternenhimmel auch fernab von Techno-Beats beschwingt das Tanzbein schwingen.",
-            "og:image:secure_url": "/css/berlin_de/foxtrot/images/favicons/berlin_de_fb_social.png",
-            "cm.info": "articles-7490847-61435",
-            "viewport": "width=device-width, initial-scale=1.0",
-            "dc.title": "Tanzabende und Tanzkurse unter freiem Himmel",
-            "og:url": "https://www.berlin.de/kultur-und-tickets/tipps/draussen/7490847-6199728-tanzen-und-tanzkurse-unter-freiem-himmel.html"
-          }
-        ],
-        "cse_image": [
-          {
-            "src": "https://www.berlin.de/binaries/asset/image_assets/8240861/ratio_4_3/1686743770/800x600/"
-          }
-        ],
-        "listitem": [
-          {
-            "item": "Startseite",
-            "name": "Startseite",
-            "position": "1"
-          },
-          {
-            "item": "Kultur und Tickets",
-            "name": "Kultur und Tickets",
-            "position": "2"
-          },
-          {
-            "item": "Tipps",
-            "name": "Tipps",
-            "position": "3"
-          },
-          {
-            "item": "Draußen",
-            "name": "Draußen",
-            "position": "4"
-          }
-        ]
-      }
-    },
-    {
-      "kind": "customsearch#result",
-      "title": "Salsa Berlin – So Tanzt Du Durch Die Hauptstadt!",
-      "htmlTitle": "<b>Salsa Berlin</b> – So Tanzt Du Durch Die Hauptstadt!",
-      "link": "https://cumbancha.de/salsa-berlin-so-tanzt-du-durch-die-hauptstadt/",
-      "displayLink": "cumbancha.de",
-      "snippet": "... Berlin ab 20:00 eine Salsa und Bachata After-Work-Party. Das bringt gute Laune nach einem anstrengenden Arbeitstag. Auch Freitag und Samstag kannst du ab 22 ...",
-      "htmlSnippet": "... <b>Berlin</b> ab 20:00 eine <b>Salsa</b> und Bachata After-Work-Party. Das bringt gute Laune nach einem anstrengenden Arbeitstag. Auch <b>Freitag</b> und Samstag kannst du ab 22&nbsp;...",
-      "formattedUrl": "https://cumbancha.de/salsa-berlin-so-tanzt-du-durch-die-hauptstadt/",
-      "htmlFormattedUrl": "https://cumbancha.de/<b>salsa</b>-<b>berlin</b>-so-tanzt-du-durch-die-hauptstadt/",
-      "pagemap": {
-        "cse_thumbnail": [
-          {
-            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJjw_736XW8MaMzyVmrc3VWgyCD7MYpCn8p--3s-vM_s5sgfFW3aRNaJWu&s",
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjgPP8p42-fJt7U4PgAznXgLrUr11L1nHlqy-paemCVsw3V6BAmic41cBn&s",
             "width": "300",
             "height": "168"
           }
         ],
         "metatags": [
           {
-            "og:image": "https://cumbancha.de/wp-content/uploads/2023/11/Salsa-Berlin.png",
-            "og:image:width": "1920",
-            "article:published_time": "2023-10-24T12:02:57+02:00",
-            "twitter:card": "summary_large_image",
-            "og:site_name": "Cumbancha - Die Salsa Tanzschule in Berlin / Kreuzberg",
-            "twitter:label1": "Time to read",
-            "og:image:type": "image/png",
-            "msapplication-tileimage": "https://cumbancha.de/wp-content/uploads/2022/05/cropped-logo_fuer_hell-1-270x270.png",
-            "og:description": "💃🕺 Salsa Berlin! Wir möchten allen Salsa Begeisterten einen kleinen Überblick über das Angebot in der Stadt geben. Salsa in Berlin zu tanzen steckt an!",
-            "twitter:creator": "@Hardy",
-            "article:publisher": "https://www.facebook.com/Salsa.Tanzschule.Berlin",
-            "og:image:secure_url": "https://cumbancha.de/wp-content/uploads/2023/11/Salsa-Berlin.png",
-            "twitter:image": "https://cumbancha.de/wp-content/uploads/2023/11/Salsa-Berlin.png",
-            "twitter:data1": "6 minutes",
-            "article:modified_time": "2025-07-08T09:40:34+02:00",
+            "msapplication-tilecolor": "#da532c",
+            "og:image": "https://www.tollwood.de/wp-content/uploads/2025/04/06-26-andechser-zelt-tollwood-salsaroja-c-salsaroja.jpg",
+            "msapplication-config": "https://www.tollwood.de/wp-content/themes/ContexLabs/assets/favicon/browserconfig.xml",
             "og:type": "article",
-            "og:image:alt": "Salsa Berlin",
-            "twitter:title": "Salsa Berlin – So Tanzt Du Durch Die Hauptstadt!",
-            "og:title": "Salsa Berlin – So Tanzt Du Durch Die Hauptstadt!",
-            "og:image:height": "1080",
-            "og:updated_time": "2025-07-08T09:40:34+02:00",
-            "facebook-domain-verification": "7g752swjebmakyh8ankc0ervpyrs36",
-            "fb:app_id": "143697848984640",
-            "viewport": "width=device-width, initial-scale=1",
-            "twitter:description": "💃🕺 Salsa Berlin! Wir möchten allen Salsa Begeisterten einen kleinen Überblick über das Angebot in der Stadt geben. Salsa in Berlin zu tanzen steckt an!",
-            "og:locale": "en_US",
-            "og:url": "https://cumbancha.de/salsa-berlin-so-tanzt-du-durch-die-hauptstadt/"
-          }
-        ],
-        "cse_image": [
-          {
-            "src": "https://cumbancha.de/wp-content/uploads/2023/11/Salsa-Berlin.png"
-          }
-        ]
-      }
-    },
-    {
-      "kind": "customsearch#result",
-      "title": "Salsa Party - RUMBA SALSERA BERLIN Tickets, Sat, Jan 4, 2025 at ...",
-      "htmlTitle": "<b>Salsa</b> Party - RUMBA SALSERA <b>BERLIN</b> Tickets, Sat, Jan 4, 2025 at ...",
-      "link": "https://www.eventbrite.de/e/salsa-party-rumba-salsera-berlin-tickets-1074250354729",
-      "displayLink": "www.eventbrite.de",
-      "snippet": "Eventbrite - ART Stalker presents Salsa Party - RUMBA SALSERA BERLIN - Saturday, January 4, 2025 at ART Stalker - Kunst + Bar + Events, Berlin, BE.",
-      "htmlSnippet": "Eventbrite - ART Stalker presents <b>Salsa</b> Party - RUMBA SALSERA <b>BERLIN</b> - Saturday, January 4, 2025 at ART Stalker - Kunst + Bar + Events, <b>Berlin</b>, BE.",
-      "formattedUrl": "https://www.eventbrite.de/.../salsa-party-rumba-salsera-berlin-tickets-10742...",
-      "htmlFormattedUrl": "https://www.eventbrite.de/.../<b>salsa</b>-party-rumba-salsera-<b>berlin</b>-tickets-10742...",
-      "pagemap": {
-        "cse_thumbnail": [
-          {
-            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJQXw2s8Rvtup3HxQz126m9mXizLXWJpJmXfvq1l2v6fO_jEHavCPYXX8&s",
-            "width": "146",
-            "height": "200"
-          }
-        ],
-        "metatags": [
-          {
-            "og:determiner": "an",
-            "twitter:app:url:iphone": "com-eventbrite-attendee://event/1074250354729/?referrer=eiosurlxtcar&",
-            "twitter:app:id:googleplay": "com.eventbrite.attendee",
-            "og:image": "https://cdn.evbuc.com/images/892041283/116393153455/1/logo.20241105-122632",
-            "theme-color": "#f6682f",
+            "og:image:width": "1280",
             "twitter:card": "summary_large_image",
-            "og:site_name": "Eventbrite",
-            "apple-mobile-web-app-title": "Eventbrite",
-            "al:android:package": "com.eventbrite.attendee",
-            "twitter:app:name:googleplay": "Eventbrite",
-            "event:location:longitude": "13.30231",
-            "y_key": "d92e23811007b438",
-            "msapplication-tileimage": "https://cdn.evbstatic.com/s3-build/prod/1990039-rc2025-07-10_20.04-py27-339238d/django/images/favicons/mstile-144x144.png",
-            "twitter:app:id:iphone": "487922291",
-            "twitter:image": "https://cdn.evbuc.com/images/892041283/116393153455/1/logo.20241105-122632",
-            "twitter:site": "@eventbrite",
-            "application-name": "Eventbrite",
-            "msapplication-tilecolor": "#f6682f",
-            "twitter:title": "Salsa Party - RUMBA SALSERA BERLIN",
-            "og:type": "events.event",
-            "branch:deeplink:customactionparams": "{\"EventId\":\"1074250354729\"}",
-            "msvalidate.01": "A9AB07B7E430E4608E0BC57AFA5004AA",
-            "branch:deeplink:displaybranchbanner": "1",
-            "og:title": "Salsa Party - RUMBA SALSERA BERLIN",
-            "branch:deeplink:custom_action": "DisplayBranchBanner",
-            "event:start_time": "2025-01-04T19:00:00+01:00",
-            "al:android:url": "com-eventbrite-attendee://event/1074250354729/?referrer=eandurlxfbk&",
-            "twitter:app:url:googleplay": "com-eventbrite-attendee://event/1074250354729/?referrer=eandurlxtcar&",
-            "fb:app_id": "28218816837",
-            "event:end_time": "2025-01-04T22:00:00+01:00",
-            "viewport": "initial-scale=1, width=device-width",
-            "event:location:latitude": "52.509285",
+            "theme-color": "#fd4638",
+            "og:site_name": "Tollwood München: Veranstaltungen, Konzerte, Theater, Markt",
+            "og:title": "Veranstaltung Salsa Roja - Tollwood München: Veranstaltungen, Konzerte, Theater, Markt",
+            "og:image:height": "720",
+            "og:image:type": "image/jpeg",
+            "msapplication-tileimage": "https://www.tollwood.de/wp-content/themes/ContexLabs/assets/favicon/mstile-144x144.png",
+            "og:description": "Andechser Zelt | Fiery salsa classics with Salsa Roja on Thursday, June 26 at the Tollwood Summer Festival 2025. Free admission!",
+            "article:publisher": "https://www.facebook.com/Tollwood/",
+            "twitter:site": "@Tollwoodmunich",
+            "article:modified_time": "2025-04-29T09:28:30+00:00",
+            "viewport": "width=device-width, initial-scale=1",
             "og:locale": "en_US",
-            "og:ttl": "777600",
-            "og:url": "https://www.eventbrite.de/e/salsa-party-rumba-salsera-berlin-tickets-1074250354729",
-            "twitter:app:name:iphone": "Eventbrite",
-            "al:android:app_name": "Eventbrite"
+            "og:url": "https://www.tollwood.de/en/veranstaltungen/2025/salsa-roja/"
           }
         ],
         "cse_image": [
           {
-            "src": "https://cdn.evbuc.com/images/892041283/116393153455/1/logo.20241105-122632"
+            "src": "https://www.tollwood.de/wp-content/uploads/2025/04/06-26-andechser-zelt-tollwood-salsaroja-c-salsaroja.jpg"
           }
         ]
       }
     },
     {
       "kind": "customsearch#result",
-      "title": "HAVANNA Berlin",
-      "htmlTitle": "HAVANNA <b>Berlin</b>",
-      "link": "https://www.havanna-berlin.de/",
-      "displayLink": "www.havanna-berlin.de",
-      "snippet": "Havanna in Berlin: Salsa tanzen und Party feiern mit Black Music, R'n'B, Salsa, Merengue, Bachata, Reggaeton, Hits der 80er und 90er.",
-      "htmlSnippet": "Havanna in <b>Berlin</b>: <b>Salsa</b> tanzen und Party feiern mit Black Music, R&#39;n&#39;B, <b>Salsa</b>, Merengue, Bachata, Reggaeton, Hits der 80er und 90er.",
-      "formattedUrl": "https://www.havanna-berlin.de/",
-      "htmlFormattedUrl": "https://www.havanna-<b>berlin</b>.de/",
+      "title": "Events - München",
+      "htmlTitle": "Events - <b>München</b>",
+      "link": "https://salsaclub-munich.de/events.php",
+      "displayLink": "salsaclub-munich.de",
+      "snippet": "Anastasia Susi und Siempre Salsa e.V.. >> zur Anmeldung. Salsa Beats Social | Donnerstags. start - 21:00 Uhr Unser traditioneller Salsa und Bachata Party.",
+      "htmlSnippet": "Anastasia Susi und Siempre <b>Salsa</b> e.V.. &gt;&gt; zur Anmeldung. <b>Salsa</b> Beats Social | Donnerstags. start - 21:00 Uhr Unser traditioneller <b>Salsa</b> und Bachata Party.",
+      "formattedUrl": "https://salsaclub-munich.de/events.php",
+      "htmlFormattedUrl": "https://<b>salsa</b>club-munich.de/events.php",
       "pagemap": {
         "cse_thumbnail": [
           {
-            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlzf0p79RQczMUiwQoYLVFDVQL15L1wsSIABui-wcDDb6XMwmSnoybug&s",
-            "width": "180",
-            "height": "41"
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTHb6gGN0buWaz2fwPKNMCq1Rz61hjRHa8btBGAjK78NSWtNzSvWvWUFs&s",
+            "width": "192",
+            "height": "192"
           }
         ],
         "metatags": [
           {
-            "og:image": "http://static1.squarespace.com/static/568d0402a128e6a4d712eadf/t/56d58ff420c6470d70421ae3/1456836597078/Logo.png?format=1500w",
+            "msapplication-tilecolor": "#ffffff",
+            "og:image": "/img/favicon/apple-icon.png",
+            "msapplication-square70x70logo": "/img/favicon/win8-tile-70x70.png",
+            "theme-color": "#ffffff",
             "og:type": "website",
-            "og:image:width": "180",
-            "twitter:title": "HAVANNA Berlin",
             "twitter:card": "summary",
-            "og:site_name": "HAVANNA Berlin",
-            "twitter:url": "https://www.havanna-berlin.de",
-            "og:title": "HAVANNA Berlin",
-            "og:image:height": "41",
-            "og:description": "Havanna in Berlin: Salsa tanzen und Party feiern mit Black Music, R’n’B, Salsa, Merengue, Bachata, Reggaeton, Hits der 80er und 90er",
-            "twitter:image": "http://static1.squarespace.com/static/568d0402a128e6a4d712eadf/t/56d58ff420c6470d70421ae3/1456836597078/Logo.png?format=1500w",
-            "referrer": "no-referrer",
-            "viewport": "width=device-width,initial-scale=1",
-            "twitter:description": "Havanna in Berlin: Salsa tanzen und Party feiern mit Black Music, R’n’B, Salsa, Merengue, Bachata, Reggaeton, Hits der 80er und 90er",
-            "og:url": "https://www.havanna-berlin.de"
+            "msapplication-square144x144logo": "/img/favicon/win8-tile-144x144.png",
+            "og:title": "Events",
+            "msapplication-wide310x150logo": "/img/favicon/win8-tile-310x150.png",
+            "msapplication-tileimage": "/img/favicon/win8-tile-144x144.png",
+            "msapplication-navbutton-color": "#ffffff",
+            "msapplication-square150x150logo": "/img/favicon/win8-tile-150x150.png",
+            "og:description": "Events",
+            "facebook-domain-verification": "6gk2bmplxw46s6t5foztyhzm0zoqgu",
+            "viewport": "width=device-width, initial-scale=1",
+            "msapplication-square310x310logo": "/img/favicon/win8-tile-310x310.png",
+            "twitter:description": "Events",
+            "og:url": "https://www.salsaclub-munich.de/"
           }
         ],
         "cse_image": [
           {
-            "src": "http://static1.squarespace.com/static/568d0402a128e6a4d712eadf/t/56d58ff420c6470d70421ae3/1456836597078/Logo.png?format=1500w"
+            "src": "https://salsaclub-munich.de/img/favicon/apple-icon.png"
           }
         ]
       }
     },
     {
       "kind": "customsearch#result",
-      "title": "Welcome — SALSA School of Analytical Sciences Adlershof",
-      "htmlTitle": "Welcome — <b>SALSA</b> School of Analytical Sciences Adlershof",
-      "link": "https://fakultaeten.hu-berlin.de/en/mnf/forschung_internationales/grs/salsa",
-      "displayLink": "fakultaeten.hu-berlin.de",
-      "snippet": "... event in the SALSA year 2022 thanks to the participation of everyone. We were ... For the Zoom link, please contact the SALSA team: salsa[at]hu-berlin.de ...",
-      "htmlSnippet": "... event in the <b>SALSA</b> year 2022 thanks to the participation of everyone. We were ... For the Zoom link, please contact the <b>SALSA</b> team: <b>salsa</b>[at]hu-<b>berlin</b>.de&nbsp;...",
-      "formattedUrl": "https://fakultaeten.hu-berlin.de/en/mnf/forschung_internationales/grs/salsa",
-      "htmlFormattedUrl": "https://fakultaeten.hu-<b>berlin</b>.de/en/mnf/forschung_internationales/grs/<b>salsa</b>",
+      "title": "wöchentlich | München Salsa",
+      "htmlTitle": "wöchentlich | <b>München Salsa</b>",
+      "link": "https://www.msalsa.de/taxonomy/term/36",
+      "displayLink": "www.msalsa.de",
+      "snippet": "München ,. Wir freuen uns, euch zu der wöchentlichen Salsa & Bachata Party einzuladen, die bereits seit 2003 jeden Dienstag in unserer Location stattfindet!",
+      "htmlSnippet": "<b>München</b> ,. Wir freuen uns, euch zu der wöchentlichen <b>Salsa</b> &amp; Bachata Party einzuladen, die bereits seit 2003 jeden <b>Dienstag</b> in unserer Location stattfindet!",
+      "formattedUrl": "https://www.msalsa.de/taxonomy/term/36",
+      "htmlFormattedUrl": "https://www.m<b>salsa</b>.de/taxonomy/term/36",
+      "pagemap": {
+        "hcard": [
+          {
+            "fn": "Salsea",
+            "nickname": "Salsea"
+          },
+          {
+            "fn": "Salsea",
+            "nickname": "Salsea"
+          },
+          {
+            "fn": "Mint Club"
+          },
+          {
+            "fn": "Mint Club"
+          },
+          {
+            "fn": "Megano",
+            "nickname": "Megano"
+          },
+          {
+            "fn": "Megano",
+            "nickname": "Megano"
+          },
+          {
+            "fn": "Salsamas Pasing"
+          },
+          {
+            "fn": "Salsamas Pasing"
+          },
+          {
+            "fn": "OnStage",
+            "nickname": "OnStage"
+          },
+          {
+            "fn": "OnStage",
+            "nickname": "OnStage"
+          }
+        ],
+        "Concept": [
+          {
+            "prefLabel": "wöchentlich",
+            "label": "wöchentlich"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg0bw-1tw0B2NpMSfxIT2jOd4NNBR2kOBVh-AzqteHwG1MGuU74dJBveY&s",
+            "width": "191",
+            "height": "130"
+          }
+        ],
+        "Item": [
+          {
+            "num_replies": "0"
+          },
+          {
+            "num_replies": "0"
+          },
+          {
+            "num_replies": "0",
+            "title": "Legenday Salsa Social Dance Party",
+            "encoded": "Wir freuen uns, euch zu der wöchentlichen Salsa & Bachata Party einzuladen, die bereits seit 2003 jeden Dienstag in unserer Location stattfindet! Seid Teil dieser lebendigen Tradition und..."
+          },
+          {
+            "num_replies": "0",
+            "title": "SALSEA Montags Party",
+            "encoded": "SALSEA Montagsparty: Salsa, Timba, Son, und Bachata Ort: Mint Club - Leopoldstr. 25. 80802 München Preis: 10€ Studenten: 8 € (inkl. Schnupperkurs) Abendkasse und Vorverkauf"
+          },
+          {
+            "num_replies": "0",
+            "title": "Salsa & Bachata - All Styles",
+            "encoded": "ab 21:00 Uhr Mit DJ MEL﻿﻿ ﻿ Programm • Inkl. Schnupperkurs: 21:00 - 21:30 • Party ab 21:30﻿﻿ Eintrittspreis • Regulär: 10 €"
+          }
+        ],
+        "person": [
+          {
+            "location": "München"
+          }
+        ],
+        "postaladdress": [
+          {
+            "addresslocality": "München",
+            "name": "Salsea",
+            "addresscountry": "Deutschland",
+            "streetaddress": "Heßstr. 48B"
+          },
+          {
+            "addresslocality": "München",
+            "name": "Salsea",
+            "streetaddress": "Heßstr. 48B"
+          },
+          {
+            "addresslocality": "München",
+            "name": "Mint Club",
+            "addresscountry": "Deutschland",
+            "streetaddress": "Leopoldstr. 25"
+          },
+          {
+            "addresslocality": "München",
+            "name": "Mint Club",
+            "streetaddress": "Leopoldstr. 25"
+          },
+          {
+            "addresslocality": "München",
+            "name": "Megano",
+            "addresscountry": "Deutschland",
+            "streetaddress": "Geretsrieder Str. 6"
+          },
+          {
+            "addresslocality": "München",
+            "name": "Megano",
+            "streetaddress": "Geretsrieder Str. 6"
+          },
+          {
+            "addresslocality": "München Pasing",
+            "name": "Salsamas Pasing",
+            "addresscountry": "Deutschland",
+            "streetaddress": "Am Schützeneck 3"
+          },
+          {
+            "addresslocality": "München Pasing",
+            "name": "Salsamas Pasing",
+            "streetaddress": "Am Schützeneck 3"
+          },
+          {
+            "addresslocality": "München",
+            "name": "OnStage",
+            "addresscountry": "Deutschland",
+            "streetaddress": "Neumarkter Str. 71"
+          },
+          {
+            "addresslocality": "München",
+            "name": "OnStage",
+            "streetaddress": "Neumarkter Str. 71"
+          },
+          {
+            "addresslocality": "München",
+            "name": "Salsa Club Munich",
+            "addresscountry": "Deutschland",
+            "streetaddress": "Westenrieder Str 41"
+          },
+          {
+            "addresslocality": "München",
+            "name": "Salsa Club Munich",
+            "streetaddress": "Westenrieder Str 41"
+          },
+          {
+            "addresslocality": "München",
+            "name": "NachtKantine",
+            "addresscountry": "Deutschland",
+            "streetaddress": "Grafingerstr.6"
+          },
+          {
+            "addresslocality": "München",
+            "name": "NachtKantine",
+            "streetaddress": "Grafingerstr.6"
+          },
+          {
+            "addresslocality": "München",
+            "name": "Mint Club",
+            "addresscountry": "Deutschland",
+            "streetaddress": "Leopoldstraße 25"
+          },
+          {
+            "addresslocality": "München",
+            "name": "Mint Club",
+            "streetaddress": "Leopoldstraße 25"
+          }
+        ],
+        "metatags": [
+          {
+            "og:type": "article",
+            "og:site_name": "MSalsa - München Salsa",
+            "handheldfriendly": "true",
+            "dcterms.type": "Text",
+            "og:title": "wöchentlich",
+            "dcterms.title": "wöchentlich",
+            "rdfs:label skos:preflabel": "wöchentlich",
+            "viewport": "width=device-width, initial-scale=1",
+            "apple-mobile-web-app-capable": "yes",
+            "mobileoptimized": "width",
+            "dcterms.format": "text/html",
+            "og:url": "https://www.msalsa.de/taxonomy/term/36",
+            "dcterms.identifier": "https://www.msalsa.de/taxonomy/term/36"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.msalsa.de/sites/default/files/logo.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Veranstaltung Salsa Thursday - Tollwood München ...",
+      "htmlTitle": "<b>Veranstaltung Salsa</b> Thursday - Tollwood <b>München</b> ...",
+      "link": "https://www.tollwood.de/en/veranstaltungen/2025/salsa-thursday-4/",
+      "displayLink": "www.tollwood.de",
+      "snippet": "The legendary salsa party every Thursday with Marion Morena and DJ Daniel. Visitors learn the basic steps to the respective dances.",
+      "htmlSnippet": "The legendary <b>salsa</b> party every Thursday with Marion Morena and DJ Daniel. Visitors learn the basic steps to the respective dances.",
+      "formattedUrl": "https://www.tollwood.de/en/veranstaltungen/2025/salsa-thursday-4/",
+      "htmlFormattedUrl": "https://www.tollwood.de/en/<b>veranstaltung</b>en/2025/<b>salsa</b>-thursday-4/",
       "pagemap": {
         "cse_thumbnail": [
           {
-            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlSrs9kJdVluc0yJfSUEey39y0_SnGwMQmRfQc4kYn-kjjK3KyCusGGsU&s",
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ9ZskQwOudN2_684U6AQCS9Mf_tezsszyuv1vuLbR9JSbQJHu6s9J8U4&s",
+            "width": "300",
+            "height": "168"
+          }
+        ],
+        "metatags": [
+          {
+            "msapplication-tilecolor": "#da532c",
+            "og:image": "https://www.tollwood.de/wp-content/uploads/2024/04/salsa-thursday-half-moon-bar-c-alexander-scharf.jpg",
+            "msapplication-config": "https://www.tollwood.de/wp-content/themes/ContexLabs/assets/favicon/browserconfig.xml",
+            "og:type": "article",
+            "og:image:width": "1280",
+            "twitter:card": "summary_large_image",
+            "theme-color": "#fd4638",
+            "og:site_name": "Tollwood München: Veranstaltungen, Konzerte, Theater, Markt",
+            "og:title": "Veranstaltung Salsa Thursday - Tollwood München: Veranstaltungen, Konzerte, Theater, Markt",
+            "og:image:height": "720",
+            "og:image:type": "image/jpeg",
+            "msapplication-tileimage": "https://www.tollwood.de/wp-content/themes/ContexLabs/assets/favicon/mstile-144x144.png",
+            "og:description": "Half Moon Bar | The legendary salsa party every Thursday at the Tollwood Summer Festival 2025. Free admission!",
+            "article:publisher": "https://www.facebook.com/Tollwood/",
+            "twitter:site": "@Tollwoodmunich",
+            "article:modified_time": "2025-05-16T10:53:21+00:00",
+            "viewport": "width=device-width, initial-scale=1",
+            "og:locale": "en_US",
+            "og:url": "https://www.tollwood.de/en/veranstaltungen/2025/salsa-thursday-4/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.tollwood.de/wp-content/uploads/2024/04/salsa-thursday-half-moon-bar-c-alexander-scharf.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Salsa München | Salsango",
+      "htmlTitle": "<b>Salsa München</b> | <b>Salsango</b>",
+      "link": "https://www.salsa-und-tango.de/salsa/salsa-muenchen/",
+      "displayLink": "www.salsa-und-tango.de",
+      "snippet": "... München, sortiert nach Tag (heute), Tanzschule und Art der Veranstaltung ... Salsa-Party München am Dienstag. Eine Salsa-Party diesntags in München ist ...",
+      "htmlSnippet": "... <b>München</b>, sortiert nach Tag (heute), Tanzschule und Art der <b>Veranstaltung</b> ... <b>Salsa</b>-Party <b>München</b> am <b>Dienstag</b>. Eine <b>Salsa</b>-Party diesntags in <b>München</b> ist&nbsp;...",
+      "formattedUrl": "https://www.salsa-und-tango.de/salsa/salsa-muenchen/",
+      "htmlFormattedUrl": "https://www.<b>salsa</b>-und-tango.de/<b>salsa</b>/<b>salsa</b>-muenchen/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQJnlVIhdIfhalIrZfwf2qYneI6p4lbATg-odefsjlTmb67AAw0T9zwJg&s",
+            "width": "275",
+            "height": "183"
+          }
+        ],
+        "metatags": [
+          {
+            "og:type": "website",
+            "viewport": "width=device-width, initial-scale=1",
+            "og:title": "Salsa München | Salsango",
+            "og:url": "https://www.salsa-und-tango.de/salsa/salsa-muenchen/",
+            "og:description": "Salsa München: Salsa-Partys, Konzerte, Salsa-Kurse und -Workshops in München, sortiert nach Tag (heute), Tanzschule und Art der Veranstaltung.",
+            "verification": "0fa070f867aaf8103833ccbf086c6cfe"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.salsa-und-tango.de/wp-content/uploads/2023/08/Salsa-in-Muenchen.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Salsa Club Munich (@salsaclubmunich) • Instagram photos and ...",
+      "htmlTitle": "<b>Salsa</b> Club Munich (@<b>salsaclubmunich</b>) • Instagram photos and ...",
+      "link": "https://newsletter.salsaclub-munich.de/i/_6mttu38dfZ32fJntYPPXs08Nxdfr3sipbetgjzHCUc",
+      "displayLink": "newsletter.salsaclub-munich.de",
+      "snippet": "6669 Followers, 1692 Following, 375 Posts - Salsa Club Munich (@salsaclubmunich) on Instagram: \"Mambo | Salsa | Bachata by Hakan Seven Salsa Party every ...",
+      "htmlSnippet": "6669 Followers, 1692 Following, 375 Posts - <b>Salsa</b> Club Munich (@salsaclubmunich) on Instagram: &quot;Mambo | <b>Salsa</b> | Bachata by Hakan Seven <b>Salsa</b> Party every&nbsp;...",
+      "formattedUrl": "https://newsletter.salsaclub-munich.de/.../_6mttu38dfZ32fJntYPPXs08Nxdf...",
+      "htmlFormattedUrl": "https://newsletter.<b>salsa</b>club-munich.de/.../_6mttu38dfZ32fJntYPPXs08Nxdf...",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXSk8xg9mDKl17qzvT_8zUR4uU9-CbjoHiPyIzxY9WvPEPqpPpK48C61M&s",
+            "width": "168",
+            "height": "299"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://scontent-iad3-2.cdninstagram.com/v/t51.2885-19/274068661_1773876596138994_6371858222564618755_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=111&ccb=1-7&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=algKXaXkNPYQ7kNvwFmJPpp&_nc_oc=AdnZ5FPOxz3xDFiMriu4Q4FCs0H0V2LYCYe4nHDblnapHN_YqkeQwiR_GsvleJY83LA&_nc_zt=24&_nc_ht=scontent-iad3-2.cdninstagram.com&oh=00_AfRLHXt441J65ZEKokbYY5AfpT1CVMz5lp8lYuWoiwAGtg&oe=68890256",
+            "theme-color": "#FFFFFF",
+            "og:type": "profile",
+            "al:ios:app_name": "Instagram",
+            "og:title": "Salsa Club Munich (@salsaclubmunich) • Instagram photos and videos",
+            "application-title": "Instagram",
+            "al:android:package": "com.instagram.android",
+            "bingbot": "noarchive",
+            "al:ios:url": "instagram://user?username=salsaclubmunich",
+            "color-scheme": "light",
+            "og:description": "6,669 Followers, 1,692 Following, 375 Posts - See Instagram photos and videos from Salsa Club Munich (@salsaclubmunich)",
+            "al:ios:app_store_id": "389801252",
+            "al:android:url": "https://instagram.com/_u/salsaclubmunich/",
+            "apple-mobile-web-app-status-bar-style": "default",
+            "viewport": "width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover",
+            "mobile-web-app-capable": "yes",
+            "og:url": "https://www.instagram.com/salsaclubmunich/",
+            "al:android:app_name": "Instagram"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3679365166742518450"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Salsa Y Corazon ::: Die Tanzschule in München für Salsa und Bachata",
+      "htmlTitle": "<b>Salsa</b> Y Corazon ::: Die Tanzschule in <b>München</b> für <b>Salsa</b> und Bachata",
+      "link": "https://www.salsa-y-corazon.de/",
+      "displayLink": "www.salsa-y-corazon.de",
+      "snippet": "TANZKURSE - EVENTS - TANZSCHIFFFAHRTEN - TANZREISEN · In unseren regulären Kursen achten wir auf ausgeglichene Kurse. · Singles bekommen einen Tanzpartner/in ...",
+      "htmlSnippet": "TANZKURSE - EVENTS - TANZSCHIFFFAHRTEN - TANZREISEN &middot; In unseren regulären Kursen achten wir auf ausgeglichene Kurse. &middot; Singles bekommen einen Tanzpartner/in&nbsp;...",
+      "formattedUrl": "https://www.salsa-y-corazon.de/",
+      "htmlFormattedUrl": "https://www.<b>salsa</b>-y-corazon.de/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlnQpcnyxAvaBvahb069fggntyqFVtwFYs_icZ_fVkNpsxq1Hc7fnV_lZg&s",
             "width": "310",
             "height": "163"
           }
         ],
+        "postaladdress": [
+          {
+            "addresslocality": "München",
+            "postalcode": "80337",
+            "name": "Salsa Y Corazon",
+            "streetaddress": "Zenettistraße 7",
+            "telephone": "0172-965 95 79",
+            "faxnumber": "089-158 149 44",
+            "email": "info@salsa-y-corazon.de"
+          }
+        ],
         "metatags": [
           {
-            "og:image": "https://fakultaeten.hu-berlin.de/@@site-logo/og_logo.png",
-            "twitter:card": "summary",
+            "og:image": "https://www.salsa-y-corazon.de/images/website-thumbnail_1200x630.jpg",
             "og:type": "website",
-            "og:site_name": "Fakultäten an der HU",
-            "og:title": "Welcome",
-            "dc.format": "text/html",
-            "og:image:type": "image/png",
-            "dc.date.created": "2012-09-25T11:37:12+02:00",
-            "dc.type": "Page",
-            "viewport": "width=device-width, initial-scale=1.0",
-            "dc.date.valid_range": "2012/09/25 -",
-            "dc.date.modified": "2025-06-20T10:31:42+02:00",
-            "og:url": "https://fakultaeten.hu-berlin.de/en/mnf/forschung_internationales/grs/salsa",
-            "dc.language": "en"
+            "og:image:width": "1200",
+            "geo.region": "DE-Bayern",
+            "author": "Salsa Y Corazon - Marion Morena",
+            "og:title": "Salsa Y Corazon ::: Die Tanzschule in München für Salsa und Bachata",
+            "og:image:height": "630",
+            "geo.position": "48.1232;11.557859",
+            "og:description": "Die Tanzschule in München für Salsa und Bachata. Tanzkurse für Singles und Paare für jung und alt, jeder soll die Freude, den Spaß am Tanzen erleben.",
+            "icbm": "48.1232,11.557859",
+            "viewport": "width=device-width, initial-scale=1",
+            "og:url": "https://www.salsa-y-corazon.de/",
+            "geo.placename": "Zenettistraße 7, 80337 München, DE"
           }
         ],
         "cse_image": [
           {
-            "src": "https://fakultaeten.hu-berlin.de/@@site-logo/og_logo.png"
+            "src": "https://www.salsa-y-corazon.de/images/website-thumbnail_1200x630.jpg"
           }
         ]
       }
