@@ -4,7 +4,8 @@
   "main": "index.cjs",
   "scripts": {
     "start": "node index.cjs",
-    "dev": "nodemon index.cjs"
+    "dev": "nodemon index.cjs",
+    "test-cumbancha": "node test_cumbancha_scraping.js"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",

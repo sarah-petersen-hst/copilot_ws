@@ -10,11 +10,29 @@ const { pool, initDb, voteEvent } = require('./db.cjs');
 const app = express();
 const PORT = process.env.PORT || 4000;
 
-// Restrict CORS in production
-const allowedOrigins = process.env.NODE_ENV === 'production'
-  ? ['https://your-frontend-domain.com']
-  : undefined;
-app.use(cors({ origin: allowedOrigins || true }));
+// Configure CORS with secure defaults
+const corsOptions = {
+  origin: function (origin, callback) {
+    // Allow requests with no origin (like mobile apps or curl requests)
+    if (!origin) return callback(null, true);
+    
+    const allowedOrigins = process.env.NODE_ENV === 'production'
+      ? (process.env.FRONTEND_DOMAIN ? [process.env.FRONTEND_DOMAIN] : [])
+      : ['http://localhost:3000', 'http://127.0.0.1:3000', 'http://localhost:5173', 'http://127.0.0.1:5173']; // Common React dev ports
+    
+    if (allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      console.warn(`CORS blocked origin: ${origin}`);
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true, // Allow cookies/auth headers if needed
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With']
+};
+
+app.use(cors(corsOptions));
 
 app.use(express.json());
 
